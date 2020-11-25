@@ -1,9 +1,9 @@
-# InviteManager
+# Initial page
 
 ## Reference
 
-- [Commands](/en/reference/commands.md)
-- [Configs / Settings](/en/reference/settings.md)
+* [Commands](https://github.com/chaun14/invlogclassic-docs/tree/82501d50a3e84eb378df2d4096492c8fd504020c/en/reference/commands.md)
+* [Configs / Settings](https://github.com/chaun14/invlogclassic-docs/tree/82501d50a3e84eb378df2d4096492c8fd504020c/en/reference/settings.md)
 
 ## Getting Started
 
@@ -15,8 +15,9 @@ While our bot is on your server, we track every invite that happens on your serv
 
 ### Moderation
 
-Our brand new moderation system allows you to auto-moderate many things. Please check our [strikes](/en/modules/moderation/strikes.md) and [punishments](/en/modules/moderation/punishments.md) pages for more info. In short, our bot gives out 'strikes' to people who misbehave, and after a certain amount of strikes, the user receives a punishment. All of this is configurable by the user.
+Our brand new moderation system allows you to auto-moderate many things. Please check our [strikes](https://github.com/chaun14/invlogclassic-docs/tree/82501d50a3e84eb378df2d4096492c8fd504020c/en/modules/moderation/strikes.md) and [punishments](https://github.com/chaun14/invlogclassic-docs/tree/82501d50a3e84eb378df2d4096492c8fd504020c/en/modules/moderation/punishments.md) pages for more info. In short, our bot gives out 'strikes' to people who misbehave, and after a certain amount of strikes, the user receives a punishment. All of this is configurable by the user.
 
 ## Premium
 
-To pay our server bill, we offer a premium version of the bot. To see all the extra feature you get, please visit our [pricing page](/en/premium/features.md).
+To pay our server bill, we offer a premium version of the bot. To see all the extra feature you get, please visit our [pricing page](https://github.com/chaun14/invlogclassic-docs/tree/82501d50a3e84eb378df2d4096492c8fd504020c/en/premium/features.md).
+

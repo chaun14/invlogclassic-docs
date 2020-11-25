@@ -2,7 +2,7 @@
 
 * [Initial page](README.md)
 
-## modules <a id="module"></a>
+## modules
 
-* [test](module/test.md)
+* [test](modules/test.md)
 
