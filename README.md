@@ -1,29 +1,27 @@
 # Welcome
 
-## Reference
+### Verweise
 
-* [Commands](references/commands.md)
-* [Configs / Settings](references/settings.md)
+* [Befehle](references/commands.md)
+* [Konfigurationen / Einstellungen](references/settings.md)
 
-## Getting Started
+### Erste Schritte
 
-To get started, just run the `!setup` command on your server.
+Um zu beginnen, führe einfach den Befehl `!setup` auf deinem Server aus.
 
-### Invite Management
+#### Einladungsmanagement
 
-While our bot is on your server, we track every invite that happens on your server. Discord only shows you who has how many invites. Our bot also analyses who was invited by whom. This allows our bot to detect fake invites and see who is trying to cheat the invite system.
+Während unser Bot auf deinem Server ist, verfolgen wir jede Einladung, die auf deinem Server stattfindet. Discord zeigt dir nur, wer wie viele Einladungen hat. Unser Bot analysiert auch, wer von wem eingeladen wurde. Dies ermöglicht unserem Bot gefälschte Einladungen zu erkennen und zu sehen, wer versucht das Einladungssystem zu betrügen.
 
-### Moderation
+#### Moderation
 
-Our brand new moderation system allows you to auto-moderate many things. Please check our [strikes](modules/moderation-1/strikes.md) and [punishments](modules/moderation-1/punishments.md) pages for more info. In short, our bot gives out 'strikes' to people who misbehave, and after a certain amount of strikes, the user receives a punishment. All of this is configurable by the user.
+Unser brandneues Moderationssystem ermöglicht es dir viele Dinge automatisch zu moderieren. Bitte schaue dir für weiteren Informationen unsere [Strikes](modules/moderation-1/strikes.md) und [Bestraftungen](modules/moderation-1/punishments.md) Seiten an. Kurz gesagt vergibt unser Bot 'Strikes' an Leute, die sich schlecht benehmen, und nach einer bestimmten Anzahl von Strikes erhält der User eine Bestrafung. All das ist durch den Benutzer konfigurierbar.
 
 ## Bot lists:
-Vote to the bot to help us on different bot list !
 
+Vote to the bot to help us on different bot list !
 
 `infinitybotlist:`
 
-
 [![infinitybotlist](https://infinitybotlist.com/bots/617497548743245835/widget?size=large)](https://infinitybotlist.com/bots/617497548743245835/vote)
-
 
