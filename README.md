@@ -24,4 +24,4 @@ Voter pour le bot sur les différentes list de bot afin de nous soutenir !
 `infinitybotlist:`
 
 
-![infinitybotlist](https://infinitybotlist.com/bots/617497548743245835/widget?size=large)
+[![infinitybotlist](https://infinitybotlist.com/bots/617497548743245835/widget?size=large)](https://infinitybotlist.com/bots/617497548743245835/vote)
