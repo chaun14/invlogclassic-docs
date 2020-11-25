@@ -2,7 +2,7 @@
 description: You can customise the join and leave messages with a number of parameters.
 ---
 
-# custom-messages
+# Custom Messages
 
 \(Jump to placeholders\)
 
