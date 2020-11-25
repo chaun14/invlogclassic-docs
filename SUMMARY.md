@@ -5,7 +5,7 @@
 ## modules
 
 * [Invites](modules/invites/README.md)
-  * [Exemples](modules/invites/exemples.md)
+  * [Examples](modules/invites/examples.md)
   * [Custom Messages](modules/invites/custom-messages.md)
 * [test](modules/test.md)
 
