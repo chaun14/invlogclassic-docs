@@ -1,29 +1,27 @@
 # Welcome
 
-## Reference
+## Referans
 
-* [Commands](references/commands.md)
+* [Komutlar](references/commands.md)
 * [Configs / Settings](references/settings.md)
 
-## Getting Started
+## Başlangıç
 
-To get started, just run the `!setup` command on your server.
+Başlamak için sunucunuzda `!setup` komutunu çalıştırmanız yeterlidir.
 
-### Invite Management
+#### Davet Yönetimi
 
-While our bot is on your server, we track every invite that happens on your server. Discord only shows you who has how many invites. Our bot also analyses who was invited by whom. This allows our bot to detect fake invites and see who is trying to cheat the invite system.
+Botumuz sunucunuzdayken, sunucunuzda gerçekleşen her daveti izleriz. Discord sadece size kimin davet ettiğini gösterir. Botumuz ayrıca kimin kimi davet ettiğini analiz eder. Bu botumuzun sahte davetiyeleri tespit etmesini ve davet sistemini kandırmaya çalıştığını görmesini sağlar.
 
-### Moderation
+#### Moderasyon
 
-Our brand new moderation system allows you to auto-moderate many things. Please check our [strikes](modules/moderation-1/strikes.md) and [punishments](modules/moderation-1/punishments.md) pages for more info. In short, our bot gives out 'strikes' to people who misbehave, and after a certain amount of strikes, the user receives a punishment. All of this is configurable by the user.
+Yeni moderasyon sistemimiz birçok şeyi otomatik olarak yönetmenizi sağlar. Daha fazla bilgi için lütfen [strikes](/tr/modules/moderation/strikes.md) ve [punishments](/tr/modules/moderation/punishments.md) sayfalarımızı kontrol edin. Kısacası, botumuz yanlış davranan insanlara 'grev' verir ve belirli bir grevden sonra kullanıcı bir ceza alır. Tüm bunlar kullanıcı tarafından yapılandırılabilir.
 
 ## Bot lists:
-Vote to the bot to help us on different bot list !
 
+Vote to the bot to help us on different bot list !
 
 `infinitybotlist:`
 
-
 [![infinitybotlist](https://infinitybotlist.com/bots/617497548743245835/widget?size=large)](https://infinitybotlist.com/bots/617497548743245835/vote)
-
 

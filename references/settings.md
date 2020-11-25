@@ -1,168 +1,170 @@
 # Settings
 
+## Configs
+
 There are many config options that can be set. You don't have to set all of them. If you just added the bot, just run `!setup`, which will guide you through the most important ones.
 
-## Overview
+### Overview
 
-### General
-
-| Setting | Description |
-| :--- | :--- |
-| [Prefix]() | The prefix used to trigger bot commands. |
-| [Language]() | The language of the bot |
-| [Log Channel]() | The channel where bot actions are logged. |
-| [Get Updates]() | Enable to receive development updates about InviteLogger. |
-| [Command channels]() | The channels in which the bot will react to commands. |
-| [Ignored channels]() | The channels in which the bot will ignore commands. |
-
-### Invites
-
-#### General
+#### Genel
 
 | Setting | Description |
 | :--- | :--- |
-| [Join Roles]() | Roles that are assigned to all members when joining. |
+| Prefix | The prefix used to trigger bot commands. |
+| Dil | Botun dili |
+| Log kanalı | Bot işlemlerinin günlüğe kaydedildiği kanal. |
+| Yükselt. | InviteManager hakkında geliştirme güncellemelerini almayı etkinleştirin. |
+| Komut kanalları | Botun komutlara tepki vereceği kanallar. |
+| Görmezden gelinen kanallar | Botun komutları görmezden geleceği kanallar. |
 
-#### Joins
+#### davetler
 
-| Setting | Description |
-| :--- | :--- |
-| [Message]() | The message sent when someone joins the server. |
-| [Message Channel]() | The channel that the message on join is sent to. |
-
-#### Leaves
-
-| Setting | Description |
-| :--- | :--- |
-| [Message]() | The message sent when someone leaves the server. |
-| [Message Channel]() | The channel that the leave message is sent to. |
-| [Auto Subtract]() | Automatically remove invites from the inviter when the invited user leaves. |
-| [Auto Subtract Threshold]() | The time in seconds for which a user has to stay in the server for the invite to count. |
-
-#### Leaderboard
+**Genel**
 
 | Setting | Description |
 | :--- | :--- |
-| [Style]() | The display style of the leaderboard. |
-| [Hide left members]() | Hide members that left the server from the leaderboard. |
+| Katılma rolleri | Katılırken tüm üyelere atanan roller. |
 
-#### Fakes
-
-| Setting | Description |
-| :--- | :--- |
-| [Auto Subtract]() | Automatically subtract fake invites. |
-
-#### Ranks
+**gelenler**
 
 | Setting | Description |
 | :--- | :--- |
-| [Assignment Style]() | How ranks are rewarded to users. |
-| [Announcement Channel]() | The channel where users receiving a new rank are announced. |
-| [Announcement Message]() | The message that is sent when a user receives a new rank. |
+| Mesaj | Birisi sunucuya katıldığında gönderilen mesaj. |
+| Mesaj Kanalı | Katılmadaki iletinin gönderildiği kanal |
 
-### Moderation
-
-#### Captcha
+**ayrılanlar**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Whether or not captcha verification is enabled. |
-| [Welcome Message]() | The message a user will get after joining a server and instructing them to enter the captcha. |
-| [Success Message]() | The welcome message that will be sent to the user after he successfully verifies. |
-| [Failed Message]() | The message sent to the user if he enters an invalid captcha. |
-| [Verification Timeout]() | The time within which the captcha has to be entered successfully. |
-| [Log Enabled]() | Whether or not verification attempts will be logged. |
+| Mesaj | Birisi sunucudan çıktığında gönderilen mesaj. |
+| Mesaj Kanalı | Ayrılma mesajının gönderildiği kanal. |
+| Auto Subtract | Kullanıcın yaptığı davetten gelen kullanıcı ayrıldığında kullanıcın otomatik olarak daveti kaldırılır. |
+| Auto Subtract Threshold | Davetiyenin sayması için bir kullanıcının sunucuda kalması gereken saniye cinsinden süre. |
 
-#### General
+**Liderlik Tablosu**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically moderate messages \(specific rules can also be turned on or off, this has to be ON for ANY rule to work\). |
-| [Moderated Channels]() | The list of moderated channels \(this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels\). |
-| [Moderated Roles]() | The list of roles that are moderated \(this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles\). |
-| [Ignored Channels]() | Channels that are ignored while automatically moderating. |
-| [Ignored Roles]() | Any members with these roles will not automatically be moderated. |
-| [Muted Role]() | The role that is given to people who are muted. Make sure this role is denied the "Send Message" permission. |
-| [Disabled for Old Members]() | Disabled auto moderation for members that have been in your server for a long time. |
-| [Old Members Threshold]() | The amount of time a member has to be in your server to be considered 'old'. |
+| Stil | Skor tablosunun görüntü stili. |
+| Soldaki üyeleri gizle | Liderlik tablosundan sunucudan ayrılan üyeleri gizleyin. |
 
-#### Logging
+**Sahte**
 
 | Setting | Description |
 | :--- | :--- |
-| [Log Enabled]() | Log any moderation actions that the bot makes. |
-| [Mod Log Channel]() | The channel where moderation logs will be posted in. |
-| [Delete Bot Messages]() | Automatically delete the bots own messages \(keeps your chat clean\). |
-| [Delete Bot Message Timeout]() | The timeout after which bot messages are deleted. |
-| [Delete Ban Messages]() | Whether or not "Ban" pushment messages will be deleted automatically. |
-| [Delete Kick Messages]() | Whether or not "Kick" pushment messages will be deleted automatically. |
-| [Delete Softban Messages]() | Whether or not "Softban" pushment messages will be deleted automatically. |
-| [Delete Warn Messages]() | Whether or not "Warn" pushment messages will be deleted automatically. |
-| [Delete Mute Messages]() | Whether or not "Mute" pushment messages will be deleted automatically. |
+| Auto Subtract | Sahte davetleri otomatik olarak çıkarın |
 
-#### Invites
+**rütbe**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically scan messages for discord invite links and remove them. |
+| Assignment Style | Ranklar kullanıcılara nasıl ödüllendirilir. |
+| Duyuru Kanalı | Yeni bir rütbe alan kullanıcıların duyurulduğu kanal. |
+| Duyuru Mesajı | Bir kullanıcı yeni bir rütbe aldığında gönderilen mesaj. |
 
-#### Links
+#### Moderasyon
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically remove messages containing links \(you can set a whitelist and blacklist\). |
-| [Whitelist]() | A list of links that users are allowed to post. |
-| [Blacklist]() | Blacklist certain links which users won't be able to post. |
-| [Follow Redirects]() | Enable this to resolve redirects for links. |
-
-#### Banned Words
+**Doğrulama**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Whether or not blacklisted words will be automoderated. |
-| [Blacklist]() | A list of words that are banned. |
+| Etkin | Captcha doğrulamanın etkin olup olmadığı. |
+| Karşılama mesajı | Kullanıcının bir sunucuya katıldıktan ve captcha'ya girmesini istedikten sonra alacağı mesaj. |
+| Success Message | Başarılı bir şekilde doğrulandıktan sonra kullanıcıya gönderilecek hoş geldiniz mesajı. |
+| Başarısız Mesaj | Geçersiz bir captcha girerse, kullanıcıya mesaj gönderilir. |
+| Verification Timeout | The time within which the captcha has to be entered successfully. |
+| log etkin | Doğrulama girişimlerinin yapılıp yapılmadığı günlüğe kaydedilir. |
 
-#### Caps
-
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate messages with A LOT OF CAPS. |
-| [Min. Characters]() | The minimum amount of characters in a message to be considered for moderating \(setting to '3' would ignore 'OK'\). |
-| [Percentage CAPs]() | The percentage of characters of the message that have to be CAPs for the rule to trigger. |
-
-#### Duplicate Messages
+**genel**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically moderate duplicate messages \(copy-paste spam\). |
-| [Timeframe in Seconds]() | The timeframe whithin which messages will be considered duplicates. |
+| etkin | Automatically moderate messages \(specific rules can also be turned on or off, this has to be ON for ANY rule to work\). |
+| Moderated Channels | The list of moderated channels \(this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels\). |
+| Moderatör Rolü | Denetlenen rollerin listesi \(bu, beyaz liste olarak işlev görür, tüm rolleri denetlemek için boş bırakın veya belirli rolleri yok saymak için `autoModIgnoredRoles` komutunu kullanın\). |
+| Görmezden gelinen kanallar | Otomatik olarak denetlenirken yoksayılan kanallar. |
+| Görmezden gelinen roller | Bu rollere sahip üyeler otomatik olarak denetlenmez. |
+| Susturulmuş üyenin alacağı rol | Susturulmuş olan kişilere verilen rol. Bu rolün "Mesaj Gönder" izninin reddedildiğinden emin olun. |
+| Disabled for Old Members | Disabled auto moderation for members that have been in your server for a long time. |
+| Old Members Threshold | The amount of time a member has to be in your server to be considered 'old'. |
 
-#### Spam
-
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate users sending a lot of messages in a short time. |
-| [\# of Messages]() | The number of messages that have to be sent within the timeframe to trigger the rule. |
-| [Timeframe in Seconds]() | The timeframe within which a user is allowed to send a maximum amount of messages. |
-
-#### Mentions
+**Logging**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically moderate messages that mention an excessive amount of users. |
-| [Max \# of Mentions]() | The maximum amount of users a member can mention in a message. |
-| [Enabled]() | Automatically moderate messages that mention an excessive amount of roles. |
-| [Max \# of Mentions]() | The maximum amount of roles a member can mention in a message. |
+| Log Enabled | Log any moderation actions that the bot makes. |
+| Mod Log Channel | The channel where moderation logs will be posted in. |
+| Bot Mesajlarını Sil | Botların kendi mesajlarını otomatik olarak silin \(sohbetinizi temiz tutar\). |
+| Bot Mesajı Zaman Aşımını Sil | Bot mesajlarının silindiği zaman aşımı. |
+| Yasaklama Mesajını Sil | "Ban" mesajlarının otomatik olarak silinip silinmeyeceği. |
+| Kick Mesajını Sil | "Kick" mesajlarının otomatik olarak silinip silinmeyeceği. |
+| Softban Mesajlarını Sil | "Softban" mesajlarının otomatik olarak silinip silinmeyeceği. |
+| Uyarı Mesajlarını Sil. | "Uyarı" ceza mesajlarının otomatik olarak silinip silinmeyeceği. |
+| Susturma Mesajlarını Sil. | "Mute" mesajlarının otomatik olarak silinip silinmeyeceği. |
 
-#### Emojis
+**Davetler**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically moderate messages with an excessive amount of emojis. |
-| [Max \# of Emojis]() | The maximum amount of emojis a message is allowed to have before trigger the rule. |
-| [Enabled]() | Automatically give members nicknames if they try to hoist \(use special characters to appear at the top of the user list\). |
+| etkin | Discord Sunucu davet bağlantıları için iletileri otomatik olarak tarayın ve kaldırın. |
 
-## Prefix
+**bağlantılar**
+
+| Setting | Description |
+| :--- | :--- |
+| Etkin | Automatically remove messages containing links \(you can set a whitelist and blacklist\). |
+| Betaz liste | Kullanıcıların yayın göndermesine izin verilen bağlantıların listesi. |
+| Kara liste | Blacklist certain links which users won't be able to post. |
+| Yönlendirmeleri İzle | Enable this to resolve redirects for links. |
+
+**Yasaklı Kelimeler.**
+
+| Setting | Description |
+| :--- | :--- |
+| Etkin | Whether or not blacklisted words will be automoderated. |
+| Kara liste | Yasaklanan kelimelerin listesi. |
+
+**Büyük Harfler**
+
+| Setting | Description |
+| :--- | :--- |
+| Etkin | Automatically moderate messages with A LOT OF CAPS. |
+| Min. Characters | The minimum amount of characters in a message to be considered for moderating \(setting to '3' would ignore 'OK'\). |
+| Percentage CAPs | The percentage of characters of the message that have to be CAPs for the rule to trigger. |
+
+**Çift Mesajlar**
+
+| Setting | Description |
+| :--- | :--- |
+| Etkin | Automatically moderate duplicate messages \(copy-paste spam\). |
+| Saniyede Zaman Aralığı | Hangi iletilerin kopya olarak kabul edileceği zaman dilimi. |
+
+**spam**
+
+| Setting | Description |
+| :--- | :--- |
+| Etkin | Automatically moderate users sending a lot of messages in a short time. |
+| \# of Messages | Kuralı tetiklemek için zaman aralığı içinde gönderilmesi gereken ileti sayısı. |
+| Timeframe in Seconds | The timeframe within which a user is allowed to send a maximum amount of messages. |
+
+**Bahsetmeler**
+
+| Setting | Description |
+| :--- | :--- |
+| etkin | Automatically moderate messages that mention an excessive amount of users. |
+| Max \# of Mentions | The maximum amount of users a member can mention in a message. |
+| Etkin | Automatically moderate messages that mention an excessive amount of roles. |
+| Max \# of Mentions | The maximum amount of roles a member can mention in a message. |
+
+**Emojiler**
+
+| Setting | Description |
+| :--- | :--- |
+| Etkin | Aşırı miktarda emoji içeren iletileri otomatik olarak denetleyin. |
+| Max \# of Emojis | Kuralı tetiklemeden önce bir iletinin sahip olabileceği maksimum emoji miktarı. |
+| Etkin | Kaldırmaya çalışırlarsa üyelere otomatik olarak takma adlar verin \(kullanıcı listesinin en üstünde görünmek için özel karakterler kullanın\). |
+
+### Prefix
 
 The prefix used to trigger bot commands.
 
@@ -178,9 +180,9 @@ Examples:
 
 `!config prefix >`
 
-## Language
+### Dil
 
-The language of the bot
+Botun dili
 
 Type: `Enum<Lang>`
 
@@ -194,9 +196,9 @@ Example:
 
 `!config lang ar`
 
-## Log Channel
+### Log kanalı
 
-The channel where bot actions are logged.
+Bot işlemlerinin günlüğe kaydedildiği kanal.
 
 Type: `Channel`
 
@@ -208,9 +210,9 @@ Examples:
 
 `!config logChannel #channel`
 
-## Get Updates
+### Yükselt.
 
-Enable to receive development updates about InviteLogger.
+InviteManager hakkında geliştirme güncellemelerini almayı etkinleştirin.
 
 Type: `Boolean`
 
@@ -226,9 +228,9 @@ Disable:
 
 `!config getUpdates false`
 
-## Command channels
+### Komut kanalları
 
-The channels in which the bot will react to commands.
+Botun komutlara tepki vereceği kanallar.
 
 Type: `Channel[]`
 
@@ -236,9 +238,9 @@ Default: \`\`
 
 Reset to default: `!config channels default`
 
-## Ignored channels
+### Görmezden gelinen kanallar
 
-The channels in which the bot will ignore commands.
+Botun komutları görmezden geleceği kanallar.
 
 Type: `Channel[]`
 
@@ -246,9 +248,9 @@ Default: \`\`
 
 Reset to default: `!config ignoredChannels default`
 
-## Join Roles
+### Katılma rolleri
 
-Roles that are assigned to all members when joining.
+Katılırken tüm üyelere atanan roller.
 
 Type: `Role[]`
 
@@ -256,9 +258,9 @@ Default: \`\`
 
 Reset to default: `!config joinRoles default`
 
-## Message
+### Mesaj
 
-The message sent when someone joins the server.
+Birisi sunucuya katıldığında gönderilen mesaj.
 
 Type: `String`
 
@@ -266,9 +268,9 @@ Default: `{memberMention} **joined**; Invited by **{inviterName}** (**{numInvite
 
 Reset to default: `!config joinMessage default`
 
-## Message Channel
+### Mesaj Kanalı
 
-The channel that the message on join is sent to.
+Katılmadaki iletinin gönderildiği kanal
 
 Type: `Channel`
 
@@ -282,9 +284,9 @@ Examples:
 
 `!config joinMessageChannel #joins`
 
-## Message
+### Mesaj
 
-The message sent when someone leaves the server.
+Birisi sunucudan çıktığında gönderilen mesaj.
 
 Type: `String`
 
@@ -298,9 +300,9 @@ Examples:
 
 `!config leaveMessage`
 
-## Message Channel
+### Mesaj Kanalı
 
-The channel that the leave message is sent to.
+Ayrılma mesajının gönderildiği kanal.
 
 Type: `Channel`
 
@@ -314,9 +316,9 @@ Examples:
 
 `!config leaveMessageChannel #leaves`
 
-## Style
+### Stil
 
-The display style of the leaderboard.
+Skor tablosunun görüntü stili.
 
 Type: `Enum<LeaderboardStyle>`
 
@@ -330,9 +332,9 @@ Example:
 
 `!config leaderboardStyle normal`
 
-## Hide left members
+### Soldaki üyeleri gizle
 
-Hide members that left the server from the leaderboard.
+Liderlik tablosundan sunucudan ayrılan üyeleri gizleyin.
 
 Type: `Boolean`
 
@@ -348,9 +350,9 @@ Disable:
 
 `!config hideLeftMembersFromLeaderboard false`
 
-## Auto Subtract
+### Auto Subtract
 
-Automatically subtract fake invites.
+Sahte davetleri otomatik olarak çıkarın
 
 Type: `Boolean`
 
@@ -366,9 +368,9 @@ Disable:
 
 `!config autoSubtractFakes false`
 
-## Auto Subtract
+### Auto Subtract
 
-Automatically remove invites from the inviter when the invited user leaves.
+Kullanıcın yaptığı davetten gelen kullanıcı ayrıldığında kullanıcın otomatik olarak daveti kaldırılır.
 
 Type: `Boolean`
 
@@ -384,9 +386,9 @@ Disable:
 
 `!config autoSubtractLeaves false`
 
-## Auto Subtract Threshold
+### Auto Subtract Threshold
 
-The time in seconds for which a user has to stay in the server for the invite to count.
+Davetiyenin sayması için bir kullanıcının sunucuda kalması gereken saniye cinsinden süre.
 
 Type: `Number`
 
@@ -400,9 +402,9 @@ Examples:
 
 `!config autoSubtractLeaveThreshold 3600`
 
-## Assignment Style
+### Assignment Style
 
-How ranks are rewarded to users.
+Ranklar kullanıcılara nasıl ödüllendirilir.
 
 Type: `Enum<RankAssignmentStyle>`
 
@@ -416,9 +418,9 @@ Example:
 
 `!config rankAssignmentStyle all`
 
-## Announcement Channel
+### Duyuru Kanalı
 
-The channel where users receiving a new rank are announced.
+Yeni bir rütbe alan kullanıcıların duyurulduğu kanal.
 
 Type: `Channel`
 
@@ -432,9 +434,9 @@ Examples:
 
 `!config rankAnnouncementChannel`
 
-## Announcement Message
+### Duyuru Mesajı
 
-The message that is sent when a user receives a new rank.
+Bir kullanıcı yeni bir rütbe aldığında gönderilen mesaj.
 
 Type: `String`
 
@@ -448,9 +450,9 @@ Examples:
 
 `!config rankAnnouncementMessage`
 
-## Enabled
+### Etkin
 
-Whether or not captcha verification is enabled.
+Captcha doğrulamanın etkin olup olmadığı.
 
 Type: `Boolean`
 
@@ -466,9 +468,9 @@ Disable:
 
 `!config captchaVerificationOnJoin false`
 
-## Welcome Message
+### Karşılama mesajı
 
-The message a user will get after joining a server and instructing them to enter the captcha.
+Kullanıcının bir sunucuya katıldıktan ve captcha'ya girmesini istedikten sonra alacağı mesaj.
 
 Type: `String`
 
@@ -480,9 +482,9 @@ Examples:
 
 `!config captchaVerificationWelcomeMessage Welcome, please enter the captcha below!`
 
-## Success Message
+### Success Message
 
-The welcome message that will be sent to the user after he successfully verifies.
+Başarılı bir şekilde doğrulandıktan sonra kullanıcıya gönderilecek hoş geldiniz mesajı.
 
 Type: `String`
 
@@ -494,9 +496,9 @@ Examples:
 
 `!config captchaVerificationSuccessMessage Thanks for entering the captcha, enjoy our server!`
 
-## Failed Message
+### Başarısız Mesaj
 
-The message sent to the user if he enters an invalid captcha.
+Geçersiz bir captcha girerse, kullanıcıya mesaj gönderilir.
 
 Type: `String`
 
@@ -508,7 +510,7 @@ Examples:
 
 `!config captchaVerificationFailedMessage Looks like you are not human :(. You can join again and try again later if this was a mistake!`
 
-## Verification Timeout
+### Verification Timeout
 
 The time within which the captcha has to be entered successfully.
 
@@ -524,9 +526,9 @@ Examples:
 
 `!config captchaVerificationTimeout 600`
 
-## Log Enabled
+### log etkin
 
-Whether or not verification attempts will be logged.
+Doğrulama girişimlerinin yapılıp yapılmadığı günlüğe kaydedilir.
 
 Type: `Boolean`
 
@@ -542,7 +544,7 @@ Disable:
 
 `!config captchaVerificationLogEnabled false`
 
-## Enabled
+### etkin
 
 Automatically moderate messages \(specific rules can also be turned on or off, this has to be ON for ANY rule to work\).
 
@@ -560,7 +562,7 @@ Disable:
 
 `!config autoModEnabled false`
 
-## Moderated Channels
+### Moderated Channels
 
 The list of moderated channels \(this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels\).
 
@@ -576,9 +578,9 @@ Examples:
 
 `!config autoModModeratedChannels #support,#help`
 
-## Moderated Roles
+### Moderatör Rolü
 
-The list of roles that are moderated \(this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles\).
+Denetlenen rollerin listesi \(bu, beyaz liste olarak işlev görür, tüm rolleri denetlemek için boş bırakın veya belirli rolleri yok saymak için `autoModIgnoredRoles` komutunu kullanın\).
 
 Type: `Role[]`
 
@@ -592,9 +594,9 @@ Examples:
 
 `!config autoModModeratedRoles @Newbies,@Starters`
 
-## Ignored Channels
+### Görmezden gelinen kanallar
 
-Channels that are ignored while automatically moderating.
+Otomatik olarak denetlenirken yoksayılan kanallar.
 
 Type: `Channel[]`
 
@@ -608,9 +610,9 @@ Examples:
 
 `!config autoModIgnoredChannels #off-topic,#nsfw`
 
-## Ignored Roles
+### Görmezden gelinen roller
 
-Any members with these roles will not automatically be moderated.
+Bu rollere sahip üyeler otomatik olarak denetlenmez.
 
 Type: `Role[]`
 
@@ -624,9 +626,9 @@ Examples:
 
 `!config autoModIgnoredRoles @Moderators,@Staff`
 
-## Muted Role
+### Susturulmuş üyenin alacağı rol
 
-The role that is given to people who are muted. Make sure this role is denied the "Send Message" permission.
+Susturulmuş olan kişilere verilen rol. Bu rolün "Mesaj Gönder" izninin reddedildiğinden emin olun.
 
 Type: `Role`
 
@@ -638,7 +640,7 @@ Examples:
 
 `!config mutedRole @muted`
 
-## Disabled for Old Members
+### Disabled for Old Members
 
 Disabled auto moderation for members that have been in your server for a long time.
 
@@ -656,7 +658,7 @@ Disable:
 
 `!config autoModDisabledForOldMembers false`
 
-## Old Members Threshold
+### Old Members Threshold
 
 The amount of time a member has to be in your server to be considered 'old'.
 
@@ -672,7 +674,7 @@ Examples:
 
 `!config autoModDisabledForOldMembersThreshold 2419200` \(1 month\)\`\`
 
-## Log Enabled
+### Log Enabled
 
 Log any moderation actions that the bot makes.
 
@@ -690,7 +692,7 @@ Disable:
 
 `!config autoModLogEnabled false`
 
-## Mod Log Channel
+### Mod Log Channel
 
 The channel where moderation logs will be posted in.
 
@@ -706,9 +708,9 @@ Examples:
 
 `!config modLogChannel #logs`
 
-## Delete Bot Messages
+### Bot Mesajlarını Sil
 
-Automatically delete the bots own messages \(keeps your chat clean\).
+Botların kendi mesajlarını otomatik olarak silin \(sohbetinizi temiz tutar\).
 
 Type: `Boolean`
 
@@ -724,9 +726,9 @@ Disable:
 
 `!config autoModDeleteBotMessage false`
 
-## Delete Bot Message Timeout
+### Bot Mesajı Zaman Aşımını Sil
 
-The timeout after which bot messages are deleted.
+Bot mesajlarının silindiği zaman aşımı.
 
 Type: `Number`
 
@@ -740,9 +742,9 @@ Examples:
 
 `!config autoModDeleteBotMessageTimeoutInSeconds 10`
 
-## Delete Ban Messages
+### Yasaklama Mesajını Sil
 
-Whether or not "Ban" pushment messages will be deleted automatically.
+"Ban" mesajlarının otomatik olarak silinip silinmeyeceği.
 
 Type: `Boolean`
 
@@ -758,9 +760,9 @@ Disable:
 
 `!config modPunishmentBanDeleteMessage false`
 
-## Delete Kick Messages
+### Kick Mesajını Sil
 
-Whether or not "Kick" pushment messages will be deleted automatically.
+"Kick" mesajlarının otomatik olarak silinip silinmeyeceği.
 
 Type: `Boolean`
 
@@ -776,9 +778,9 @@ Disable:
 
 `!config modPunishmentKickDeleteMessage false`
 
-## Delete Softban Messages
+### Softban Mesajlarını Sil
 
-Whether or not "Softban" pushment messages will be deleted automatically.
+"Softban" mesajlarının otomatik olarak silinip silinmeyeceği.
 
 Type: `Boolean`
 
@@ -794,9 +796,9 @@ Disable:
 
 `!config modPunishmentSoftbanDeleteMessage false`
 
-## Delete Warn Messages
+### Uyarı Mesajlarını Sil.
 
-Whether or not "Warn" pushment messages will be deleted automatically.
+"Uyarı" ceza mesajlarının otomatik olarak silinip silinmeyeceği.
 
 Type: `Boolean`
 
@@ -812,9 +814,9 @@ Disable:
 
 `!config modPunishmentWarnDeleteMessage false`
 
-## Delete Mute Messages
+### Susturma Mesajlarını Sil.
 
-Whether or not "Mute" pushment messages will be deleted automatically.
+"Mute" mesajlarının otomatik olarak silinip silinmeyeceği.
 
 Type: `Boolean`
 
@@ -830,9 +832,9 @@ Disable:
 
 `!config modPunishmentMuteDeleteMessage false`
 
-## Enabled
+### etkin
 
-Automatically scan messages for discord invite links and remove them.
+Discord Sunucu davet bağlantıları için iletileri otomatik olarak tarayın ve kaldırın.
 
 Type: `Boolean`
 
@@ -848,7 +850,7 @@ Disable:
 
 `!config autoModInvitesEnabled false`
 
-## Enabled
+### Etkin
 
 Automatically remove messages containing links \(you can set a whitelist and blacklist\).
 
@@ -866,9 +868,9 @@ Disable:
 
 `!config autoModLinksEnabled false`
 
-## Whitelist
+### Betaz liste
 
-A list of links that users are allowed to post.
+Kullanıcıların yayın göndermesine izin verilen bağlantıların listesi.
 
 Type: `String[]`
 
@@ -882,7 +884,7 @@ Examples:
 
 `!config autoModLinksWhitelist youtube.com,twitch.com`
 
-## Blacklist
+### Kara liste
 
 Blacklist certain links which users won't be able to post.
 
@@ -898,7 +900,7 @@ Examples:
 
 `!config autoModLinksBlacklist twitch.com,youtube.com`
 
-## Follow Redirects
+### Yönlendirmeleri İzle
 
 Enable this to resolve redirects for links.
 
@@ -916,7 +918,7 @@ Disable:
 
 `!config autoModLinksFollowRedirects false`
 
-## Enabled
+### Etkin
 
 Whether or not blacklisted words will be automoderated.
 
@@ -934,9 +936,9 @@ Disable:
 
 `!config autoModWordsEnabled false`
 
-## Blacklist
+### Kara liste
 
-A list of words that are banned.
+Yasaklanan kelimelerin listesi.
 
 Type: `String[]`
 
@@ -950,7 +952,7 @@ Examples:
 
 `!config autoModWordsBlacklist stupid,fuck`
 
-## Enabled
+### Etkin
 
 Automatically moderate messages with A LOT OF CAPS.
 
@@ -968,7 +970,7 @@ Disable:
 
 `!config autoModAllCapsEnabled false`
 
-## Min. Characters
+### Min. Characters
 
 The minimum amount of characters in a message to be considered for moderating \(setting to '3' would ignore 'OK'\).
 
@@ -984,7 +986,7 @@ Examples:
 
 `!config autoModAllCapsMinCharacters 15`
 
-## Percentage CAPs
+### Percentage CAPs
 
 The percentage of characters of the message that have to be CAPs for the rule to trigger.
 
@@ -1000,7 +1002,7 @@ Examples:
 
 `!config autoModAllCapsPercentageCaps 90`
 
-## Enabled
+### Etkin
 
 Automatically moderate duplicate messages \(copy-paste spam\).
 
@@ -1018,9 +1020,9 @@ Disable:
 
 `!config autoModDuplicateTextEnabled false`
 
-## Timeframe in Seconds
+### Saniyede Zaman Aralığı
 
-The timeframe whithin which messages will be considered duplicates.
+Hangi iletilerin kopya olarak kabul edileceği zaman dilimi.
 
 Type: `Number`
 
@@ -1034,7 +1036,7 @@ Examples:
 
 `!config autoModDuplicateTextTimeframeInSeconds 20`
 
-## Enabled
+### Etkin
 
 Automatically moderate users sending a lot of messages in a short time.
 
@@ -1052,9 +1054,9 @@ Disable:
 
 `!config autoModQuickMessagesEnabled false`
 
-## \# of Messages
+### \# of Messages
 
-The number of messages that have to be sent within the timeframe to trigger the rule.
+Kuralı tetiklemek için zaman aralığı içinde gönderilmesi gereken ileti sayısı.
 
 Type: `Number`
 
@@ -1068,7 +1070,7 @@ Examples:
 
 `!config autoModQuickMessagesNumberOfMessages 10`
 
-## Timeframe in Seconds
+### Timeframe in Seconds
 
 The timeframe within which a user is allowed to send a maximum amount of messages.
 
@@ -1084,7 +1086,7 @@ Examples:
 
 `!config autoModQuickMessagesTimeframeInSeconds 10`
 
-## Enabled
+### etkin
 
 Automatically moderate messages that mention an excessive amount of users.
 
@@ -1102,7 +1104,7 @@ Disable:
 
 `!config autoModMentionUsersEnabled false`
 
-## Max \# of Mentions
+### Max \# of Mentions
 
 The maximum amount of users a member can mention in a message.
 
@@ -1118,7 +1120,7 @@ Examples:
 
 `!config autoModMentionUsersMaxNumberOfMentions 5`
 
-## Enabled
+### Etkin
 
 Automatically moderate messages that mention an excessive amount of roles.
 
@@ -1136,7 +1138,7 @@ Disable:
 
 `!config autoModMentionRolesEnabled false`
 
-## Max \# of Mentions
+### Max \# of Mentions
 
 The maximum amount of roles a member can mention in a message.
 
@@ -1152,9 +1154,9 @@ Examples:
 
 `!config autoModMentionRolesMaxNumberOfMentions 5`
 
-## Enabled
+### Etkin
 
-Automatically moderate messages with an excessive amount of emojis.
+Aşırı miktarda emoji içeren iletileri otomatik olarak denetleyin.
 
 Type: `Boolean`
 
@@ -1170,9 +1172,9 @@ Disable:
 
 `!config autoModEmojisEnabled false`
 
-## Max \# of Emojis
+### Max \# of Emojis
 
-The maximum amount of emojis a message is allowed to have before trigger the rule.
+Kuralı tetiklemeden önce bir iletinin sahip olabileceği maksimum emoji miktarı.
 
 Type: `Number`
 
@@ -1186,9 +1188,9 @@ Examples:
 
 `!config autoModEmojisMaxNumberOfEmojis 10`
 
-## Enabled
+### Etkin
 
-Automatically give members nicknames if they try to hoist \(use special characters to appear at the top of the user list\).
+Kaldırmaya çalışırlarsa üyelere otomatik olarak takma adlar verin \(kullanıcı listesinin en üstünde görünmek için özel karakterler kullanın\).
 
 Type: `Boolean`
 
