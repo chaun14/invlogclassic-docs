@@ -1,73 +1,75 @@
 ---
-description: You can customise the join and leave messages with a number of parameters.
+description: Giriş ve ayrılma mesajları kendinize göre özelleştirebilirsiniz.
 ---
 
-# Custom Messages
+ Özelleştirilmiş Mesajlar
 
-\(Jump to placeholders\)
+\(Değişkenlere zıpla\)
 
-## Custom Messages
+## Özelleştirilmiş Mesajlar
 
-You can set a custom join or leave message by setting the config:
+Yapılandırmayı ayarlayarak özel bir katılma veya mesaj oluşturabilirsiniz:
 
 ```text
 !config joinMessage This is your custom join message! It will be posted every time someone joins your server.
 ```
 
-or
+ve ya
 
 ```text
 !config leaveMessage This is your custom leave message! It will be posted every time someone leaves your server.
 ```
 
-A message like that obviously doesn't make sense. You should personalise it with information about the new member, inviter or the server. Please see the list below for all available placeholders.
+Bunun gibi bir mesaj açıkça mantıklı değil. Yeni üye, davet eden veya sunucu hakkındaki bilgilerle kişiselleştirmelisiniz. Lütfen mevcut tüm değişkenler için aşağıdaki listeye bakın.
 
-So if we want the message to say
+Eğer mesajın 
 
 `Welcome @Andy! You were invited by Valandur, who now has 3 invites! Have fun on our server!`
+ 
+olmasını istiyorsak.
 
-we can easily do that by replacing all the names and the number with placeholders:
+Tüm isimleri ve numaraları değişkenlerle değiştirerek bunu kolayca yapabiliriz:
 
 `Welcome {memberMention}! You were invited by {inviterName}, who now has {numInvites} invites! Have fun on our server!`
 
-So you can now do `!config joinMessage <message from above>` to set the message. Our bot will automatically replace the placeholders every time someone joins.
+Böylece, mesajı ayarlamak için artık `!config joinMessage <mesaj>` yapabilirsiniz. Botumuz, birisi her katıldığında yer değişkenleri otomatik olarak değiştirecektir.
 
-> \[!NOTE\|style:flat\] Premium users can also use embeds in their join and leave messages. [More info here](https://github.com/chaun14/invlogclassic-docs/tree/d05e5669fc48cfcc5f429ee855b06f4511193435/modules/invites/modules/invites/examples.md) Please see the [examples page](https://github.com/chaun14/invlogclassic-docs/tree/d05e5669fc48cfcc5f429ee855b06f4511193435/modules/invites/modules/invites/examples.md) to see what kind of messages you can make!
+> \[!Not\|style:flat\] Premium kullanıcılar bu mesajları embed halinde ayarlayabilir. [Daha fazla bilgi](https://github.com/chaun14/invlogclassic-docs/tree/d05e5669fc48cfcc5f429ee855b06f4511193435/modules/invites/modules/invites/examples.md) Lütfen [Örnek sayfa](https://github.com/chaun14/invlogclassic-docs/tree/d05e5669fc48cfcc5f429ee855b06f4511193435/modules/invites/modules/invites/examples.md)'a bakarak nasıl embed mesajı yapabilceğinizi görün.
 
-### Placeholders
+### Değişkenler
 
-|  | join | leave | example | description |
+|  | Katılma | Ayrılma | Örnek | Açıklama |
 | :--- | :--- | :--- | :--- | :--- |
-| {memberName} | yes | yes | Andy | The name of the member that just joined your discord server |
-| {memberId} | yes | yes | 436844634 | The discord ID of the member that just joined your server |
-| {memberMention} | yes | no | @Andy | The mention of the member that just joined your discord server \(person will be pinged\). |
-| {memberFullName} | yes | yes | Andy\#1801 | The username and discriminator of the user that just joined your server |
-| {memberImage} | yes | yes | \[URL\] | URL of the avatar of the member |
-| {inviterName} | yes | yes | Andy | The name of the inviter |
-| {inviterId} | yes | yes | 241929953 | The discord ID of the inviter |
-| {inviterMention} | yes | yes | @Andy | The mention of the inviter \(person will be pinged\) |
-| {inviterFullName} | yes | yes | Andy\#1801 | The username and discriminator of the inviter |
-| {inviterImage} | yes | yes | \[URL\] | URL of the avatar of the inviter |
-| {numInvites} | yes | yes | 12 | Number of invites the inviter has in total |
-| {numRegularInvites} | yes | yes | 7 | Number of invites the inviter has through regular invites |
-| {numBonusInvites} | yes | yes | 5 | Number of invites the inviter has as a bonus \(they were assigned manually\) |
-| {numFakeInvites} | yes | yes | 3 | Number of fake invites the inviter has |
-| {numLeaveInvites} | yes | yes | 6 | Number of invites that were removed because the member left again. |
-| {memberCount} | yes | yes | 42 | Number of members your server has in total |
-| {numJoins} | yes | yes | 3 | Number of times the user has joined the server |
-| {channelName} | yes | yes | general | The name of the channel where the invite code was created |
-| {channelMention} | yes | yes | \#general | Mention of the channel where the invite code was created |
-| {inviteCode} | yes | yes | fgSr30s | Invite code used |
-| {memberCreated:date} | yes | yes | 25.09.2016 | Date the discord user was created |
-| {memberCreated:duration} | yes | yes | 5 weeks | Duration since the discord user was created |
-| {memberCreated:timeAgo} | yes | yes | 2 day ago | Time the discord user was created |
-| {firstJoin:date} | yes | yes | 11.12.2017 | Date the user joined the server for the first time |
-| {firstJoin:duration} | yes | yes | 4 days | Duration since the user joined the server for the first time |
-| {firstJoin:timeAgo} | yes | yes | 1 week ago | Time the user joined the server for the first time |
-| {previousJoin:date} | yes | no | 02.04.2018 | Date when the user joined the server the last time |
-| {previousJoin:duration} | yes | no | 2 months | Duration since when the user joined the server the last time |
-| {previousJoin:timeAgo} | yes | no | 1 second ago | Time when the user joined the server the last time |
-| {joinedAt:date} | no | yes | 17.05.2018 | Date when the user joined |
-| {joinedAt:duration} | no | yes | 3 minutes | Duration since when the user joined |
-| {joinedAt:timeAgo} | no | yes | 2 minutes ago | Time when the user joined |
+| {memberName} | Evet | Evet | Andy | Sunucuya giren kişinin ismi. |
+| {memberId} | Evet | Evet | 436844634 | Sunucuya giren kişinin kullanıcı ID'si |
+| {memberMention} | Evet | Hayır | @Andy | Sunucuya giren kişinin etiketi. \(Gelen kişi etiketlenir\). |
+| {memberFullName} | Evet | Evet | Andy\#1801 | Sunucuya giren kişinin tüm ismi. |
+| {memberImage} | Evet | Evet | \[URL\] | Sunucuya giren kişinin avatar linki. |
+| {inviterName} | Evet | Evet | Andy | Davet eden kişinin ismi. |
+| {inviterId} | Evet | Evet | 241929953 | Davet eden kişinin kullanıcı ID'si |
+| {inviterMention} | Evet | Evet | @Andy | Davet eden kişinin etiketi \(Davet eden kişi etiketlenir\) |
+| {inviterFullName} | Evet | Evet | Andy\#1801 | Davet eden kişinin tüm ismi. |
+| {inviterImage} | Evet | Evet | \[URL\] | Davet eden kişinin avatar linki. |
+| {numInvites} | Evet | Evet | 12 | Davet eden kişinin toplam davet sayısı. |
+| {numRegularInvites} | Evet | Evet | 7 | Davet eden kişinin normal davet sayısı. |
+| {numBonusInvites} | Evet | Evet | 5 | Davet eden kişinin bonus davet sayısı. \(!addInvites komutu ile eklenenler.\) |
+| {numFakeInvites} | Evet | Evet | 3 | Davet eden kişinin fake davet sayısı. |
+| {numLeaveInvites} | Evet | Evet | 6 | Davet eden kişinin daha önceden davet edip sunucudan çıkan kişilerim sayısı. |
+| {memberCount} | Evet | Evet | 42 | Sunucudaki üye sayısı. |
+| {numJoins} | Evet | Evet | 3 | Sunucuya gelen kişinin bu sunucuya kaçıncı girişi olduğunun sayısı.. |
+| {channelName} | Evet | Evet | general | Davet kodunun oluşturulduğu kanalın ismi. |
+| {channelMention} | Evet | Evet | \#general | Davet kodunun oluşturulduğu kanalın etiketi. |
+| {inviteCode} | Evet | Evet | fgSr30s | Sunucuya gelen kişinin kullandığı davet kodu. |
+| {memberCreated:date} | Evet | Evet | 25.09.2016 | Sunucuya gelen kişinin hesap oluşturulma tarihi. |
+| {memberCreated:duration} | Evet | Evet | 5 weeks | Sunucuya gelen kişinin hesabının ne kadar süredir açık olduğu. |
+| {memberCreated:timeAgo} | Evet | Evet | 2 day ago | Sunucuya gelen kişinin ne kadar süre önce hesabının açıldığı. |
+| {firstJoin:date} | Evet | Evet | 11.12.2017 | Sunucuya gelen kişinin sunucuya ilk giriş yaptığı tarih. |
+| {firstJoin:duration} | Evet | Evet | 4 days | Sunucuya gelen kişinin sunucuya ilk giriş yaptığı tarihin aralığı. |
+| {firstJoin:timeAgo} | Evet | Evet | 1 week ago | Sunucuya gelen kişinin sunucuya ilk ne kadar süre önce giriş yaptığı. |
+| {previousJoin:date} | Evet | Hayır | 02.04.2018 | Sunucuya gelen kişinin sunucuya son giriş yaptığı tarih.|
+| {previousJoin:duration} | Evet | Hayır | 2 months | Sunucuya gelen kişinin sunucuya son giriş yaptığı tarihin aralığı. |
+| {previousJoin:timeAgo} | Evet | Hayır | 1 second ago | Sunucuya gelen kişinin sunucuya en son ne kadar süre önce giriş yaptığı. |
+| {joinedAt:date} | Hayır | Evet | 17.05.2018 | Sunucuya giriş tarihi. |
+| {joinedAt:duration} | Hayır | Evet | 3 minutes | Sunucuya giriş tarihin şu anki zamana aralığı. |
+| {joinedAt:timeAgo} | Hayır | Evet | 2 minutes ago | Sunucuya ne kadar süre önce giriş yaptığın. |
 
