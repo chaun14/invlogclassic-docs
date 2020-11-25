@@ -7,178 +7,181 @@ To get a list of available commands, do !help on your server.
 Most commands accept arguments and/or flags.  
 According to the **Type** of the argument or flag you can provide different values.
 
-### Boolean
+### Booléen
 
-This arguments expects `true` or `false`. You can also use `yes` and `no`.
+Cet argument prend la valeur `vrai` ou `faux`. Vous pouvez aussi utiliser `oui` ou `non`.
 
-### Number
+### Nombre
 
-This arguments expects a number
+Veuillez spécifier un nombre
 
-### Enum
+### Énumération
 
-This arguments expects a value from a specific set of valid values.
+Cet argument attend une valeur d'une liste spécifique de valeurs.
 
-> Depending on the command the valid values can vary. Use `!help <command>` \(eg. `!help addRank`\) to get more information about the command and the valid values for the enum.
+> Selon la commande les valeurs valides peuvent changer. Utilisez `!help <command>` (ex : `!help addRank`) pour avoir plus d'informations sur la commande et les valeurs valides pour cette commande.
 
-### Invite Code
+### Code d'invitation
 
-This arguments expects a Discord Invite Code.
+Cet argument attend un code d'invitation Discord.
 
-> You can put only the part after `https://discord.gg/` to prevent Discord from creating a preview.
+> Vous pouvez donner uniquement le code après `https://discord.gg/` pour annuler l'aperçu créé par Discord.
 
-### User
+### Utilisateur
 
-This arguments expects a Discord User. You can use any of the following methods to provide a user:
+Cet argument attend un utilisateur Discord. Vous pouvez utiliser une de ces méthodes pour donner un utilisateur :
 
-* Mention the user: `@Valandur`
-* Use their ID: `102785693046026240`
-* Use their name: `Valandur`
-* Use their name and discriminator: `Valandur#3581`
-* Use quotes if their name has a space: `"Valandur with a space"`
+- Mentionner l'utilisateur `@Valandur`
+- Utiliser l'ID : `102785693046026240`
+- Utiliser le nom : `Valandur`
+- Utiliser des guillemets si le nom contient un espace : `"Valandur avec des espaces"`
 
 ### Role
 
-This arguments expects a Discord Role. You can use any of the following methods to provide a role:
+Cet argument attend un role Discord. Vous pouvez utiliser une de ces méthodes pour donner un role :
 
-* Mention the role: `@Admin`
-* Use the ID: `102785693046026240`
-* Use the name: `Admin`
-* Use quotes if the name has a space: `"Admin with a space"`
+- Mentionner le role `@Admin`
+- Utiliser l'ID : `102785693046026240`
+- Utiliser le nom : `Admin`
+- Utiliser des guillemets si le nom contient un espace : `"Admin avec des espaces"`
 
-### Channel
+### Salon
 
-This arguments expects a Discord Channel. You can use any of the following methods to provide a channel:
+Cet argument attend un salon Discord. Vous pouvez utiliser une de ces méthodes pour donner un salon :
 
-* Mention the channel: `#general`
-* Use the ID: `409846838129197057`
-* Use the name: `general`
-* Use quotes if the name has a space: `"general with a space"`
+- Mentionner le salon `#general`
+- Utiliser l'ID : `409846838129197057`
+- Utiliser le nom : `general`
+- Utiliser des guillemets si le nom contient un espace : `"general avec des espaces"`
 
-### Command
+### Commande
 
-This argument expects a command of this bot. You can use any of the following methods to provide a command:
+Cet argument attend une commande de ce bot. Vous pouvez utiliser une de ces méthodes pour donner une commande :
 
-* Use the command name: `invites`
-* Use an alias of the command: `p`
+- Utiliser le nom de la commande : `invites`
+- Utiliser un alias de la commande : `p`
 
-### Text
+### Texte
 
-This arguments expects any text. You can use quotes \(`"Text with quotes"`\) for text that has spaces.
+Cet argument attend du texte. Vous pouvez utiliser des guillemets (`"Texte avec des guillemets") pour du texte avec des espaces.
 
-> If the text is the last argument you don't have to use quotes.
+> Si le texte est le dernier argument vous n'avez pas besoin d'utiliser des guillemets.
 
 ### Date
 
-This argument expects a date. You can use various formats, but we recommend: `YYYY-MM-DD`
+Cet argument attend une date. Vous pouvez utiliser différents formats, mais nous recommandons : `YYYY-MM-DD`
 
-### Duration
+### Durée
 
-This argument expects a duration. The following duration types are supported:
+Cet argument attend une durée. Les durées suivantes sont supportées :
 
-* Seconds: `s` \(`5s` = 5 seconds\)
-* Minutes: `min` \(`3min` = 3 minutes\)
-* Hours: `h` \(`4h` = 4 hours\)
-* Days: `d` \(`2d` = 2 days\)
-* Weeks: `w` \(`1w` = 1 week\)
-* Months: `mo` \(`6mo` = 6 months\)
-* Years: `y` \(`10y` = 10 years\)
+- Secondes : `s` (`5s` = 5 secondes)
+- Minutes : `min` (`3min` = 3 minutes)
+- Heures : `h` (`4h` = 4 heures)
+- Jours : `d` (`2d` = 2 jours)
+- Semaines : `w` (`1w` = 1 semaine)
+- Mois : `mo` (`6mo` = 6 mois)
+- Années : `y` (`10y` = 10 ans)
 
 ## Overview
 
 ### Invites
 
-| Command | Description | Usage |
-| :--- | :--- | :--- |
-| [addInvites]() | Adds/Removes invites to/from a member. | !addInvites \ \ \[reason\] |
-| [clearInvites]() | Clear invites of the server/a user. | !clearInvites \[-d value\|--date=value\]\[-cb\|--clearbonus\] \[user\] |
-| [createInvite]() | Creates unique invite codes. | !createInvite \ \[channel\]\[maxuses\] \[expires\]\[temporarymembership\] |
-| [info]() | Show info about a specific member. | !info \ \[details\]\[page\] |
-| [inviteCodes]() | Get a list of all your invite codes | !inviteCodes |
-| [inviteDetails]() | Shows details about where your invites are from. | !inviteDetails \[user\] |
-| [invites]() | Show personal invites. | !invites \[user\] |
-| [leaderboard]() | Show members with most invites. | !leaderboard \[page\] |
-| [removeInvites]() | Removes a specified amount of invites from a user. | !removeInvites \ \ \[reason\] |
-| [restoreInvites]() | Restore all previously cleared invites. | !restoreInvites \[user\] |
-| [subtractFakes]() | Remove fake invites from all users. | !subtractFakes |
-| [subtractLeaves]() | Remove leaves from all users | !subtractLeaves |
+| Command                           | Description                                                                                | Usage                                                                    |
+| --------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| [addInvites](#addInvites)         | Ajoute/supprime des invitations d'un membre.                                               | !addInvites \<user\> \<amount\> [reason]                                 |
+| [clearInvites](#clearInvites)     | Effacer les invitations du serveur/d'un utilisateur.                                       | !clearInvites [-d value\|--date=value][-cb\|--clearbonus] [user]         |
+| [createInvite](#createInvite)     | Crée des codes d'invitation uniques.                                                       | !createInvite \<name\> [channel][maxuses] [expires][temporarymembership] |
+| [info](#info)                     | Afficher des informations sur un membre spécifique.                                        | !info \<user\> [details][page]                                           |
+| [inviteCodes](#inviteCodes)       | Obtenez une liste de tous vos codes d'invitation.                                          | !inviteCodes                                                             |
+| [inviteDetails](#inviteDetails)   | Affiche des détails sur l'origine de vos invitations.                                      | !inviteDetails [user]                                                    |
+| [invites](#invites)               | Afficher les invitations personnelles.                                                     | !invites [user]                                                          |
+| [leaderboard](#leaderboard)       | Afficher les membres avec le plus d'invitations.                                           | !leaderboard [page]                                                      |
+| [removeInvites](#removeInvites)   | Enlève un certain nombre d'invitations à un utilisateur.                                   | !removeInvites \<user\> \<amount\> [reason]                              |
+| [restoreInvites](#restoreInvites) | Restaurez toutes les invitations précédemment effacées.                                    | !restoreInvites [user]                                                   |
+| [subtractFakes](#subtractFakes)   | Supprimez les fausses invitations de tous les utilisateurs.                                | !subtractFakes                                                           |
+| [subtractLeaves](#subtractLeaves) | Supprimer le nombre des invitations des personne qui ont quitter de tous les utilisateurs. | !subtractLeaves                                                          |
 
 ### Ranks
 
-| Command | Description | Usage |
-| :--- | :--- | :--- |
-| [addRank]() | Add a new rank. | !addRank \ \ \[info\] |
-| [fixRanks]() | Deletes any ranks where the role was deleted. | !fixRanks |
-| [ranks]() | Show all ranks. | !ranks \[page\] |
-| [removeRank]() | Remove a rank. | !removeRank \ |
+| Command                   | Description                                              | Usage                                |
+| ------------------------- | -------------------------------------------------------- | ------------------------------------ |
+| [addRank](#addRank)       | Ajouter un nouveau Ranks.                                | !addRank \<role\> \<invites\> [info] |
+| [fixRanks](#fixRanks)     | Supprime les rangs configurés si le rôle a été supprimé. | !fixRanks                            |
+| [ranks](#ranks)           | Montrer tous les rangs.                                  | !ranks [page]                        |
+| [removeRank](#removeRank) | Supprimer un rang.                                       | !removeRank \<rank\>                 |
 
 ### Config
 
-| Command | Description | Usage |
-| :--- | :--- | :--- |
-| [botConfig]() | Show and change the config of the bot. | !botConfig \[key\]\[value\] |
-| [config]() | Show and change the config of the server. | !config \[key\]\[value\] |
-| [interactiveConfig]() | Interactive Config | !interactiveConfig |
-| [inviteCodeConfig]() | Show and change the config of invite codes of the server. | !inviteCodeConfig \[key\]\[invitecode\] \[value\] |
-| [memberConfig]() | Show and change the config of members of the server. | !memberConfig \[key\]\[user\] \[value\] |
-| [permissions]() | Configure permissions to use commands. | !permissions \[cmd\]\[role\] |
+| Command                                 | Description                                                            | Usage                                       |
+| --------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------- |
+| [botConfig](#botConfig)                 | Afficher et changer la configuration du bot.                           | !botConfig [key][value]                     |
+| [config](#config)                       | Affiche et modifie la configuration du serveur.                        | !config [key][value]                        |
+| [interactiveConfig](#interactiveConfig) | Configuration interactive                                              | !interactiveConfig                          |
+| [inviteCodeConfig](#inviteCodeConfig)   | Affiche et modifie la configuration des codes d'invitation du serveur. | !inviteCodeConfig [key][invitecode] [value] |
+| [memberConfig](#memberConfig)           | Affiche et modifie la configuration des membres du serveur.            | !memberConfig [key][user] [value]           |
+| [permissions](#permissions)             | Configurez les permissions pour utiliser des commandes.                | !permissions [cmd][role]                    |
 
 ### Info
 
-| Command | Description | Usage |
-| :--- | :--- | :--- |
-| [botInfo]() | Get general information about the bot. | !botInfo |
-| [credits]() | Show developers and contributors of the bot. | !credits |
-| [getBot]() | Get an invite link for the bot. | !getBot |
-| [help]() | Display help. | !help \[command\] |
-| [members]() | Show member count of current server. | !members |
-| [ping]() | Ping the bot | !ping |
-| [prefix]() | Shows the current prefix of the bot. | !prefix |
-| [setup]() | Help with setting up the bot and checking for problems \(e.g. missing permissions\) | !setup |
-| [support]() | Get an invite link to our support server. | !support |
+| Command             | Description                                                                                           | Usage           |
+| ------------------- | ----------------------------------------------------------------------------------------------------- | --------------- |
+| [botInfo](#botInfo) | Obtenez des informations à propos du bot.                                                             | !botInfo        |
+| [credits](#credits) | Afficher les développeurs et les contributeurs du bot.                                                | !credits        |
+| [getBot](#getBot)   | Obtenez un lien d'invitation pour le bot.                                                             | !getBot         |
+| [help](#help)       | Afficher l'aide.                                                                                      | !help [command] |
+| [members](#members) | Afficher le nombre de membres du serveur actuel.                                                      | !members        |
+| [ping](#ping)       | Mentionner le bot                                                                                     | !ping           |
+| [prefix](#prefix)   | Affiche le préfixe actuel du bot.                                                                     | !prefix         |
+| [setup](#setup)     | Aide à la configuration du bot et à la recherche de problèmes (par exemple: autorisations manquantes) | !setup          |
+| [support](#support) | Obtenez un lien d'invitation vers notre serveur d'assistance.                                         | !support        |
 
 ### Premium
 
-| Command | Description | Usage |
-| :--- | :--- | :--- |
-| [export]() | Export data of InviteLogger to a csv sheet. | !export \ |
-| [premium]() | Info about premium version of InviteLogger. | !premium \[action\] |
-| [tryPremium]() | Try the premium version of InviteLogger for free for a limited duration. | !tryPremium |
+| Command                   | Description                                                                     | Usage             |
+| ------------------------- | ------------------------------------------------------------------------------- | ----------------- |
+| [export](#export)         | Exportez les données d'InviteManager vers une feuille de calculs CSV.           | !export \<type\>  |
+| [premium](#premium)       | Informations sur la version premium d'InviteManager.                            | !premium [action] |
+| [tryPremium](#tryPremium) | Essayez gratuitement la version premium d’InviteManager pour une durée limitée. | !tryPremium       |
 
 ### Moderation
 
-| Command | Description | Usage |
-| :--- | :--- | :--- |
-| [ban]() | Ban a member from the server. | !ban \[-d value\|--deleteMessageDays=value\] \ \[reason\] |
-| [caseDelete]() | Delete a specific case. | !caseDelete \ \[reason\] |
-| [caseView]() | View info about a specific case. | !caseView \ |
-| [check]() | Check violation and punishment history of a user. | !check \ |
-| [clean]() | Clean a channel of certain message types. | !clean \ \[numberOfMessages\] |
-| [cleanShort]() | Clear short messages | !cleanShort \ \[numberOfMessages\] |
-| [cleanText]() | Delete messages containing certain keywords. | !cleanText \ \[numberOfMessages\] |
-| [kick]() | Kick a member from the server. | !kick \ \[reason\] |
-| [lockdown]() | Lockdown a specific channel \(Prevents anyone without special roles from sending messages\) | !lockdown \[-t value\|--timeout=value\]\[channel\] |
-| [mute]() | Mute a user | !mute \[-d value\|--duration=value\] \ \[reason\] |
-| [punishmentConfig]() | Configure punishments when reaching a certain amount of strikes. | !punishmentConfig \[punishment\]\[strikes\] \[args\] |
-| [purge]() | Purge messages in a channel. | !purge \ \[user\] |
-| [purgeUntil]() | Purge messages in a channel up until a specified message. | !purgeUntil \ |
-| [softBan]() | Ban and then automatically unban a member from the server. | !softBan \[-d value\|--deleteMessageDays=value\] \ \[reason\] |
-| [strike]() | Add strikes to a user | !strike \ \ \ |
-| [strikeConfig]() | Configure strikes received for various violations. | !strikeConfig \[violation\]\[strikes\] |
-| [unban]() | Unban a user | !unban \ \[reason\] |
-| [unhoist]() | Add a character in front of all members with a special character in front of their name, so they will be shown at the end of the member list. | !unhoist |
-| [unmute]() | Unmute a user | !unmute \ |
-| [warn]() | Warn a member. | !warn \ \[reason\] |
+| Command                               | Description                                                                                                              | Usage                                                            |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| [ban](#ban)                           | Bannir un membre du serveur.                                                                                             | !ban [-d value\|--deleteMessageDays=value] \<user\> [reason]     |
+| [caseDelete](#caseDelete)             | Supprimer un cas spécifique.                                                                                             | !caseDelete \<caseNumber\> [reason]                              |
+| [caseView](#caseView)                 | Voir les informations sur un cas spécifique.                                                                             | !caseView \<caseNumber\>                                         |
+| [check](#check)                       | Vérifier la violation et l'historique des punitions d'un utilisateur.                                                    | !check \<user\>                                                  |
+| [clean](#clean)                       | Nettoyer un salon de certains messages.                                                                                  | !clean \<type\> [numberOfMessages]                               |
+| [cleanShort](#cleanShort)             | Effacer les messages courts.                                                                                             | !cleanShort \<maxTextLength\> [numberOfMessages]                 |
+| [cleanText](#cleanText)               | Supprimer les messages contenant certains mots clefs.                                                                    | !cleanText \<text\> [numberOfMessages]                           |
+| [kick](#kick)                         | Expulser un membre du serveur.                                                                                           | !kick \<member\> [reason]                                        |
+| [lockdown](#lockdown)                 | Bloque un salon spécifique (empêche tout le monde sans rôle spécial d'envoyer des messages)                              | !lockdown [-t value\|--timeout=value][channel]                   |
+| [mute](#mute)                         | Rendre muet un utilisateur                                                                                               | !mute [-d value\|--duration=value] \<user\> [reason]             |
+| [punishmentConfig](#punishmentConfig) | Configurez les punitions lorsque vous atteignez un certain nombre d'avertissements.                                      | !punishmentConfig [punishment][strikes] [args]                   |
+| [purge](#purge)                       | Purger les messages dans un canal.                                                                                       | !purge \<quantity\> [user]                                       |
+| [purgeUntil](#purgeUntil)             | Purger les messages dans un salon jusqu'à un message spécifié.                                                           | !purgeUntil \<messageID\>                                        |
+| [softBan](#softBan)                   | Bannir puis automatiquement dé-bannir un membre du serveur.                                                              | !softBan [-d value\|--deleteMessageDays=value] \<user\> [reason] |
+| [strike](#strike)                     | Ajouter des avertissements à un utilisateur                                                                              | !strike \<member\> \<type\> \<amount\>                           |
+| [strikeConfig](#strikeConfig)         | Configurez les Strike reçues pour diverses violations.                                                                   | !strikeConfig [violation][strikes]                               |
+| [unban](#unban)                       | Dé-bannir un utilisateur                                                                                                 | !unban \<user\> [reason]                                         |
+| [unhoist](#unhoist)                   | Ajoute un caractère spécial devant le nom de chaque membre, donc ils seront affichés en dernier de la liste des membres. | !unhoist                                                         |
+| [unmute](#unmute)                     | Démuter un utilisateur                                                                                                   | !unmute \<user\>                                                 |
+| [warn](#warn)                         | Avertir un membre.                                                                                                       | !warn \<member\> [reason]                                        |
 
 ### Other
 
-| Command | Description | Usage |
-| :--- | :--- | :--- |
-| [graph]() | Shows graphs about various stats on this server. | !graph \ \[from\]\[to\] |
+| Command         | Description                                                         | Usage                      |
+| --------------- | ------------------------------------------------------------------- | -------------------------- |
+| [graph](#graph) | Affiche des graphiques sur différentes statistiques sur ce serveur. | !graph \<type\> [from][to] |
+
+<a name='addInvites'></a>
+
+---
 
 ## !addInvites
 
-Adds/Removes invites to/from a member.
+Ajoute/supprime des invitations d'un membre.
 
 ### Usage
 
@@ -188,15 +191,15 @@ Adds/Removes invites to/from a member.
 
 ### Aliases
 
-* `!add-invites`
+- `!add-invites`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | Yes | The user that will receive/lose the bonus invites. |  |
-| amount | [Number]() | Yes | The amount of invites the user will get/lose. Use a negative \(-\) number to remove invites. |  |
-| reason | [Text]() | No | The reason for adding/removing the invites. |  |
+| Argument | Type                        | Required | Description                                                                                                                      | Details |
+| -------- | --------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | Yes      | L'utilisateur recevra / perdra le bonus invite                                                                                   |         |
+| amount   | [Nombre](#Nombre)           | Yes      | La quantité d'invitations que l'utilisateur va recevoir / perdre. Utilisez un nombre négatif (-) pour supprimer les invitations. |         |
+| reason   | [Texte](#Texte)             | No       | La raison de l'ajout / suppression des invitations.                                                                              |         |
 
 ### Examples
 
@@ -208,9 +211,13 @@ Adds/Removes invites to/from a member.
 !addInvites "Name with space" -30 Removed for cheating
 ```
 
+<a name='addRank'></a>
+
+---
+
 ## !addRank
 
-Add a new rank.
+Ajouter un nouveau Ranks.
 
 ### Usage
 
@@ -220,17 +227,17 @@ Add a new rank.
 
 ### Aliases
 
-* `!add-rank`
-* `!set-rank`
-* `!setrank`
+- `!add-rank`
+- `!set-rank`
+- `!setrank`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| role | [Role]() | Yes | The role which the user will receive when reaching this rank. |  |
-| invites | [Number]() | Yes | The amount of invites needed to reach the rank. |  |
-| info | [Text]() | No | A description that users will see so they know more about this rank. |  |
+| Argument | Type              | Required | Description                                                                   | Details |
+| -------- | ----------------- | -------- | ----------------------------------------------------------------------------- | ------- |
+| role     | [Role](#Role)     | Yes      | Le rôle que l'utilisateur recevra lorsqu'il atteindra ce rang.                |         |
+| invites  | [Nombre](#Nombre) | Yes      | La quantité d'invitations nécessaires pour atteindre le rang.                 |         |
+| info     | [Texte](#Texte)   | No       | Une description que les utilisateurs verront pour en savoir plus sur ce rang. |         |
 
 ### Examples
 
@@ -242,9 +249,13 @@ Add a new rank.
 !addRank "Role with space" 10 Wow, already 10 people!
 ```
 
+<a name='ban'></a>
+
+---
+
 ## !ban
 
-Ban a member from the server.
+Bannir un membre du serveur.
 
 ### Usage
 
@@ -254,22 +265,26 @@ Ban a member from the server.
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | Yes | User to ban. |  |
-| reason | [Text]() | No | Why was the user banned. |  |
+| Argument | Type                        | Required | Description                              | Details |
+| -------- | --------------------------- | -------- | ---------------------------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | Yes      | Utilisateur à bannir.                    |         |
+| reason   | [Texte](#Texte)             | No       | Pourquoi l'utilisateur a-t-il été banni? |         |
 
 ### Flags
 
-| Flag | Short | Type | Description |
-| :--- | :--- | :--- | :--- |
-| ‑‑deleteMessageDays | ‑d | [Number]() | If specified will delete messages by the banned members this many days back. |
+| Flag                              | Short     | Type              | Description                                                                                |
+| --------------------------------- | --------- | ----------------- | ------------------------------------------------------------------------------------------ |
+| &#x2011;&#x2011;deleteMessageDays | &#x2011;d | [Nombre](#Nombre) | Si spécifié, cela va supprimer les messages du membre banni ce nombre de jours en arrière. |
 
 ### Examples
 
+<a name='botConfig'></a>
+
+---
+
 ## !botConfig
 
-Show and change the config of the bot.
+Afficher et changer la configuration du bot.
 
 ### Usage
 
@@ -279,16 +294,16 @@ Show and change the config of the bot.
 
 ### Aliases
 
-* `!bot-config`
-* `!botsetting`
-* `!bot-setting`
+- `!bot-config`
+- `!botsetting`
+- `!bot-setting`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| key | [Enum]() | No | The bot config setting which you want to show/change. | Use one of the following values: `activityEnabled`, `activityMessage`, `activityStatus`, `activityType`, `activityUrl`, `embedDefaultColor` |
-| value | [Value]() | No | The new value of the setting. |  |
+| Argument | Type                        | Required | Description                                                              | Details                                                                                                                                         |
+| -------- | --------------------------- | -------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| key      | [Énumération](#Énumération) | No       | Les paramètres de configurations que vous souhaitez afficher / modifier. | Utilisez une des valeurs suivantes : `activityEnabled`, `activityMessage`, `activityStatus`, `activityType`, `activityUrl`, `embedDefaultColor` |
+| value    | [Valeur](#Valeur)           | No       | La nouvelle valeur du paramètre.                                         |                                                                                                                                                 |
 
 ### Examples
 
@@ -296,9 +311,13 @@ Show and change the config of the bot.
 !botConfig
 ```
 
+<a name='botInfo'></a>
+
+---
+
 ## !botInfo
 
-Get general information about the bot.
+Obtenez des informations à propos du bot.
 
 ### Usage
 
@@ -308,7 +327,7 @@ Get general information about the bot.
 
 ### Aliases
 
-* `!bot-info`
+- `!bot-info`
 
 ### Examples
 
@@ -316,9 +335,13 @@ Get general information about the bot.
 !botInfo
 ```
 
+<a name='caseDelete'></a>
+
+---
+
 ## !caseDelete
 
-Delete a specific case.
+Supprimer un cas spécifique.
 
 ### Usage
 
@@ -328,16 +351,16 @@ Delete a specific case.
 
 ### Aliases
 
-* `!case-delete`
-* `!deletecase`
-* `!delete-case`
+- `!case-delete`
+- `!deletecase`
+- `!delete-case`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| caseNumber | [Number]() | Yes | Case number |  |
-| reason | [Text]() | No | The reason for removing the case. |  |
+| Argument   | Type              | Required | Description                         | Details |
+| ---------- | ----------------- | -------- | ----------------------------------- | ------- |
+| caseNumber | [Nombre](#Nombre) | Yes      | Numéro du cas                       |         |
+| reason     | [Texte](#Texte)   | No       | La raison de la suppression du cas. |         |
 
 ### Examples
 
@@ -345,9 +368,13 @@ Delete a specific case.
 !caseDelete 5434 User apologized
 ```
 
+<a name='caseView'></a>
+
+---
+
 ## !caseView
 
-View info about a specific case.
+Voir les informations sur un cas spécifique.
 
 ### Usage
 
@@ -357,15 +384,15 @@ View info about a specific case.
 
 ### Aliases
 
-* `!case-view`
-* `!viewcase`
-* `!view-case`
+- `!case-view`
+- `!viewcase`
+- `!view-case`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| caseNumber | [Number]() | Yes | Case number |  |
+| Argument   | Type              | Required | Description   | Details |
+| ---------- | ----------------- | -------- | ------------- | ------- |
+| caseNumber | [Nombre](#Nombre) | Yes      | Numéro du cas |         |
 
 ### Examples
 
@@ -373,9 +400,13 @@ View info about a specific case.
 !caseView 5434
 ```
 
+<a name='check'></a>
+
+---
+
 ## !check
 
-Check violation and punishment history of a user.
+Vérifier la violation et l'historique des punitions d'un utilisateur.
 
 ### Usage
 
@@ -385,13 +416,13 @@ Check violation and punishment history of a user.
 
 ### Aliases
 
-* `!history`
+- `!history`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | Yes | User to check. |  |
+| Argument | Type                        | Required | Description             | Details |
+| -------- | --------------------------- | -------- | ----------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | Yes      | Utilisateur à vérifier. |         |
 
 ### Examples
 
@@ -403,9 +434,13 @@ Check violation and punishment history of a user.
 !check "User with space"
 ```
 
+<a name='clean'></a>
+
+---
+
 ## !clean
 
-Clean a channel of certain message types.
+Nettoyer un salon de certains messages.
 
 ### Usage
 
@@ -415,20 +450,24 @@ Clean a channel of certain message types.
 
 ### Aliases
 
-* `!clear`
+- `!clear`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| type | [Enum]() | Yes | The type of messages that will be deleted. | Use one of the following values: `bots`, `embeds`, `emojis`, `images`, `links`, `mentions`, `reacted`, `reactions` |
-| numberOfMessages | [Number]() | No | Number of messages that will be searched. |  |
+| Argument         | Type                        | Required | Description                               | Details                                                                                                                |
+| ---------------- | --------------------------- | -------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| type             | [Énumération](#Énumération) | Yes      | Le type de messages qui seront supprimés. | Utilisez une des valeurs suivantes : `bots`, `embeds`, `emojis`, `images`, `links`, `mentions`, `reacted`, `reactions` |
+| numberOfMessages | [Nombre](#Nombre)           | No       | Nombre de messages qui seront recherchés. |                                                                                                                        |
 
 ### Examples
 
+<a name='cleanShort'></a>
+
+---
+
 ## !cleanShort
 
-Clear short messages
+Effacer les messages courts.
 
 ### Usage
 
@@ -438,22 +477,26 @@ Clear short messages
 
 ### Aliases
 
-* `!clean-short`
-* `!clearshort`
-* `!clear-short`
+- `!clean-short`
+- `!clearshort`
+- `!clear-short`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| maxTextLength | [Number]() | Yes | All messages shorter than this will be deleted. |  |
-| numberOfMessages | [Number]() | No | Number of messages that will be searched. |  |
+| Argument         | Type              | Required | Description                                            | Details |
+| ---------------- | ----------------- | -------- | ------------------------------------------------------ | ------- |
+| maxTextLength    | [Nombre](#Nombre) | Yes      | Tous les messages plus courts que ça seront supprimés. |         |
+| numberOfMessages | [Nombre](#Nombre) | No       | Nombre de messages qui seront recherchés.              |         |
 
 ### Examples
 
+<a name='cleanText'></a>
+
+---
+
 ## !cleanText
 
-Delete messages containing certain keywords.
+Supprimer les messages contenant certains mots clefs.
 
 ### Usage
 
@@ -463,22 +506,26 @@ Delete messages containing certain keywords.
 
 ### Aliases
 
-* `!clean-text`
-* `!cleartext`
-* `!clear-text`
+- `!clean-text`
+- `!cleartext`
+- `!clear-text`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| text | [Text]() | Yes | All messages containing this word will be deleted. |  |
-| numberOfMessages | [Number]() | No | Number of messages that will be searched. |  |
+| Argument         | Type              | Required | Description                                           | Details |
+| ---------------- | ----------------- | -------- | ----------------------------------------------------- | ------- |
+| text             | [Texte](#Texte)   | Yes      | Tous les messages contenants ce mot seront supprimés. |         |
+| numberOfMessages | [Nombre](#Nombre) | No       | Nombre de messages qui seront recherchés.             |         |
 
 ### Examples
 
+<a name='clearInvites'></a>
+
+---
+
 ## !clearInvites
 
-Clear invites of the server/a user.
+Effacer les invitations du serveur/d'un utilisateur.
 
 ### Usage
 
@@ -488,20 +535,20 @@ Clear invites of the server/a user.
 
 ### Aliases
 
-* `!clear-invites`
+- `!clear-invites`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | No | The user to clear all invites from. If omitted clears all users. |  |
+| Argument | Type                        | Required | Description                                                                                                                       | Details |
+| -------- | --------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | No       | L'utilisateur que vous voulez effacer toutes ses invitations. Si pas renseigner, efface les invitations de tous les utilisateurs. |         |
 
 ### Flags
 
-| Flag | Short | Type | Description |
-| :--- | :--- | :--- | :--- |
-| ‑‑date | ‑d | [Date]() | The date start at which invites should be counted. Default is today. |
-| ‑‑clearBonus | ‑cb | [Boolean]() | Add this flag to clear bonus invites aswell. Otherwise bonus invites are left untouched. |
+| Flag                       | Short      | Type                | Description                                                                                                       |
+| -------------------------- | ---------- | ------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| &#x2011;&#x2011;date       | &#x2011;d  | [Date](#Date)       | La date à laquelle les invitations doivent être comptées. La valeur par défaut est aujourd'hui.                   |
+| &#x2011;&#x2011;clearBonus | &#x2011;cb | [Booléen](#Booléen) | Ajouter ce drapeau pour effacer aussi les invitations bonus. Sinon, les invitations bonus ne seront pas altérées. |
 
 ### Examples
 
@@ -517,9 +564,13 @@ Clear invites of the server/a user.
 !clearInvites -cb "User with space"
 ```
 
+<a name='config'></a>
+
+---
+
 ## !config
 
-Show and change the config of the server.
+Affiche et modifie la configuration du serveur.
 
 ### Usage
 
@@ -529,14 +580,14 @@ Show and change the config of the server.
 
 ### Aliases
 
-* `!c`
+- `!c`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| key | [Enum]() | No | The config setting which you want to show/change. | Use one of the following values: `autoModAllCapsEnabled`, `autoModAllCapsMinCharacters`, `autoModAllCapsPercentageCaps`, `autoModDeleteBotMessage`, `autoModDeleteBotMessageTimeoutInSeconds`, `autoModDisabledForOldMembers`, `autoModDisabledForOldMembersThreshold`, `autoModDuplicateTextEnabled`, `autoModDuplicateTextTimeframeInSeconds`, `autoModEmojisEnabled`, `autoModEmojisMaxNumberOfEmojis`, `autoModEnabled`, `autoModHoistEnabled`, `autoModIgnoredChannels`, `autoModIgnoredRoles`, `autoModInvitesEnabled`, `autoModLinksBlacklist`, `autoModLinksEnabled`, `autoModLinksFollowRedirects`, `autoModLinksWhitelist`, `autoModLogEnabled`, `autoModMentionRolesEnabled`, `autoModMentionRolesMaxNumberOfMentions`, `autoModMentionUsersEnabled`, `autoModMentionUsersMaxNumberOfMentions`, `autoModModeratedChannels`, `autoModModeratedRoles`, `autoModQuickMessagesEnabled`, `autoModQuickMessagesNumberOfMessages`, `autoModQuickMessagesTimeframeInSeconds`, `autoModWordsBlacklist`, `autoModWordsEnabled`, `autoSubtractFakes`, `autoSubtractLeaves`, `autoSubtractLeaveThreshold`, `captchaVerificationFailedMessage`, `captchaVerificationLogEnabled`, `captchaVerificationOnJoin`, `captchaVerificationSuccessMessage`, `captchaVerificationTimeout`, `captchaVerificationWelcomeMessage`, `channels`, `getUpdates`, `hideLeftMembersFromLeaderboard`, `ignoredChannels`, `joinMessage`, `joinMessageChannel`, `joinRoles`, `lang`, `leaderboardStyle`, `leaveMessage`, `leaveMessageChannel`, `logChannel`, `modLogChannel`, `modPunishmentBanDeleteMessage`, `modPunishmentKickDeleteMessage`, `modPunishmentMuteDeleteMessage`, `modPunishmentSoftbanDeleteMessage`, `modPunishmentWarnDeleteMessage`, `mutedRole`, `prefix`, `rankAnnouncementChannel`, `rankAnnouncementMessage`, `rankAssignmentStyle` |
-| value | [Value]() | No | The new value of the setting. |  |
+| Argument | Type                        | Required | Description                                                           | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| -------- | --------------------------- | -------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| key      | [Énumération](#Énumération) | No       | Le paramètre de configuration que vous souhaitez afficher / modifier. | Utilisez une des valeurs suivantes : `autoModAllCapsEnabled`, `autoModAllCapsMinCharacters`, `autoModAllCapsPercentageCaps`, `autoModDeleteBotMessage`, `autoModDeleteBotMessageTimeoutInSeconds`, `autoModDisabledForOldMembers`, `autoModDisabledForOldMembersThreshold`, `autoModDuplicateTextEnabled`, `autoModDuplicateTextTimeframeInSeconds`, `autoModEmojisEnabled`, `autoModEmojisMaxNumberOfEmojis`, `autoModEnabled`, `autoModHoistEnabled`, `autoModIgnoredChannels`, `autoModIgnoredRoles`, `autoModInvitesEnabled`, `autoModLinksBlacklist`, `autoModLinksEnabled`, `autoModLinksFollowRedirects`, `autoModLinksWhitelist`, `autoModLogEnabled`, `autoModMentionRolesEnabled`, `autoModMentionRolesMaxNumberOfMentions`, `autoModMentionUsersEnabled`, `autoModMentionUsersMaxNumberOfMentions`, `autoModModeratedChannels`, `autoModModeratedRoles`, `autoModQuickMessagesEnabled`, `autoModQuickMessagesNumberOfMessages`, `autoModQuickMessagesTimeframeInSeconds`, `autoModWordsBlacklist`, `autoModWordsEnabled`, `autoSubtractFakes`, `autoSubtractLeaves`, `autoSubtractLeaveThreshold`, `captchaVerificationFailedMessage`, `captchaVerificationLogEnabled`, `captchaVerificationOnJoin`, `captchaVerificationSuccessMessage`, `captchaVerificationTimeout`, `captchaVerificationWelcomeMessage`, `channels`, `getUpdates`, `hideLeftMembersFromLeaderboard`, `ignoredChannels`, `joinMessage`, `joinMessageChannel`, `joinRoles`, `lang`, `leaderboardStyle`, `leaveMessage`, `leaveMessageChannel`, `logChannel`, `modLogChannel`, `modPunishmentBanDeleteMessage`, `modPunishmentKickDeleteMessage`, `modPunishmentMuteDeleteMessage`, `modPunishmentSoftbanDeleteMessage`, `modPunishmentWarnDeleteMessage`, `mutedRole`, `prefix`, `rankAnnouncementChannel`, `rankAnnouncementMessage`, `rankAssignmentStyle` |
+| value    | [Valeur](#Valeur)           | No       | La nouvelle valeur du paramétrage.                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 ### Examples
 
@@ -544,9 +595,13 @@ Show and change the config of the server.
 !config
 ```
 
+<a name='createInvite'></a>
+
+---
+
 ## !createInvite
 
-Creates unique invite codes.
+Crée des codes d'invitation uniques.
 
 ### Usage
 
@@ -556,17 +611,17 @@ Creates unique invite codes.
 
 ### Aliases
 
-* `!create-invite`
+- `!create-invite`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| name | [Text]() | Yes | The name of the invite code. |  |
-| channel | [Channel]() | No | The channel for which the invite code is created. Uses the current channel by default. |  |
-| maxUses | [Number]() | No | `number` --&gt; The max amount of uses of the invite code |  |
-| expires | [Boolean]() | No | `true` or `false` --&gt; Set if the invite will expires after 24 hours |  |
-| temporaryMembership | [Boolean]() | No | `true` or `false` --&gt; Set if the invited users are granted as temporary members |  |
+| Argument            | Type                | Required | Description                                                                     | Details |
+| ------------------- | ------------------- | -------- | ------------------------------------------------------------------------------- | ------- |
+| name                | [Texte](#Texte)     | Yes      | Le nom du code d'invitation.                                                    |         |
+| channel             | [Salon](#Salon)     | No       | Le Salon ou le code d'invitation est créé. Utilise le canal actuel par défaut.  |         |
+| maxUses             | [Nombre](#Nombre)   | No       | `number` --> The max amount of uses of the invite code                          |         |
+| expires             | [Booléen](#Booléen) | No       | `true` or `false` --> Set if the invite will expires after 24 hours             |         |
+| temporaryMembership | [Booléen](#Booléen) | No       | `true` or `false` --> Set if the invited users are granted as temporary members |         |
 
 ### Examples
 
@@ -578,9 +633,13 @@ Creates unique invite codes.
 !createInvite website #welcome
 ```
 
+<a name='credits'></a>
+
+---
+
 ## !credits
 
-Show developers and contributors of the bot.
+Afficher les développeurs et les contributeurs du bot.
 
 ### Usage
 
@@ -594,9 +653,13 @@ Show developers and contributors of the bot.
 !credits
 ```
 
+<a name='export'></a>
+
+---
+
 ## !export
 
-Export data of InviteLogger to a csv sheet.
+Exportez les données d'InviteManager vers une feuille de calculs CSV.
 
 ### Usage
 
@@ -606,9 +669,9 @@ Export data of InviteLogger to a csv sheet.
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| type | [Enum]() | Yes | The type of export you want. | Use one of the following values: `leaderboard` |
+| Argument | Type                        | Required | Description                            | Details                                            |
+| -------- | --------------------------- | -------- | -------------------------------------- | -------------------------------------------------- |
+| type     | [Énumération](#Énumération) | Yes      | Le type d'exportation que vous voulez. | Utilisez une des valeurs suivantes : `leaderboard` |
 
 ### Examples
 
@@ -616,9 +679,13 @@ Export data of InviteLogger to a csv sheet.
 !export leaderboard
 ```
 
+<a name='fixRanks'></a>
+
+---
+
 ## !fixRanks
 
-Deletes any ranks where the role was deleted.
+Supprime les rangs configurés si le rôle a été supprimé.
 
 ### Usage
 
@@ -628,17 +695,21 @@ Deletes any ranks where the role was deleted.
 
 ### Aliases
 
-* `!fix-ranks`
+- `!fix-ranks`
 
 ### Examples
 
 ```text
 !fixRanks
 ```
+
+<a name='getBot'></a>
+
+---
 
 ## !getBot
 
-Get an invite link for the bot.
+Obtenez un lien d'invitation pour le bot.
 
 ### Usage
 
@@ -648,9 +719,9 @@ Get an invite link for the bot.
 
 ### Aliases
 
-* `!get-bot`
-* `!invite-bot`
-* `!invitebot`
+- `!get-bot`
+- `!invite-bot`
+- `!invitebot`
 
 ### Examples
 
@@ -658,9 +729,13 @@ Get an invite link for the bot.
 !getBot
 ```
 
+<a name='graph'></a>
+
+---
+
 ## !graph
 
-Shows graphs about various stats on this server.
+Affiche des graphiques sur différentes statistiques sur ce serveur.
 
 ### Usage
 
@@ -670,16 +745,16 @@ Shows graphs about various stats on this server.
 
 ### Aliases
 
-* `!g`
-* `!chart`
+- `!g`
+- `!chart`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| type | [Enum]() | Yes | The type of chart to display. | Use one of the following values: `joins`, `joinsAndLeaves`, `leaves` |
-| from | [Date]() | No | Start date of the chart |  |
-| to | [Date]() | No | End date of the chart |  |
+| Argument | Type                        | Required | Description                      | Details                                                                  |
+| -------- | --------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------ |
+| type     | [Énumération](#Énumération) | Yes      | Le type de graphique à afficher. | Utilisez une des valeurs suivantes : `joins`, `joinsAndLeaves`, `leaves` |
+| from     | [Date](#Date)               | No       | Date de début du graphique       |                                                                          |
+| to       | [Date](#Date)               | No       | Date de fin du graphique         |                                                                          |
 
 ### Examples
 
@@ -695,9 +770,13 @@ Shows graphs about various stats on this server.
 !graph usage
 ```
 
+<a name='help'></a>
+
+---
+
 ## !help
 
-Display help.
+Afficher l'aide.
 
 ### Usage
 
@@ -707,9 +786,9 @@ Display help.
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| command | [Command]() | No | The command to get detailed information for. | Use one of the following values: `addInvites`, `addRank`, `ban`, `botConfig`, `botInfo`, `caseDelete`, `caseView`, `check`, `clean`, `cleanShort`, `cleanText`, `clearInvites`, `config`, `createInvite`, `credits`, `export`, `fixRanks`, `getBot`, `graph`, `help`, `info`, `interactiveConfig`, `inviteCodeConfig`, `inviteCodes`, `inviteDetails`, `invites`, `kick`, `leaderboard`, `lockdown`, `memberConfig`, `members`, `mute`, `permissions`, `ping`, `prefix`, `premium`, `punishmentConfig`, `purge`, `purgeUntil`, `ranks`, `removeInvites`, `removeRank`, `restoreInvites`, `setup`, `softBan`, `strike`, `strikeConfig`, `subtractFakes`, `subtractLeaves`, `support`, `tryPremium`, `unban`, `unhoist`, `unmute`, `warn` |
+| Argument | Type                  | Required | Description                                                | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| -------- | --------------------- | -------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| command  | [Commande](#Commande) | No       | La commande pour obtenir des informations détaillées pour. | Utilisez une des valeurs suivantes : `addInvites`, `addRank`, `ban`, `botConfig`, `botInfo`, `caseDelete`, `caseView`, `check`, `clean`, `cleanShort`, `cleanText`, `clearInvites`, `config`, `createInvite`, `credits`, `export`, `fixRanks`, `getBot`, `graph`, `help`, `info`, `interactiveConfig`, `inviteCodeConfig`, `inviteCodes`, `inviteDetails`, `invites`, `kick`, `leaderboard`, `lockdown`, `memberConfig`, `members`, `mute`, `permissions`, `ping`, `prefix`, `premium`, `punishmentConfig`, `purge`, `purgeUntil`, `ranks`, `removeInvites`, `removeRank`, `restoreInvites`, `setup`, `softBan`, `strike`, `strikeConfig`, `subtractFakes`, `subtractLeaves`, `support`, `tryPremium`, `unban`, `unhoist`, `unmute`, `warn` |
 
 ### Examples
 
@@ -721,9 +800,13 @@ Display help.
 !help addRank
 ```
 
+<a name='info'></a>
+
+---
+
 ## !info
 
-Show info about a specific member.
+Afficher des informations sur un membre spécifique.
 
 ### Usage
 
@@ -733,15 +816,15 @@ Show info about a specific member.
 
 ### Aliases
 
-* `!showinfo`
+- `!showinfo`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | Yes | The user for whom you want to see additional info. |  |
-| details | [Enum]() | No | Request only specific details about a member. | Use one of the following values: `bonus`, `members` |
-| page | [Number]() | No | What page of the details to show. You can also use the reactions to navigate. |  |
+| Argument | Type                        | Required | Description                                                                               | Details                                                 |
+| -------- | --------------------------- | -------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| user     | [Utilisateur](#Utilisateur) | Yes      | L'utilisateur pour lequel vous souhaitez voir des informations supplémentaires.           |                                                         |
+| details  | [Énumération](#Énumération) | No       | Voir uniquement des détails spécifiques d'un membre.                                      | Utilisez une des valeurs suivantes : `bonus`, `members` |
+| page     | [Nombre](#Nombre)           | No       | Quelle page des détails afficher. Vous pouvez aussi utiliser les réactions pour naviguer. |                                                         |
 
 ### Examples
 
@@ -765,9 +848,13 @@ Show info about a specific member.
 !info @User members 4
 ```
 
+<a name='interactiveConfig'></a>
+
+---
+
 ## !interactiveConfig
 
-Interactive Config
+Configuration interactive
 
 ### Usage
 
@@ -777,7 +864,7 @@ Interactive Config
 
 ### Aliases
 
-* `!ic`
+- `!ic`
 
 ### Examples
 
@@ -785,9 +872,13 @@ Interactive Config
 !interactiveConfig
 ```
 
+<a name='inviteCodeConfig'></a>
+
+---
+
 ## !inviteCodeConfig
 
-Show and change the config of invite codes of the server.
+Affiche et modifie la configuration des codes d'invitation du serveur.
 
 ### Usage
 
@@ -797,16 +888,16 @@ Show and change the config of invite codes of the server.
 
 ### Aliases
 
-* `!invite-code-config`
-* `!icc`
+- `!invite-code-config`
+- `!icc`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| key | [Enum]() | No | The config setting which you want to show/change. | Use one of the following values: `name`, `roles` |
-| inviteCode | [Invite Code]() | No | The invite code for which you want to change the settings. |  |
-| value | [Value]() | No | The new value of the setting. |  |
+| Argument   | Type                                   | Required | Description                                                              | Details                                              |
+| ---------- | -------------------------------------- | -------- | ------------------------------------------------------------------------ | ---------------------------------------------------- |
+| key        | [Énumération](#Énumération)            | No       | Les paramètres de configurations que vous souhaitez afficher / modifier. | Utilisez une des valeurs suivantes : `name`, `roles` |
+| inviteCode | [Code d'invitation](#Coded'invitation) | No       | The invite code for which you want to change the settings.               |                                                      |
+| value      | [Valeur](#Valeur)                      | No       | La nouvelle valeur du paramètre.                                         |                                                      |
 
 ### Examples
 
@@ -814,9 +905,13 @@ Show and change the config of invite codes of the server.
 !inviteCodeConfig
 ```
 
+<a name='inviteCodes'></a>
+
+---
+
 ## !inviteCodes
 
-Get a list of all your invite codes
+Obtenez une liste de tous vos codes d'invitation.
 
 ### Usage
 
@@ -826,14 +921,14 @@ Get a list of all your invite codes
 
 ### Aliases
 
-* `!invitecode`
-* `!invite-code`
-* `!invite-codes`
-* `!getinvitecode`
-* `!get-invite-code`
-* `!get-invite-codes`
-* `!showinvitecode`
-* `!show-invite-code`
+- `!invitecode`
+- `!invite-code`
+- `!invite-codes`
+- `!getinvitecode`
+- `!get-invite-code`
+- `!get-invite-codes`
+- `!showinvitecode`
+- `!show-invite-code`
 
 ### Examples
 
@@ -841,9 +936,13 @@ Get a list of all your invite codes
 !inviteCodes
 ```
 
+<a name='inviteDetails'></a>
+
+---
+
 ## !inviteDetails
 
-Shows details about where your invites are from.
+Affiche des détails sur l'origine de vos invitations.
 
 ### Usage
 
@@ -853,13 +952,13 @@ Shows details about where your invites are from.
 
 ### Aliases
 
-* `!invite-details`
+- `!invite-details`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | No | The user for whom you want to show detailed invites. |  |
+| Argument | Type                        | Required | Description                                                          | Details |
+| -------- | --------------------------- | -------- | -------------------------------------------------------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | No       | L'utilisateur ou vous souhaitez afficher des invitations détaillées. |         |
 
 ### Examples
 
@@ -875,9 +974,13 @@ Shows details about where your invites are from.
 !inviteDetails "User with space"
 ```
 
+<a name='invites'></a>
+
+---
+
 ## !invites
 
-Show personal invites.
+Afficher les invitations personnelles.
 
 ### Usage
 
@@ -887,14 +990,14 @@ Show personal invites.
 
 ### Aliases
 
-* `!invite`
-* `!rank`
+- `!invite`
+- `!rank`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | No | The user for whom you want to show invites. |  |
+| Argument | Type                        | Required | Description                                               | Details |
+| -------- | --------------------------- | -------- | --------------------------------------------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | No       | L'utilisateur ou vous souhaitez afficher les invitations. |         |
 
 ### Examples
 
@@ -910,9 +1013,13 @@ Show personal invites.
 !invites "User with space"
 ```
 
+<a name='kick'></a>
+
+---
+
 ## !kick
 
-Kick a member from the server.
+Expulser un membre du serveur.
 
 ### Usage
 
@@ -922,16 +1029,20 @@ Kick a member from the server.
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| member | [Member]() | Yes | Member to kick. |  |
-| reason | [Text]() | No | Why the member was kicked. |  |
+| Argument | Type              | Required | Description                       | Details |
+| -------- | ----------------- | -------- | --------------------------------- | ------- |
+| member   | [Membre](#Membre) | Yes      | Membre à expulser.                |         |
+| reason   | [Texte](#Texte)   | No       | Pourquoi le membre a été expulsé. |         |
 
 ### Examples
 
+<a name='leaderboard'></a>
+
+---
+
 ## !leaderboard
 
-Show members with most invites.
+Afficher les membres avec le plus d'invitations.
 
 ### Usage
 
@@ -941,13 +1052,13 @@ Show members with most invites.
 
 ### Aliases
 
-* `!top`
+- `!top`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| page | [Number]() | No | Which page of the leaderboard to get. |  |
+| Argument | Type              | Required | Description                                 | Details |
+| -------- | ----------------- | -------- | ------------------------------------------- | ------- |
+| page     | [Nombre](#Nombre) | No       | Quelle page du classement voulez vous voir. |         |
 
 ### Examples
 
@@ -963,9 +1074,13 @@ Show members with most invites.
 !leaderboard 30d 6
 ```
 
+<a name='lockdown'></a>
+
+---
+
 ## !lockdown
 
-Lockdown a specific channel \(Prevents anyone without special roles from sending messages\)
+Bloque un salon spécifique (empêche tout le monde sans rôle spécial d'envoyer des messages)
 
 ### Usage
 
@@ -975,15 +1090,15 @@ Lockdown a specific channel \(Prevents anyone without special roles from sending
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| channel | [Channel]() | No | The channel that you want to lock down. |  |
+| Argument | Type            | Required | Description                       | Details |
+| -------- | --------------- | -------- | --------------------------------- | ------- |
+| channel  | [Salon](#Salon) | No       | Le salon que vous voulez bloquer. |         |
 
 ### Flags
 
-| Flag | Short | Type | Description |
-| :--- | :--- | :--- | :--- |
-| ‑‑timeout | ‑t | [Duration]() | The timeout after which the lockdown automatically ends. Run the command again to end the lockdown manually. |
+| Flag                    | Short     | Type            | Description                                                                                                                                |
+| ----------------------- | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| &#x2011;&#x2011;timeout | &#x2011;t | [Durée](#Durée) | La durée après laquelle le blocage se finit automatiquement. Utilisez la commande une nouvelle fois pour terminer le blocage manuellement. |
 
 ### Examples
 
@@ -991,9 +1106,13 @@ Lockdown a specific channel \(Prevents anyone without special roles from sending
 !lockdown
 ```
 
+<a name='memberConfig'></a>
+
+---
+
 ## !memberConfig
 
-Show and change the config of members of the server.
+Affiche et modifie la configuration des membres du serveur.
 
 ### Usage
 
@@ -1003,17 +1122,17 @@ Show and change the config of members of the server.
 
 ### Aliases
 
-* `!member-config`
-* `!memconf`
-* `!mc`
+- `!member-config`
+- `!memconf`
+- `!mc`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| key | [Enum]() | No | The member config setting which you want to show/change. | Use one of the following values: `hideFromLeaderboard` |
-| user | [User]() | No | The member that the setting is shown/changed for. |  |
-| value | [Value]() | No | The new value of the setting. |  |
+| Argument | Type                        | Required | Description                                                 | Details                                                    |
+| -------- | --------------------------- | -------- | ----------------------------------------------------------- | ---------------------------------------------------------- |
+| key      | [Énumération](#Énumération) | No       | La configuration de membre que vous souhaitez voir/changer. | Utilisez une des valeurs suivantes : `hideFromLeaderboard` |
+| user     | [Utilisateur](#Utilisateur) | No       | Le membre ou le paramètre est affiché / modifié.            |                                                            |
+| value    | [Valeur](#Valeur)           | No       | La nouvelle valeur du paramètre.                            |                                                            |
 
 ### Examples
 
@@ -1021,9 +1140,13 @@ Show and change the config of members of the server.
 !memberConfig
 ```
 
+<a name='members'></a>
+
+---
+
 ## !members
 
-Show member count of current server.
+Afficher le nombre de membres du serveur actuel.
 
 ### Usage
 
@@ -1033,8 +1156,8 @@ Show member count of current server.
 
 ### Aliases
 
-* `!member`
-* `!memberscount`
+- `!member`
+- `!memberscount`
 
 ### Examples
 
@@ -1042,9 +1165,13 @@ Show member count of current server.
 !members
 ```
 
+<a name='mute'></a>
+
+---
+
 ## !mute
 
-Mute a user
+Rendre muet un utilisateur
 
 ### Usage
 
@@ -1054,22 +1181,26 @@ Mute a user
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [Member]() | Yes | The user that should be muted. |  |
-| reason | [Text]() | No | The reason why this user is muted. |  |
+| Argument | Type              | Required | Description                                   | Details |
+| -------- | ----------------- | -------- | --------------------------------------------- | ------- |
+| user     | [Membre](#Membre) | Yes      | L'utilisateur qui doit être rendu muet.       |         |
+| reason   | [Texte](#Texte)   | No       | La raison de pourquoi l'utilisateur est muet. |         |
 
 ### Flags
 
-| Flag | Short | Type | Description |
-| :--- | :--- | :--- | :--- |
-| ‑‑duration | ‑d | [Duration]() | The duration to mute the user for |
+| Flag                     | Short     | Type            | Description                                    |
+| ------------------------ | --------- | --------------- | ---------------------------------------------- |
+| &#x2011;&#x2011;duration | &#x2011;d | [Durée](#Durée) | Le temps pendant lequel l'utilisateur est muet |
 
 ### Examples
 
+<a name='permissions'></a>
+
+---
+
 ## !permissions
 
-Configure permissions to use commands.
+Configurez les permissions pour utiliser des commandes.
 
 ### Usage
 
@@ -1079,14 +1210,14 @@ Configure permissions to use commands.
 
 ### Aliases
 
-* `!perms`
+- `!perms`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| cmd | [Command]() | No | The command to configure permissions for. | Use one of the following values: `addInvites`, `addRank`, `ban`, `botConfig`, `botInfo`, `caseDelete`, `caseView`, `check`, `clean`, `cleanShort`, `cleanText`, `clearInvites`, `config`, `createInvite`, `credits`, `export`, `fixRanks`, `getBot`, `graph`, `help`, `info`, `interactiveConfig`, `inviteCodeConfig`, `inviteCodes`, `inviteDetails`, `invites`, `kick`, `leaderboard`, `lockdown`, `memberConfig`, `members`, `mute`, `permissions`, `ping`, `prefix`, `premium`, `punishmentConfig`, `purge`, `purgeUntil`, `ranks`, `removeInvites`, `removeRank`, `restoreInvites`, `setup`, `softBan`, `strike`, `strikeConfig`, `subtractFakes`, `subtractLeaves`, `support`, `tryPremium`, `unban`, `unhoist`, `unmute`, `warn` |
-| role | [Role]() | No | The role which should be granted or denied access to the command. |  |
+| Argument | Type                  | Required | Description                                         | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| -------- | --------------------- | -------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| cmd      | [Commande](#Commande) | No       | La commande pour configurer les autorisations pour. | Utilisez une des valeurs suivantes : `addInvites`, `addRank`, `ban`, `botConfig`, `botInfo`, `caseDelete`, `caseView`, `check`, `clean`, `cleanShort`, `cleanText`, `clearInvites`, `config`, `createInvite`, `credits`, `export`, `fixRanks`, `getBot`, `graph`, `help`, `info`, `interactiveConfig`, `inviteCodeConfig`, `inviteCodes`, `inviteDetails`, `invites`, `kick`, `leaderboard`, `lockdown`, `memberConfig`, `members`, `mute`, `permissions`, `ping`, `prefix`, `premium`, `punishmentConfig`, `purge`, `purgeUntil`, `ranks`, `removeInvites`, `removeRank`, `restoreInvites`, `setup`, `softBan`, `strike`, `strikeConfig`, `subtractFakes`, `subtractLeaves`, `support`, `tryPremium`, `unban`, `unhoist`, `unmute`, `warn` |
+| role     | [Role](#Role)         | No       | Le rôle qui aura l'accès ou non à la commande.      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 ### Examples
 
@@ -1094,9 +1225,13 @@ Configure permissions to use commands.
 !permissions
 ```
 
+<a name='ping'></a>
+
+---
+
 ## !ping
 
-Ping the bot
+Mentionner le bot
 
 ### Usage
 
@@ -1109,10 +1244,14 @@ Ping the bot
 ```text
 !ping
 ```
+
+<a name='prefix'></a>
+
+---
 
 ## !prefix
 
-Shows the current prefix of the bot.
+Affiche le préfixe actuel du bot.
 
 ### Usage
 
@@ -1126,9 +1265,13 @@ Shows the current prefix of the bot.
 !prefix
 ```
 
+<a name='premium'></a>
+
+---
+
 ## !premium
 
-Info about premium version of InviteLogger.
+Informations sur la version premium d'InviteManager.
 
 ### Usage
 
@@ -1138,14 +1281,14 @@ Info about premium version of InviteLogger.
 
 ### Aliases
 
-* `!patreon`
-* `!donate`
+- `!patreon`
+- `!donate`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| action | [Enum]() | No | The action to perform. None for premium info. `check` to check your premium status. `activate` to use your premium for this server. | Use one of the following values: `Activate`, `Check`, `Deactivate` |
+| Argument | Type                        | Required | Description                                                                                                                                         | Details                                                                |
+| -------- | --------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| action   | [Énumération](#Énumération) | No       | L'action à faire. Aucune pour les infos premium. `check` pour vérifier votre statut premium. `activate` pour utiliser votre premium sur ce serveur. | Utilisez une des valeurs suivantes : `Activate`, `Check`, `Deactivate` |
 
 ### Examples
 
@@ -1165,9 +1308,13 @@ Info about premium version of InviteLogger.
 !premium deactivate
 ```
 
+<a name='punishmentConfig'></a>
+
+---
+
 ## !punishmentConfig
 
-Configure punishments when reaching a certain amount of strikes.
+Configurez les punitions lorsque vous atteignez un certain nombre d'avertissements.
 
 ### Usage
 
@@ -1177,15 +1324,15 @@ Configure punishments when reaching a certain amount of strikes.
 
 ### Aliases
 
-* `!punishment-config`
+- `!punishment-config`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| punishment | [Enum]() | No | Type of punishment to use. | Use one of the following values: `ban`, `kick`, `mute`, `softban`, `warn` |
-| strikes | [Number]() | No | Number of strikes for this punishment to be used. |  |
-| args | [Text]() | No | Arguments passed to the punishment. |  |
+| Argument   | Type                        | Required | Description                                                  | Details                                                                       |
+| ---------- | --------------------------- | -------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| punishment | [Énumération](#Énumération) | No       | Type de punitions à utiliser.                                | Utilisez une des valeurs suivantes : `ban`, `kick`, `mute`, `softban`, `warn` |
+| strikes    | [Nombre](#Nombre)           | No       | Nombre d'avertissements pour que cette peine soit appliquée. |                                                                               |
+| args       | [Texte](#Texte)             | No       | Arguments passés pour la sanction.                           |                                                                               |
 
 ### Examples
 
@@ -1193,9 +1340,13 @@ Configure punishments when reaching a certain amount of strikes.
 !punishmentConfig
 ```
 
+<a name='purge'></a>
+
+---
+
 ## !purge
 
-Purge messages in a channel.
+Purger les messages dans un canal.
 
 ### Usage
 
@@ -1205,20 +1356,24 @@ Purge messages in a channel.
 
 ### Aliases
 
-* `!prune`
+- `!prune`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| quantity | [Number]() | Yes | How many messages should be deleted. |  |
-| user | [User]() | No | User whose messages are deleted. |  |
+| Argument | Type                        | Required | Description                                     | Details |
+| -------- | --------------------------- | -------- | ----------------------------------------------- | ------- |
+| quantity | [Nombre](#Nombre)           | Yes      | Combien de messages doivent être supprimés?     |         |
+| user     | [Utilisateur](#Utilisateur) | No       | L'utilisateur dont les messages sont supprimés. |         |
 
 ### Examples
 
+<a name='purgeUntil'></a>
+
+---
+
 ## !purgeUntil
 
-Purge messages in a channel up until a specified message.
+Purger les messages dans un salon jusqu'à un message spécifié.
 
 ### Usage
 
@@ -1228,22 +1383,26 @@ Purge messages in a channel up until a specified message.
 
 ### Aliases
 
-* `!purge-until`
-* `!prune-until`
-* `!pruneu`
-* `!purgeu`
+- `!purge-until`
+- `!prune-until`
+- `!pruneu`
+- `!purgeu`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| messageID | [Text]() | Yes | Last message ID to be deleted. |  |
+| Argument  | Type            | Required | Description                        | Details |
+| --------- | --------------- | -------- | ---------------------------------- | ------- |
+| messageID | [Texte](#Texte) | Yes      | Dernier ID de message à supprimer. |         |
 
 ### Examples
 
+<a name='ranks'></a>
+
+---
+
 ## !ranks
 
-Show all ranks.
+Montrer tous les rangs.
 
 ### Usage
 
@@ -1253,14 +1412,14 @@ Show all ranks.
 
 ### Aliases
 
-* `!show-ranks`
-* `!showranks`
+- `!show-ranks`
+- `!showranks`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| page | [Number]() | No | The page of the ranks list to show. |  |
+| Argument | Type              | Required | Description                              | Details |
+| -------- | ----------------- | -------- | ---------------------------------------- | ------- |
+| page     | [Nombre](#Nombre) | No       | La page de la liste des rangs à montrer. |         |
 
 ### Examples
 
@@ -1268,9 +1427,13 @@ Show all ranks.
 !ranks
 ```
 
+<a name='removeInvites'></a>
+
+---
+
 ## !removeInvites
 
-Removes a specified amount of invites from a user.
+Enlève un certain nombre d'invitations à un utilisateur.
 
 ### Usage
 
@@ -1280,15 +1443,15 @@ Removes a specified amount of invites from a user.
 
 ### Aliases
 
-* `!remove-invites`
+- `!remove-invites`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | Yes | The user to remove the invites from. |  |
-| amount | [Number]() | Yes | The amount of invites to remove. |  |
-| reason | [Text]() | No | The reason for removing the invites. |  |
+| Argument | Type                        | Required | Description                                  | Details |
+| -------- | --------------------------- | -------- | -------------------------------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | Yes      | L'utilisateur à qui enlever des invitations. |         |
+| amount   | [Nombre](#Nombre)           | Yes      | Le nombre d'invitations à enlever.           |         |
+| reason   | [Texte](#Texte)             | No       | La raison de l'enlèvement d'invitations.     |         |
 
 ### Examples
 
@@ -1304,9 +1467,13 @@ Removes a specified amount of invites from a user.
 !removeInvites @User -6 Added for apologizing
 ```
 
+<a name='removeRank'></a>
+
+---
+
 ## !removeRank
 
-Remove a rank.
+Supprimer un rang.
 
 ### Usage
 
@@ -1316,13 +1483,13 @@ Remove a rank.
 
 ### Aliases
 
-* `!remove-rank`
+- `!remove-rank`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| rank | [Role]() | Yes | The for which you want to remove the rank. |  |
+| Argument | Type          | Required | Description                              | Details |
+| -------- | ------------- | -------- | ---------------------------------------- | ------- |
+| rank     | [Role](#Role) | Yes      | Celui que vous voulez supprimer le rang. |         |
 
 ### Examples
 
@@ -1334,9 +1501,13 @@ Remove a rank.
 !removeRank "Role with space"
 ```
 
+<a name='restoreInvites'></a>
+
+---
+
 ## !restoreInvites
 
-Restore all previously cleared invites.
+Restaurez toutes les invitations précédemment effacées.
 
 ### Usage
 
@@ -1346,15 +1517,15 @@ Restore all previously cleared invites.
 
 ### Aliases
 
-* `!restore-invites`
-* `!unclear-invites`
-* `!unclearinvites`
+- `!restore-invites`
+- `!unclear-invites`
+- `!unclearinvites`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | No | The user to restore all invites to. If omitted restores invites for all users. |  |
+| Argument | Type                        | Required | Description                                                                                                                                  | Details |
+| -------- | --------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | No       | L'utilisateur à qui restaurer les invitations. Si aucun utilisateur n'est indiqué, cela restaure les invitations pour tous les utilisateurs. |         |
 
 ### Examples
 
@@ -1370,9 +1541,13 @@ Restore all previously cleared invites.
 !restoreInvites "User with space"
 ```
 
+<a name='setup'></a>
+
+---
+
 ## !setup
 
-Help with setting up the bot and checking for problems \(e.g. missing permissions\)
+Aide à la configuration du bot et à la recherche de problèmes (par exemple: autorisations manquantes)
 
 ### Usage
 
@@ -1382,10 +1557,10 @@ Help with setting up the bot and checking for problems \(e.g. missing permission
 
 ### Aliases
 
-* `!guide`
-* `!test`
-* `!testbot`
-* `!test-bot`
+- `!guide`
+- `!test`
+- `!testbot`
+- `!test-bot`
 
 ### Examples
 
@@ -1393,9 +1568,13 @@ Help with setting up the bot and checking for problems \(e.g. missing permission
 !setup
 ```
 
+<a name='softBan'></a>
+
+---
+
 ## !softBan
 
-Ban and then automatically unban a member from the server.
+Bannir puis automatiquement dé-bannir un membre du serveur.
 
 ### Usage
 
@@ -1405,26 +1584,30 @@ Ban and then automatically unban a member from the server.
 
 ### Aliases
 
-* `!soft-ban`
+- `!soft-ban`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [Member]() | Yes | User to ban. |  |
-| reason | [Text]() | No | Why was the user banned. |  |
+| Argument | Type              | Required | Description                              | Details |
+| -------- | ----------------- | -------- | ---------------------------------------- | ------- |
+| user     | [Membre](#Membre) | Yes      | Utilisateur à bannir.                    |         |
+| reason   | [Texte](#Texte)   | No       | Pourquoi l'utilisateur a-t-il été banni? |         |
 
 ### Flags
 
-| Flag | Short | Type | Description |
-| :--- | :--- | :--- | :--- |
-| ‑‑deleteMessageDays | ‑d | [Number]() | Delete messages from the user this many days back. |
+| Flag                              | Short     | Type              | Description                                                               |
+| --------------------------------- | --------- | ----------------- | ------------------------------------------------------------------------- |
+| &#x2011;&#x2011;deleteMessageDays | &#x2011;d | [Nombre](#Nombre) | Supprime les messages d'un utilisateur depuis un certain nombre de jours. |
 
 ### Examples
 
+<a name='strike'></a>
+
+---
+
 ## !strike
 
-Add strikes to a user
+Ajouter des avertissements à un utilisateur
 
 ### Usage
 
@@ -1434,17 +1617,21 @@ Add strikes to a user
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| member | [Member]() | Yes | The member receiving the strikes |  |
-| type | [Enum]() | Yes | The type of the violation | Use one of the following values: `allCaps`, `duplicateText`, `emojis`, `hoist`, `invites`, `links`, `mentionRoles`, `mentionUsers`, `quickMessages`, `words` |
-| amount | [Number]() | Yes | The amount of strikes to be added |  |
+| Argument | Type                        | Required | Description                           | Details                                                                                                                                                          |
+| -------- | --------------------------- | -------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| member   | [Membre](#Membre)           | Yes      | Le membre recevant les avertissements |                                                                                                                                                                  |
+| type     | [Énumération](#Énumération) | Yes      | Le type d'infraction                  | Utilisez une des valeurs suivantes : `allCaps`, `duplicateText`, `emojis`, `hoist`, `invites`, `links`, `mentionRoles`, `mentionUsers`, `quickMessages`, `words` |
+| amount   | [Nombre](#Nombre)           | Yes      | Le nombre d'avertissements à ajouter  |                                                                                                                                                                  |
 
 ### Examples
 
+<a name='strikeConfig'></a>
+
+---
+
 ## !strikeConfig
 
-Configure strikes received for various violations.
+Configurez les Strike reçues pour diverses violations.
 
 ### Usage
 
@@ -1454,14 +1641,14 @@ Configure strikes received for various violations.
 
 ### Aliases
 
-* `!strike-config`
+- `!strike-config`
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| violation | [Enum]() | No | Violation type. | Use one of the following values: `allCaps`, `duplicateText`, `emojis`, `hoist`, `invites`, `links`, `mentionRoles`, `mentionUsers`, `quickMessages`, `words` |
-| strikes | [Number]() | No | Number of strikes. |  |
+| Argument  | Type                        | Required | Description        | Details                                                                                                                                                          |
+| --------- | --------------------------- | -------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| violation | [Énumération](#Énumération) | No       | Type de violation  | Utilisez une des valeurs suivantes : `allCaps`, `duplicateText`, `emojis`, `hoist`, `invites`, `links`, `mentionRoles`, `mentionUsers`, `quickMessages`, `words` |
+| strikes   | [Nombre](#Nombre)           | No       | Nombre de Strikes. |                                                                                                                                                                  |
 
 ### Examples
 
@@ -1469,9 +1656,13 @@ Configure strikes received for various violations.
 !strikeConfig
 ```
 
+<a name='subtractFakes'></a>
+
+---
+
 ## !subtractFakes
 
-Remove fake invites from all users.
+Supprimez les fausses invitations de tous les utilisateurs.
 
 ### Usage
 
@@ -1481,19 +1672,23 @@ Remove fake invites from all users.
 
 ### Aliases
 
-* `!subtract-fakes`
-* `!subfakes`
-* `!sf`
+- `!subtract-fakes`
+- `!subfakes`
+- `!sf`
 
 ### Examples
 
 ```text
 !subtractFakes
 ```
+
+<a name='subtractLeaves'></a>
+
+---
 
 ## !subtractLeaves
 
-Remove leaves from all users
+Supprimer le nombre des invitations des personne qui ont quitter de tous les utilisateurs.
 
 ### Usage
 
@@ -1503,19 +1698,23 @@ Remove leaves from all users
 
 ### Aliases
 
-* `!subtract-leaves`
-* `!subleaves`
-* `!sl`
+- `!subtract-leaves`
+- `!subleaves`
+- `!sl`
 
 ### Examples
 
 ```text
 !subtractLeaves
 ```
+
+<a name='support'></a>
+
+---
 
 ## !support
 
-Get an invite link to our support server.
+Obtenez un lien d'invitation vers notre serveur d'assistance.
 
 ### Usage
 
@@ -1529,9 +1728,13 @@ Get an invite link to our support server.
 !support
 ```
 
+<a name='tryPremium'></a>
+
+---
+
 ## !tryPremium
 
-Try the premium version of InviteLogger for free for a limited duration.
+Essayez gratuitement la version premium d’InviteManager pour une durée limitée.
 
 ### Usage
 
@@ -1541,8 +1744,8 @@ Try the premium version of InviteLogger for free for a limited duration.
 
 ### Aliases
 
-* `!try`
-* `!try-premium`
+- `!try`
+- `!try-premium`
 
 ### Examples
 
@@ -1550,9 +1753,13 @@ Try the premium version of InviteLogger for free for a limited duration.
 !tryPremium
 ```
 
+<a name='unban'></a>
+
+---
+
 ## !unban
 
-Unban a user
+Dé-bannir un utilisateur
 
 ### Usage
 
@@ -1562,16 +1769,20 @@ Unban a user
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [User]() | Yes | The user that should be unbanned. |  |
-| reason | [Text]() | No | The reason why this user is unbanned. |  |
+| Argument | Type                        | Required | Description                                       | Details |
+| -------- | --------------------------- | -------- | ------------------------------------------------- | ------- |
+| user     | [Utilisateur](#Utilisateur) | Yes      | The user that should be unbanned.                 |         |
+| reason   | [Texte](#Texte)             | No       | La raison de pourquoi l'utilisateur est dé-banni. |         |
 
 ### Examples
 
+<a name='unhoist'></a>
+
+---
+
 ## !unhoist
 
-Add a character in front of all members with a special character in front of their name, so they will be shown at the end of the member list.
+Ajoute un caractère spécial devant le nom de chaque membre, donc ils seront affichés en dernier de la liste des membres.
 
 ### Usage
 
@@ -1581,7 +1792,7 @@ Add a character in front of all members with a special character in front of the
 
 ### Aliases
 
-* `!dehoist`
+- `!dehoist`
 
 ### Examples
 
@@ -1589,9 +1800,13 @@ Add a character in front of all members with a special character in front of the
 !unhoist
 ```
 
+<a name='unmute'></a>
+
+---
+
 ## !unmute
 
-Unmute a user
+Démuter un utilisateur
 
 ### Usage
 
@@ -1601,15 +1816,19 @@ Unmute a user
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| user | [Member]() | Yes | The user that should be unmuted. |  |
+| Argument | Type              | Required | Description                                 | Details |
+| -------- | ----------------- | -------- | ------------------------------------------- | ------- |
+| user     | [Membre](#Membre) | Yes      | L'utilisateur qui doit reprendre la parole. |         |
 
 ### Examples
 
+<a name='warn'></a>
+
+---
+
 ## !warn
 
-Warn a member.
+Avertir un membre.
 
 ### Usage
 
@@ -1619,10 +1838,9 @@ Warn a member.
 
 ### Arguments
 
-| Argument | Type | Required | Description | Details |
-| :--- | :--- | :--- | :--- | :--- |
-| member | [Member]() | Yes | Member to warn. |  |
-| reason | [Text]() | No | Why was the member was warned. |  |
+| Argument | Type              | Required | Description                      | Details |
+| -------- | ----------------- | -------- | -------------------------------- | ------- |
+| member   | [Membre](#Membre) | Yes      | Membre à avertir.                |         |
+| reason   | [Texte](#Texte)   | No       | Pourquoi le membre a été averti. |         |
 
 ### Examples
-
