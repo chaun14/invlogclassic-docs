@@ -1,176 +1,181 @@
-# Settings
+# Configs
 
 There are many config options that can be set. You don't have to set all of them. If you just added the bot, just run `!setup`, which will guide you through the most important ones.
 
 ## Overview
 
-### General
+### Paramètres de base
 
-| Setting | Description |
-| :--- | :--- |
-| [Prefix]() | The prefix used to trigger bot commands. |
-| [Language]() | The language of the bot |
-| [Log Channel]() | The channel where bot actions are logged. |
-| [Get Updates]() | Enable to receive development updates about InviteLogger. |
-| [Command channels]() | The channels in which the bot will react to commands. |
-| [Ignored channels]() | The channels in which the bot will ignore commands. |
+| Setting                                  | Description                                               |
+| ---------------------------------------- | --------------------------------------------------------- |
+| [Préfixe](#prefix)                       | Le préfixe utilisé pour les commandes du bot.             |
+| [Langage](#lang)                         | La langue du bot                                          |
+| [Salon des logs](#logchannel)            | Le salon dans lequel les actions du bot sont notées.      |
+| [Obtenir les mises à jour.](#getupdates) | Activer pour recevoir les mises à jour d'InviteManager.   |
+| [Channel des commandes](#channels)       | Le channel dans lequel le bot réagira aux commandes.      |
+| [Salons ignorés](#ignoredchannels)       | Les salons dans lesquelles le bot ignorera les commandes. |
 
-### Invites
+### Invitations
 
-#### General
+#### Général
 
-| Setting | Description |
-| :--- | :--- |
-| [Join Roles]() | Roles that are assigned to all members when joining. |
+| Setting                        | Description                                                  |
+| ------------------------------ | ------------------------------------------------------------ |
+| [Rôles d'arrivées](#joinroles) | Rôles assignés à tous les utilisateurs quand ils rejoignent. |
 
-#### Joins
+#### Arrivées
 
-| Setting | Description |
-| :--- | :--- |
-| [Message]() | The message sent when someone joins the server. |
-| [Message Channel]() | The channel that the message on join is sent to. |
+| Setting                                | Description                                              |
+| -------------------------------------- | -------------------------------------------------------- |
+| [Message d'arrivée](#joinmessage)      | Le message envoyé quand quelqu'un rejoint le serveur.    |
+| [Salon d'arrivée](#joinmessagechannel) | Le salon dans lequel le message de bienvenue est envoyé. |
 
-#### Leaves
+#### Départs
 
-| Setting | Description |
-| :--- | :--- |
-| [Message]() | The message sent when someone leaves the server. |
-| [Message Channel]() | The channel that the leave message is sent to. |
-| [Auto Subtract]() | Automatically remove invites from the inviter when the invited user leaves. |
-| [Auto Subtract Threshold]() | The time in seconds for which a user has to stay in the server for the invite to count. |
+| Setting                                                          | Description                                                                             |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Message de départ](#leavemessage)                               | Le message envoyé quand quelqu'un quitte le serveur.                                    |
+| [Salon de départ](#leavemessagechannel)                          | Le salon dans lequel est envoyé le message lorsque quelqu'un quitte le serveur.         |
+| [Soustraction automatique](#autosubtractleaves)                  | Enlève automatiquement les invitations de l'invitant quand l'utilisateur invité quitte. |
+| [Seuil de soustraction automatique](#autosubtractleavethreshold) | Le temps en secondes que doivent rester les utilisateurs pour que l'invitation compte.  |
 
-#### Leaderboard
+#### Classement
 
-| Setting | Description |
-| :--- | :--- |
-| [Style]() | The display style of the leaderboard. |
-| [Hide left members]() | Hide members that left the server from the leaderboard. |
+| Setting                                                      | Description                                                      |
+| ------------------------------------------------------------ | ---------------------------------------------------------------- |
+| [Style](#leaderboardstyle)                                   | Le style d'affichage du leaderboard.                             |
+| [Cacher les membres partis](#hideleftmembersfromleaderboard) | Cache les utilisateurs qui ont quitté le serveur du leaderboard. |
 
-#### Fakes
+#### Faux
 
-| Setting | Description |
-| :--- | :--- |
-| [Auto Subtract]() | Automatically subtract fake invites. |
+| Setting                                        | Description                                     |
+| ---------------------------------------------- | ----------------------------------------------- |
+| [Soustraction automatique](#autosubtractfakes) | Enlève automatiquement les fausses invitations. |
 
-#### Ranks
+#### Rangs
 
-| Setting | Description |
-| :--- | :--- |
-| [Assignment Style]() | How ranks are rewarded to users. |
-| [Announcement Channel]() | The channel where users receiving a new rank are announced. |
-| [Announcement Message]() | The message that is sent when a user receives a new rank. |
+| Setting                                        | Description                                                   |
+| ---------------------------------------------- | ------------------------------------------------------------- |
+| [Style d'assignement](#rankassignmentstyle)    | Comment les rangs sont donnés aux utilisateurs.               |
+| [Salon d'annonce](#rankannouncementchannel)    | Le salon où le nouveau niveau d'utilisateurs est annoncé.     |
+| [Message d'annonce ](#rankannouncementmessage) | Le message envoyé quand l'utilisateur reçois un nouveau rang. |
 
-### Moderation
+### Modération
 
 #### Captcha
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Whether or not captcha verification is enabled. |
-| [Welcome Message]() | The message a user will get after joining a server and instructing them to enter the captcha. |
-| [Success Message]() | The welcome message that will be sent to the user after he successfully verifies. |
-| [Failed Message]() | The message sent to the user if he enters an invalid captcha. |
-| [Verification Timeout]() | The time within which the captcha has to be entered successfully. |
-| [Log Enabled]() | Whether or not verification attempts will be logged. |
+| Setting                                                    | Description                                                                                                       |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| [Activé](#captchaverificationonjoin)                       | Si la vérification captcha est activée ou non.                                                                    |
+| [Message de bienvenue](#captchaverificationwelcomemessage) | Le message que l'utilisateur recevra après avoir rejoint le server et les instructions pour compléter le captcha. |
+| [Message de réussite](#captchaverificationsuccessmessage)  | Le message de bienvenue envoyé à l'utilisateur après une vérification réussie.                                    |
+| [Message d’échec](#captchaverificationfailedmessage)       | Le message envoyé à l'utilisateur si il a entré un mauvais captcha.                                               |
+| [Message de temps expiré](#captchaverificationtimeout)     | Le temps que l'utilisateur a pour valider le captcha.                                                             |
+| [Logs](#captchaverificationlogenabled)                     | Whether or not verification attempts will be logged                                                               |
 
-#### General
+#### Générale
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate messages \(specific rules can also be turned on or off, this has to be ON for ANY rule to work\). |
-| [Moderated Channels]() | The list of moderated channels \(this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels\). |
-| [Moderated Roles]() | The list of roles that are moderated \(this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles\). |
-| [Ignored Channels]() | Channels that are ignored while automatically moderating. |
-| [Ignored Roles]() | Any members with these roles will not automatically be moderated. |
-| [Muted Role]() | The role that is given to people who are muted. Make sure this role is denied the "Send Message" permission. |
-| [Disabled for Old Members]() | Disabled auto moderation for members that have been in your server for a long time. |
-| [Old Members Threshold]() | The amount of time a member has to be in your server to be considered 'old'. |
+| Setting                                                                  | Description                                                                                                                                                  |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Activé](#automodenabled)                                                | Modère automatiquement les messages (des règles peuvent être activées ou désactivées).                                                                       |
+| [Salons modérés](#automodmoderatedchannels)                              | The list of moderated channels (this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels). |
+| [Rôles modérés](#automodmoderatedroles)                                  | The list of roles that are moderated (this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles).    |
+| [Salons ignorés](#automodignoredchannels)                                | Salons ignorés lors de la modération automatique.                                                                                                            |
+| [Rôles ignorés](#automodignoredroles)                                    | N'importe quel membre avec ce rôle ne sera pas automatiquement modéré.                                                                                       |
+| [Rôle muet](#mutedrole)                                                  | Le rôle donné aux utilisateurs quand ils sont rendus muets. Vérifiez que ce rôle n'a pas la permission "Envoyer des messages"                                |
+| [Désactivé pour les anciens membres](#automoddisabledforoldmembers)      | Désactive la modération automatique pour les membres qui sont dans votre serveur depuis longtemps.                                                           |
+| [Seuil pour les anciens membres](#automoddisabledforoldmembersthreshold) | L'ancienneté d'un membre requise dans votre serveur pour être considéré comme "ancien".                                                                      |
 
-#### Logging
+#### Logger
 
-| Setting | Description |
-| :--- | :--- |
-| [Log Enabled]() | Log any moderation actions that the bot makes. |
-| [Mod Log Channel]() | The channel where moderation logs will be posted in. |
-| [Delete Bot Messages]() | Automatically delete the bots own messages \(keeps your chat clean\). |
-| [Delete Bot Message Timeout]() | The timeout after which bot messages are deleted. |
-| [Delete Ban Messages]() | Whether or not "Ban" pushment messages will be deleted automatically. |
-| [Delete Kick Messages]() | Whether or not "Kick" pushment messages will be deleted automatically. |
-| [Delete Softban Messages]() | Whether or not "Softban" pushment messages will be deleted automatically. |
-| [Delete Warn Messages]() | Whether or not "Warn" pushment messages will be deleted automatically. |
-| [Delete Mute Messages]() | Whether or not "Mute" pushment messages will be deleted automatically. |
+| Setting                                                                               | Description                                                                   |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [Mod Log Channel](#automodlogenabled)                                                 | Enregistre toutes les actions faites par le bot.                              |
+| [Salon des journaux de modération](#modlogchannel)                                    | Le salon où les notes de modérations seront postées.                          |
+| [Supprimer les messages du Bot](#automoddeletebotmessage)                             | Supprime automatiquement les messages du bot (garde le chat propre)           |
+| [Délai de suppression des messages du bot.](#automoddeletebotmessagetimeoutinseconds) | Le temps après lequel les messages du bot sont supprimés                      |
+| [Supprimer les messages de bannissement](#modpunishmentbandeletemessage)              | Si oui ou non les messages après un ban seront automatiquement supprimés.     |
+| [Supprimer les messages d'expulsion](#modpunishmentkickdeletemessage)                 | Si oui ou non les messages après un kick seront automatiquement supprimés.    |
+| [Supprime les messages de Softban](#modpunishmentsoftbandeletemessage)                | Si oui ou non les messages après un softban seront automatiquement supprimés. |
+| [Supprimer les messages d'avertissement](#modpunishmentwarndeletemessage)             | Si oui ou non les messages après un warn seront automatiquement supprimés.    |
+| [Supprimer les messages de mute](#modpunishmentmutedeletemessage)                     | Si oui ou non les messages après un mute seront automatiquement supprimés.    |
 
-#### Invites
+#### Invitations
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically scan messages for discord invite links and remove them. |
+| Setting                                                           | Description                                                                |
+| ----------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [Les invitations sont désormais modérées](#automodinvitesenabled) | Vérifie automatiquement les messages pour enlever les invitations Discord. |
 
-#### Links
+#### Liens
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically remove messages containing links \(you can set a whitelist and blacklist\). |
-| [Whitelist]() | A list of links that users are allowed to post. |
-| [Blacklist]() | Blacklist certain links which users won't be able to post. |
-| [Follow Redirects]() | Enable this to resolve redirects for links. |
+| Setting                                                  | Description                                                                                                            |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [Les liens sont désormais modérés](#automodlinksenabled) | Retire automatiquement les messages contenant des liens (vous pouvez configurer une liste blanche et une liste noire). |
+| [Liste blanche](#automodlinkswhitelist)                  | Une liste de liens que les utilisateurs peuvent poster.                                                                |
+| [Liste noire](#automodlinksblacklist)                    | Met sur liste noire certains liens que les utilisateurs ne pourront pas envoyer.                                       |
+| [Suivre les redirections](#automodlinksfollowredirects)  | Activez ceci pour corriger les redirections de liens.                                                                  |
 
-#### Banned Words
+#### Mots bannis
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Whether or not blacklisted words will be automoderated. |
-| [Blacklist]() | A list of words that are banned. |
+| Setting                               | Description                                               |
+| ------------------------------------- | --------------------------------------------------------- |
+| [Activé](#automodwordsenabled)        | Que les mots de la liste noire soient ou non automatisés. |
+| [Liste noire](#automodwordsblacklist) | Une liste de mots bannis.                                 |
 
-#### Caps
+#### Majuscules
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate messages with A LOT OF CAPS. |
-| [Min. Characters]() | The minimum amount of characters in a message to be considered for moderating \(setting to '3' would ignore 'OK'\). |
-| [Percentage CAPs]() | The percentage of characters of the message that have to be CAPs for the rule to trigger. |
+| Setting                                            | Description                                                                                                                  |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [Activé](#automodallcapsenabled)                   | Modère automatiquement les messages avec BEAUCOUP DE MAJUSCULES.                                                             |
+| [Caractères minimum](#automodallcapsmincharacters) | La quantité minimale de caractères dans un message à prendre en compte pour la modération (définir sur '3' ignorerait 'OK'). |
+| [Percentage Caps](#automodallcapspercentagecaps)   | Le pourcentage de caractères en majuscules dans le message pour que celui-ci soit modéré.                                    |
 
-#### Duplicate Messages
+#### Messages doublons
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate duplicate messages \(copy-paste spam\). |
-| [Timeframe in Seconds]() | The timeframe whithin which messages will be considered duplicates. |
+| Setting                                              | Description                                                                          |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [Activé](#automodduplicatetextenabled)               | Modère automatiquement les messages dupliqués (spam copié-collé)                     |
+| [Timeframe](#automodduplicatetexttimeframeinseconds) | L'écart de temps pour que les messages identiques soient considérés comme dupliqués. |
 
 #### Spam
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate users sending a lot of messages in a short time. |
-| [\# of Messages]() | The number of messages that have to be sent within the timeframe to trigger the rule. |
-| [Timeframe in Seconds]() | The timeframe within which a user is allowed to send a maximum amount of messages. |
+| Setting                                                     | Description                                                                                              |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [Activé](#automodquickmessagesenabled)                      | Modère automatiquement les utilisateurs qui envoient beucoup de messages rapidement.                     |
+| [Nombre de messages](#automodquickmessagesnumberofmessages) | Le nombre de messages qui doivent être envoyés pendant une certaine durée pour que celui-ci soit modéré. |
+| [Timeframe](#automodquickmessagestimeframeinseconds)        | La durée pendant laquelle l'utilisateur peut envoyer un nombre maximum de messages.                      |
 
 #### Mentions
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate messages that mention an excessive amount of users. |
-| [Max \# of Mentions]() | The maximum amount of users a member can mention in a message. |
-| [Enabled]() | Automatically moderate messages that mention an excessive amount of roles. |
-| [Max \# of Mentions]() | The maximum amount of roles a member can mention in a message. |
+| Setting                                                                                        | Description                                                                             |
+| ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Activé](#automodmentionusersenabled)                                                          | Retire automatiquement les messages avec un nombre excessif de mentions d'utilisateurs. |
+| [Nombre maximal de mentions utilisateurs par message](#automodmentionusersmaxnumberofmentions) | Le nombre maximal de d'utilisateurs qu'un membre peut mentionner en un message.         |
+| [Activé](#automodmentionrolesenabled)                                                          | Retire automatiquement les messages avec trop de mentions de rôles.                     |
+| [Nombre maximal de mentions de rôle par message](#automodmentionrolesmaxnumberofmentions)      | Le nombre maximal de rôles qu'un membre peut mentionner en un message.                  |
 
 #### Emojis
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate messages with an excessive amount of emojis. |
-| [Max \# of Emojis]() | The maximum amount of emojis a message is allowed to have before trigger the rule. |
-| [Enabled]() | Automatically give members nicknames if they try to hoist \(use special characters to appear at the top of the user list\). |
+| Setting                                                    | Description                                                                                                                                          |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Activé](#automodemojisenabled)                            | Modère automatiquement les messages avec trop d'emojis.                                                                                              |
+| [Nombre maximal d'émojis](#automodemojismaxnumberofemojis) | Le maximum d'emojis autorisés avant de modérer le message.                                                                                           |
+| [Activé](#automodhoistenabled)                             | Donne automatiquement des pseudos aux membres si ils essaient de tricher (en utilisant des caractères spéciaux pour apparaître en haut de la liste). |
 
-## Prefix
+<a name=prefix></a>
 
-The prefix used to trigger bot commands.
+---
+
+## Préfixe
+
+Le préfixe utilisé pour les commandes du bot.
 
 Type: `String`
 
 Default: `!`
 
-Reset to default: `!config prefix default`
+Reset to default:
+`!config prefix default`
 
 Examples:
 
@@ -178,15 +183,20 @@ Examples:
 
 `!config prefix >`
 
-## Language
+<a name=lang></a>
 
-The language of the bot
+---
+
+## Langage
+
+La langue du bot
 
 Type: `Enum<Lang>`
 
 Default: `en`
 
-Reset to default: `!config lang default`
+Reset to default:
+`!config lang default`
 
 Possible values: `ar`, `bg`, `cs`, `de`, `el`, `en`, `es`, `fr`, `hu`, `id_ID`, `it`, `ja`, `lt`, `nl`, `pl`, `pt`, `pt_BR`, `ro`, `ru`, `sr`, `tr`, `zh_CN`, `zh_TW`
 
@@ -194,29 +204,39 @@ Example:
 
 `!config lang ar`
 
-## Log Channel
+<a name=logChannel></a>
 
-The channel where bot actions are logged.
+---
+
+## Salon des logs
+
+Le salon dans lequel les actions du bot sont notées.
 
 Type: `Channel`
 
 Default: `null`
 
-Reset to default: `!config logChannel default`
+Reset to default:
+`!config logChannel default`
 
 Examples:
 
 `!config logChannel #channel`
 
-## Get Updates
+<a name=getUpdates></a>
 
-Enable to receive development updates about InviteLogger.
+---
+
+## Obtenir les mises à jour.
+
+Activer pour recevoir les mises à jour d'InviteManager.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config getUpdates default`
+Reset to default:
+`!config getUpdates default`
 
 Enable:
 
@@ -226,55 +246,80 @@ Disable:
 
 `!config getUpdates false`
 
-## Command channels
+<a name=channels></a>
 
-The channels in which the bot will react to commands.
+---
 
-Type: `Channel[]`
+## Channel des commandes
 
-Default: \`\`
-
-Reset to default: `!config channels default`
-
-## Ignored channels
-
-The channels in which the bot will ignore commands.
+Le channel dans lequel le bot réagira aux commandes.
 
 Type: `Channel[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config ignoredChannels default`
+Reset to default:
+`!config channels default`
 
-## Join Roles
+<a name=ignoredChannels></a>
 
-Roles that are assigned to all members when joining.
+---
+
+## Salons ignorés
+
+Les salons dans lesquelles le bot ignorera les commandes.
+
+Type: `Channel[]`
+
+Default: ``
+
+Reset to default:
+`!config ignoredChannels default`
+
+<a name=joinRoles></a>
+
+---
+
+## Rôles d'arrivées
+
+Rôles assignés à tous les utilisateurs quand ils rejoignent.
 
 Type: `Role[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config joinRoles default`
+Reset to default:
+`!config joinRoles default`
 
-## Message
+<a name=joinMessage></a>
 
-The message sent when someone joins the server.
+---
+
+## Message d'arrivée
+
+Le message envoyé quand quelqu'un rejoint le serveur.
 
 Type: `String`
 
 Default: `{memberMention} **joined**; Invited by **{inviterName}** (**{numInvites}** invites)`
 
-Reset to default: `!config joinMessage default`
+Reset to default:
+`!config joinMessage default`
 
-## Message Channel
+<a name=joinMessageChannel></a>
 
-The channel that the message on join is sent to.
+---
+
+## Salon d'arrivée
+
+Le salon dans lequel le message de bienvenue est envoyé.
 
 Type: `Channel`
 
 Default: `null`
 
-Reset to default: `!config joinMessageChannel default`
+Reset to default:
+`!config joinMessageChannel default`
 
 Examples:
 
@@ -282,15 +327,20 @@ Examples:
 
 `!config joinMessageChannel #joins`
 
-## Message
+<a name=leaveMessage></a>
 
-The message sent when someone leaves the server.
+---
+
+## Message de départ
+
+Le message envoyé quand quelqu'un quitte le serveur.
 
 Type: `String`
 
 Default: `{memberName} **left**; Invited by **{inviterName}**`
 
-Reset to default: `!config leaveMessage default`
+Reset to default:
+`!config leaveMessage default`
 
 Examples:
 
@@ -298,15 +348,20 @@ Examples:
 
 `!config leaveMessage`
 
-## Message Channel
+<a name=leaveMessageChannel></a>
 
-The channel that the leave message is sent to.
+---
+
+## Salon de départ
+
+Le salon dans lequel est envoyé le message lorsque quelqu'un quitte le serveur.
 
 Type: `Channel`
 
 Default: `null`
 
-Reset to default: `!config leaveMessageChannel default`
+Reset to default:
+`!config leaveMessageChannel default`
 
 Examples:
 
@@ -314,15 +369,20 @@ Examples:
 
 `!config leaveMessageChannel #leaves`
 
+<a name=leaderboardStyle></a>
+
+---
+
 ## Style
 
-The display style of the leaderboard.
+Le style d'affichage du leaderboard.
 
 Type: `Enum<LeaderboardStyle>`
 
 Default: `normal`
 
-Reset to default: `!config leaderboardStyle default`
+Reset to default:
+`!config leaderboardStyle default`
 
 Possible values: `normal`, `table`, `mentions`
 
@@ -330,15 +390,20 @@ Example:
 
 `!config leaderboardStyle normal`
 
-## Hide left members
+<a name=hideLeftMembersFromLeaderboard></a>
 
-Hide members that left the server from the leaderboard.
+---
+
+## Cacher les membres partis
+
+Cache les utilisateurs qui ont quitté le serveur du leaderboard.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config hideLeftMembersFromLeaderboard default`
+Reset to default:
+`!config hideLeftMembersFromLeaderboard default`
 
 Enable:
 
@@ -348,15 +413,20 @@ Disable:
 
 `!config hideLeftMembersFromLeaderboard false`
 
-## Auto Subtract
+<a name=autoSubtractFakes></a>
 
-Automatically subtract fake invites.
+---
+
+## Soustraction automatique
+
+Enlève automatiquement les fausses invitations.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoSubtractFakes default`
+Reset to default:
+`!config autoSubtractFakes default`
 
 Enable:
 
@@ -366,15 +436,20 @@ Disable:
 
 `!config autoSubtractFakes false`
 
-## Auto Subtract
+<a name=autoSubtractLeaves></a>
 
-Automatically remove invites from the inviter when the invited user leaves.
+---
+
+## Soustraction automatique
+
+Enlève automatiquement les invitations de l'invitant quand l'utilisateur invité quitte.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoSubtractLeaves default`
+Reset to default:
+`!config autoSubtractLeaves default`
 
 Enable:
 
@@ -384,15 +459,20 @@ Disable:
 
 `!config autoSubtractLeaves false`
 
-## Auto Subtract Threshold
+<a name=autoSubtractLeaveThreshold></a>
 
-The time in seconds for which a user has to stay in the server for the invite to count.
+---
+
+## Seuil de soustraction automatique
+
+Le temps en secondes que doivent rester les utilisateurs pour que l'invitation compte.
 
 Type: `Number`
 
 Default: `600`
 
-Reset to default: `!config autoSubtractLeaveThreshold default`
+Reset to default:
+`!config autoSubtractLeaveThreshold default`
 
 Examples:
 
@@ -400,15 +480,20 @@ Examples:
 
 `!config autoSubtractLeaveThreshold 3600`
 
-## Assignment Style
+<a name=rankAssignmentStyle></a>
 
-How ranks are rewarded to users.
+---
+
+## Style d'assignement
+
+Comment les rangs sont donnés aux utilisateurs.
 
 Type: `Enum<RankAssignmentStyle>`
 
 Default: `all`
 
-Reset to default: `!config rankAssignmentStyle default`
+Reset to default:
+`!config rankAssignmentStyle default`
 
 Possible values: `all`, `highest`, `onlyAdd`
 
@@ -416,15 +501,20 @@ Example:
 
 `!config rankAssignmentStyle all`
 
-## Announcement Channel
+<a name=rankAnnouncementChannel></a>
 
-The channel where users receiving a new rank are announced.
+---
+
+## Salon d'annonce
+
+Le salon où le nouveau niveau d'utilisateurs est annoncé.
 
 Type: `Channel`
 
 Default: `null`
 
-Reset to default: `!config rankAnnouncementChannel default`
+Reset to default:
+`!config rankAnnouncementChannel default`
 
 Examples:
 
@@ -432,15 +522,20 @@ Examples:
 
 `!config rankAnnouncementChannel`
 
-## Announcement Message
+<a name=rankAnnouncementMessage></a>
 
-The message that is sent when a user receives a new rank.
+---
+
+## Message d'annonce
+
+Le message envoyé quand l'utilisateur reçois un nouveau rang.
 
 Type: `String`
 
 Default: `Congratulations, **{memberMention}** has reached the **{rankName}** rank!`
 
-Reset to default: `!config rankAnnouncementMessage default`
+Reset to default:
+`!config rankAnnouncementMessage default`
 
 Examples:
 
@@ -448,15 +543,20 @@ Examples:
 
 `!config rankAnnouncementMessage`
 
-## Enabled
+<a name=captchaVerificationOnJoin></a>
 
-Whether or not captcha verification is enabled.
+---
+
+## Activé
+
+Si la vérification captcha est activée ou non.
 
 Type: `Boolean`
 
 Default: `false`
 
-Reset to default: `!config captchaVerificationOnJoin default`
+Reset to default:
+`!config captchaVerificationOnJoin default`
 
 Enable:
 
@@ -466,57 +566,77 @@ Disable:
 
 `!config captchaVerificationOnJoin false`
 
-## Welcome Message
+<a name=captchaVerificationWelcomeMessage></a>
 
-The message a user will get after joining a server and instructing them to enter the captcha.
+---
+
+## Message de bienvenue
+
+Le message que l'utilisateur recevra après avoir rejoint le server et les instructions pour compléter le captcha.
 
 Type: `String`
 
 Default: `Welcome to the server **{serverName}**! For extra protection, new members are required to enter a captcha.`
 
-Reset to default: `!config captchaVerificationWelcomeMessage default`
+Reset to default:
+`!config captchaVerificationWelcomeMessage default`
 
 Examples:
 
 `!config captchaVerificationWelcomeMessage Welcome, please enter the captcha below!`
 
-## Success Message
+<a name=captchaVerificationSuccessMessage></a>
 
-The welcome message that will be sent to the user after he successfully verifies.
+---
+
+## Message de réussite
+
+Le message de bienvenue envoyé à l'utilisateur après une vérification réussie.
 
 Type: `String`
 
 Default: `You have successfully entered the captcha. Welcome to the server!`
 
-Reset to default: `!config captchaVerificationSuccessMessage default`
+Reset to default:
+`!config captchaVerificationSuccessMessage default`
 
 Examples:
 
 `!config captchaVerificationSuccessMessage Thanks for entering the captcha, enjoy our server!`
 
-## Failed Message
+<a name=captchaVerificationFailedMessage></a>
 
-The message sent to the user if he enters an invalid captcha.
+---
+
+## Message d’échec
+
+Le message envoyé à l'utilisateur si il a entré un mauvais captcha.
 
 Type: `String`
 
 Default: `You did not enter the captha right within the specified time.We're sorry, but we have to kick you from the server. Feel free to join again.`
 
-Reset to default: `!config captchaVerificationFailedMessage default`
+Reset to default:
+`!config captchaVerificationFailedMessage default`
 
 Examples:
 
 `!config captchaVerificationFailedMessage Looks like you are not human :(. You can join again and try again later if this was a mistake!`
 
-## Verification Timeout
+<a name=captchaVerificationTimeout></a>
 
-The time within which the captcha has to be entered successfully.
+---
+
+## Message de temps expiré
+
+Le temps que l'utilisateur a pour valider le captcha.
 
 Type: `Number`
 
 Default: `180`
 
-Reset to default: `!config captchaVerificationTimeout default`
+Reset to default:
+`!config captchaVerificationTimeout default`
 
 Examples:
 
@@ -524,15 +644,20 @@ Examples:
 
 `!config captchaVerificationTimeout 600`
 
-## Log Enabled
+<a name=captchaVerificationLogEnabled></a>
 
-Whether or not verification attempts will be logged.
+---
+
+## Logs
+
+Whether or not verification attempts will be logged
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config captchaVerificationLogEnabled default`
+Reset to default:
+`!config captchaVerificationLogEnabled default`
 
 Enable:
 
@@ -542,15 +667,20 @@ Disable:
 
 `!config captchaVerificationLogEnabled false`
 
-## Enabled
+<a name=autoModEnabled></a>
 
-Automatically moderate messages \(specific rules can also be turned on or off, this has to be ON for ANY rule to work\).
+---
+
+## Activé
+
+Modère automatiquement les messages (des règles peuvent être activées ou désactivées).
 
 Type: `Boolean`
 
 Default: `false`
 
-Reset to default: `!config autoModEnabled default`
+Reset to default:
+`!config autoModEnabled default`
 
 Enable:
 
@@ -560,15 +690,20 @@ Disable:
 
 `!config autoModEnabled false`
 
-## Moderated Channels
+<a name=autoModModeratedChannels></a>
 
-The list of moderated channels \(this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels\).
+---
+
+## Salons modérés
+
+The list of moderated channels (this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels).
 
 Type: `Channel[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config autoModModeratedChannels default`
+Reset to default:
+`!config autoModModeratedChannels default`
 
 Examples:
 
@@ -576,15 +711,20 @@ Examples:
 
 `!config autoModModeratedChannels #support,#help`
 
-## Moderated Roles
+<a name=autoModModeratedRoles></a>
 
-The list of roles that are moderated \(this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles\).
+---
+
+## Rôles modérés
+
+The list of roles that are moderated (this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles).
 
 Type: `Role[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config autoModModeratedRoles default`
+Reset to default:
+`!config autoModModeratedRoles default`
 
 Examples:
 
@@ -592,15 +732,20 @@ Examples:
 
 `!config autoModModeratedRoles @Newbies,@Starters`
 
-## Ignored Channels
+<a name=autoModIgnoredChannels></a>
 
-Channels that are ignored while automatically moderating.
+---
+
+## Salons ignorés
+
+Salons ignorés lors de la modération automatique.
 
 Type: `Channel[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config autoModIgnoredChannels default`
+Reset to default:
+`!config autoModIgnoredChannels default`
 
 Examples:
 
@@ -608,15 +753,20 @@ Examples:
 
 `!config autoModIgnoredChannels #off-topic,#nsfw`
 
-## Ignored Roles
+<a name=autoModIgnoredRoles></a>
 
-Any members with these roles will not automatically be moderated.
+---
+
+## Rôles ignorés
+
+N'importe quel membre avec ce rôle ne sera pas automatiquement modéré.
 
 Type: `Role[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config autoModIgnoredRoles default`
+Reset to default:
+`!config autoModIgnoredRoles default`
 
 Examples:
 
@@ -624,29 +774,39 @@ Examples:
 
 `!config autoModIgnoredRoles @Moderators,@Staff`
 
-## Muted Role
+<a name=mutedRole></a>
 
-The role that is given to people who are muted. Make sure this role is denied the "Send Message" permission.
+---
+
+## Rôle muet
+
+Le rôle donné aux utilisateurs quand ils sont rendus muets. Vérifiez que ce rôle n'a pas la permission "Envoyer des messages"
 
 Type: `Role`
 
 Default: `null`
 
-Reset to default: `!config mutedRole default`
+Reset to default:
+`!config mutedRole default`
 
 Examples:
 
 `!config mutedRole @muted`
 
-## Disabled for Old Members
+<a name=autoModDisabledForOldMembers></a>
 
-Disabled auto moderation for members that have been in your server for a long time.
+---
+
+## Désactivé pour les anciens membres
+
+Désactive la modération automatique pour les membres qui sont dans votre serveur depuis longtemps.
 
 Type: `Boolean`
 
 Default: `false`
 
-Reset to default: `!config autoModDisabledForOldMembers default`
+Reset to default:
+`!config autoModDisabledForOldMembers default`
 
 Enable:
 
@@ -656,31 +816,41 @@ Disable:
 
 `!config autoModDisabledForOldMembers false`
 
-## Old Members Threshold
+<a name=autoModDisabledForOldMembersThreshold></a>
 
-The amount of time a member has to be in your server to be considered 'old'.
+---
+
+## Seuil pour les anciens membres
+
+L'ancienneté d'un membre requise dans votre serveur pour être considéré comme "ancien".
 
 Type: `Number`
 
 Default: `604800`
 
-Reset to default: `!config autoModDisabledForOldMembersThreshold default`
+Reset to default:
+`!config autoModDisabledForOldMembersThreshold default`
 
 Examples:
 
-`!config autoModDisabledForOldMembersThreshold 604800` \(1 week\)\`\`
+`!config autoModDisabledForOldMembersThreshold 604800` (1 week)``
 
-`!config autoModDisabledForOldMembersThreshold 2419200` \(1 month\)\`\`
+`!config autoModDisabledForOldMembersThreshold 2419200` (1 month)``
 
-## Log Enabled
+<a name=autoModLogEnabled></a>
 
-Log any moderation actions that the bot makes.
+---
+
+## Mod Log Channel
+
+Enregistre toutes les actions faites par le bot.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModLogEnabled default`
+Reset to default:
+`!config autoModLogEnabled default`
 
 Enable:
 
@@ -690,15 +860,20 @@ Disable:
 
 `!config autoModLogEnabled false`
 
-## Mod Log Channel
+<a name=modLogChannel></a>
 
-The channel where moderation logs will be posted in.
+---
+
+## Salon des journaux de modération
+
+Le salon où les notes de modérations seront postées.
 
 Type: `Channel`
 
 Default: `null`
 
-Reset to default: `!config modLogChannel default`
+Reset to default:
+`!config modLogChannel default`
 
 Examples:
 
@@ -706,15 +881,20 @@ Examples:
 
 `!config modLogChannel #logs`
 
-## Delete Bot Messages
+<a name=autoModDeleteBotMessage></a>
 
-Automatically delete the bots own messages \(keeps your chat clean\).
+---
+
+## Supprimer les messages du Bot
+
+Supprime automatiquement les messages du bot (garde le chat propre)
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModDeleteBotMessage default`
+Reset to default:
+`!config autoModDeleteBotMessage default`
 
 Enable:
 
@@ -724,15 +904,20 @@ Disable:
 
 `!config autoModDeleteBotMessage false`
 
-## Delete Bot Message Timeout
+<a name=autoModDeleteBotMessageTimeoutInSeconds></a>
 
-The timeout after which bot messages are deleted.
+---
+
+## Délai de suppression des messages du bot.
+
+Le temps après lequel les messages du bot sont supprimés
 
 Type: `Number`
 
 Default: `5`
 
-Reset to default: `!config autoModDeleteBotMessageTimeoutInSeconds default`
+Reset to default:
+`!config autoModDeleteBotMessageTimeoutInSeconds default`
 
 Examples:
 
@@ -740,15 +925,20 @@ Examples:
 
 `!config autoModDeleteBotMessageTimeoutInSeconds 10`
 
-## Delete Ban Messages
+<a name=modPunishmentBanDeleteMessage></a>
 
-Whether or not "Ban" pushment messages will be deleted automatically.
+---
+
+## Supprimer les messages de bannissement
+
+Si oui ou non les messages après un ban seront automatiquement supprimés.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config modPunishmentBanDeleteMessage default`
+Reset to default:
+`!config modPunishmentBanDeleteMessage default`
 
 Enable:
 
@@ -758,15 +948,20 @@ Disable:
 
 `!config modPunishmentBanDeleteMessage false`
 
-## Delete Kick Messages
+<a name=modPunishmentKickDeleteMessage></a>
 
-Whether or not "Kick" pushment messages will be deleted automatically.
+---
+
+## Supprimer les messages d'expulsion
+
+Si oui ou non les messages après un kick seront automatiquement supprimés.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config modPunishmentKickDeleteMessage default`
+Reset to default:
+`!config modPunishmentKickDeleteMessage default`
 
 Enable:
 
@@ -776,15 +971,20 @@ Disable:
 
 `!config modPunishmentKickDeleteMessage false`
 
-## Delete Softban Messages
+<a name=modPunishmentSoftbanDeleteMessage></a>
 
-Whether or not "Softban" pushment messages will be deleted automatically.
+---
+
+## Supprime les messages de Softban
+
+Si oui ou non les messages après un softban seront automatiquement supprimés.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config modPunishmentSoftbanDeleteMessage default`
+Reset to default:
+`!config modPunishmentSoftbanDeleteMessage default`
 
 Enable:
 
@@ -794,15 +994,20 @@ Disable:
 
 `!config modPunishmentSoftbanDeleteMessage false`
 
-## Delete Warn Messages
+<a name=modPunishmentWarnDeleteMessage></a>
 
-Whether or not "Warn" pushment messages will be deleted automatically.
+---
+
+## Supprimer les messages d'avertissement
+
+Si oui ou non les messages après un warn seront automatiquement supprimés.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config modPunishmentWarnDeleteMessage default`
+Reset to default:
+`!config modPunishmentWarnDeleteMessage default`
 
 Enable:
 
@@ -812,15 +1017,20 @@ Disable:
 
 `!config modPunishmentWarnDeleteMessage false`
 
-## Delete Mute Messages
+<a name=modPunishmentMuteDeleteMessage></a>
 
-Whether or not "Mute" pushment messages will be deleted automatically.
+---
+
+## Supprimer les messages de mute
+
+Si oui ou non les messages après un mute seront automatiquement supprimés.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config modPunishmentMuteDeleteMessage default`
+Reset to default:
+`!config modPunishmentMuteDeleteMessage default`
 
 Enable:
 
@@ -830,15 +1040,20 @@ Disable:
 
 `!config modPunishmentMuteDeleteMessage false`
 
-## Enabled
+<a name=autoModInvitesEnabled></a>
 
-Automatically scan messages for discord invite links and remove them.
+---
+
+## Les invitations sont désormais modérées
+
+Vérifie automatiquement les messages pour enlever les invitations Discord.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModInvitesEnabled default`
+Reset to default:
+`!config autoModInvitesEnabled default`
 
 Enable:
 
@@ -848,15 +1063,20 @@ Disable:
 
 `!config autoModInvitesEnabled false`
 
-## Enabled
+<a name=autoModLinksEnabled></a>
 
-Automatically remove messages containing links \(you can set a whitelist and blacklist\).
+---
+
+## Les liens sont désormais modérés
+
+Retire automatiquement les messages contenant des liens (vous pouvez configurer une liste blanche et une liste noire).
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModLinksEnabled default`
+Reset to default:
+`!config autoModLinksEnabled default`
 
 Enable:
 
@@ -866,15 +1086,20 @@ Disable:
 
 `!config autoModLinksEnabled false`
 
-## Whitelist
+<a name=autoModLinksWhitelist></a>
 
-A list of links that users are allowed to post.
+---
+
+## Liste blanche
+
+Une liste de liens que les utilisateurs peuvent poster.
 
 Type: `String[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config autoModLinksWhitelist default`
+Reset to default:
+`!config autoModLinksWhitelist default`
 
 Examples:
 
@@ -882,15 +1107,20 @@ Examples:
 
 `!config autoModLinksWhitelist youtube.com,twitch.com`
 
-## Blacklist
+<a name=autoModLinksBlacklist></a>
 
-Blacklist certain links which users won't be able to post.
+---
+
+## Liste noire
+
+Met sur liste noire certains liens que les utilisateurs ne pourront pas envoyer.
 
 Type: `String[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config autoModLinksBlacklist default`
+Reset to default:
+`!config autoModLinksBlacklist default`
 
 Examples:
 
@@ -898,15 +1128,20 @@ Examples:
 
 `!config autoModLinksBlacklist twitch.com,youtube.com`
 
-## Follow Redirects
+<a name=autoModLinksFollowRedirects></a>
 
-Enable this to resolve redirects for links.
+---
+
+## Suivre les redirections
+
+Activez ceci pour corriger les redirections de liens.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModLinksFollowRedirects default`
+Reset to default:
+`!config autoModLinksFollowRedirects default`
 
 Enable:
 
@@ -916,15 +1151,20 @@ Disable:
 
 `!config autoModLinksFollowRedirects false`
 
-## Enabled
+<a name=autoModWordsEnabled></a>
 
-Whether or not blacklisted words will be automoderated.
+---
+
+## Activé
+
+Que les mots de la liste noire soient ou non automatisés.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModWordsEnabled default`
+Reset to default:
+`!config autoModWordsEnabled default`
 
 Enable:
 
@@ -934,15 +1174,20 @@ Disable:
 
 `!config autoModWordsEnabled false`
 
-## Blacklist
+<a name=autoModWordsBlacklist></a>
 
-A list of words that are banned.
+---
+
+## Liste noire
+
+Une liste de mots bannis.
 
 Type: `String[]`
 
-Default: \`\`
+Default: ``
 
-Reset to default: `!config autoModWordsBlacklist default`
+Reset to default:
+`!config autoModWordsBlacklist default`
 
 Examples:
 
@@ -950,15 +1195,20 @@ Examples:
 
 `!config autoModWordsBlacklist stupid,fuck`
 
-## Enabled
+<a name=autoModAllCapsEnabled></a>
 
-Automatically moderate messages with A LOT OF CAPS.
+---
+
+## Activé
+
+Modère automatiquement les messages avec BEAUCOUP DE MAJUSCULES.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModAllCapsEnabled default`
+Reset to default:
+`!config autoModAllCapsEnabled default`
 
 Enable:
 
@@ -968,15 +1218,20 @@ Disable:
 
 `!config autoModAllCapsEnabled false`
 
-## Min. Characters
+<a name=autoModAllCapsMinCharacters></a>
 
-The minimum amount of characters in a message to be considered for moderating \(setting to '3' would ignore 'OK'\).
+---
+
+## Caractères minimum
+
+La quantité minimale de caractères dans un message à prendre en compte pour la modération (définir sur '3' ignorerait 'OK').
 
 Type: `Number`
 
 Default: `10`
 
-Reset to default: `!config autoModAllCapsMinCharacters default`
+Reset to default:
+`!config autoModAllCapsMinCharacters default`
 
 Examples:
 
@@ -984,15 +1239,20 @@ Examples:
 
 `!config autoModAllCapsMinCharacters 15`
 
-## Percentage CAPs
+<a name=autoModAllCapsPercentageCaps></a>
 
-The percentage of characters of the message that have to be CAPs for the rule to trigger.
+---
+
+## Percentage Caps
+
+Le pourcentage de caractères en majuscules dans le message pour que celui-ci soit modéré.
 
 Type: `Number`
 
 Default: `70`
 
-Reset to default: `!config autoModAllCapsPercentageCaps default`
+Reset to default:
+`!config autoModAllCapsPercentageCaps default`
 
 Examples:
 
@@ -1000,15 +1260,20 @@ Examples:
 
 `!config autoModAllCapsPercentageCaps 90`
 
-## Enabled
+<a name=autoModDuplicateTextEnabled></a>
 
-Automatically moderate duplicate messages \(copy-paste spam\).
+---
+
+## Activé
+
+Modère automatiquement les messages dupliqués (spam copié-collé)
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModDuplicateTextEnabled default`
+Reset to default:
+`!config autoModDuplicateTextEnabled default`
 
 Enable:
 
@@ -1018,15 +1283,20 @@ Disable:
 
 `!config autoModDuplicateTextEnabled false`
 
-## Timeframe in Seconds
+<a name=autoModDuplicateTextTimeframeInSeconds></a>
 
-The timeframe whithin which messages will be considered duplicates.
+---
+
+## Timeframe
+
+L'écart de temps pour que les messages identiques soient considérés comme dupliqués.
 
 Type: `Number`
 
 Default: `60`
 
-Reset to default: `!config autoModDuplicateTextTimeframeInSeconds default`
+Reset to default:
+`!config autoModDuplicateTextTimeframeInSeconds default`
 
 Examples:
 
@@ -1034,15 +1304,20 @@ Examples:
 
 `!config autoModDuplicateTextTimeframeInSeconds 20`
 
-## Enabled
+<a name=autoModQuickMessagesEnabled></a>
 
-Automatically moderate users sending a lot of messages in a short time.
+---
+
+## Activé
+
+Modère automatiquement les utilisateurs qui envoient beucoup de messages rapidement.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModQuickMessagesEnabled default`
+Reset to default:
+`!config autoModQuickMessagesEnabled default`
 
 Enable:
 
@@ -1052,15 +1327,20 @@ Disable:
 
 `!config autoModQuickMessagesEnabled false`
 
-## \# of Messages
+<a name=autoModQuickMessagesNumberOfMessages></a>
 
-The number of messages that have to be sent within the timeframe to trigger the rule.
+---
+
+## Nombre de messages
+
+Le nombre de messages qui doivent être envoyés pendant une certaine durée pour que celui-ci soit modéré.
 
 Type: `Number`
 
 Default: `5`
 
-Reset to default: `!config autoModQuickMessagesNumberOfMessages default`
+Reset to default:
+`!config autoModQuickMessagesNumberOfMessages default`
 
 Examples:
 
@@ -1068,15 +1348,20 @@ Examples:
 
 `!config autoModQuickMessagesNumberOfMessages 10`
 
-## Timeframe in Seconds
+<a name=autoModQuickMessagesTimeframeInSeconds></a>
 
-The timeframe within which a user is allowed to send a maximum amount of messages.
+---
+
+## Timeframe
+
+La durée pendant laquelle l'utilisateur peut envoyer un nombre maximum de messages.
 
 Type: `Number`
 
 Default: `3`
 
-Reset to default: `!config autoModQuickMessagesTimeframeInSeconds default`
+Reset to default:
+`!config autoModQuickMessagesTimeframeInSeconds default`
 
 Examples:
 
@@ -1084,15 +1369,20 @@ Examples:
 
 `!config autoModQuickMessagesTimeframeInSeconds 10`
 
-## Enabled
+<a name=autoModMentionUsersEnabled></a>
 
-Automatically moderate messages that mention an excessive amount of users.
+---
+
+## Activé
+
+Retire automatiquement les messages avec un nombre excessif de mentions d'utilisateurs.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModMentionUsersEnabled default`
+Reset to default:
+`!config autoModMentionUsersEnabled default`
 
 Enable:
 
@@ -1102,15 +1392,20 @@ Disable:
 
 `!config autoModMentionUsersEnabled false`
 
-## Max \# of Mentions
+<a name=autoModMentionUsersMaxNumberOfMentions></a>
 
-The maximum amount of users a member can mention in a message.
+---
+
+## Nombre maximal de mentions utilisateurs par message
+
+Le nombre maximal de d'utilisateurs qu'un membre peut mentionner en un message.
 
 Type: `Number`
 
 Default: `5`
 
-Reset to default: `!config autoModMentionUsersMaxNumberOfMentions default`
+Reset to default:
+`!config autoModMentionUsersMaxNumberOfMentions default`
 
 Examples:
 
@@ -1118,15 +1413,20 @@ Examples:
 
 `!config autoModMentionUsersMaxNumberOfMentions 5`
 
-## Enabled
+<a name=autoModMentionRolesEnabled></a>
 
-Automatically moderate messages that mention an excessive amount of roles.
+---
+
+## Activé
+
+Retire automatiquement les messages avec trop de mentions de rôles.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModMentionRolesEnabled default`
+Reset to default:
+`!config autoModMentionRolesEnabled default`
 
 Enable:
 
@@ -1136,15 +1436,20 @@ Disable:
 
 `!config autoModMentionRolesEnabled false`
 
-## Max \# of Mentions
+<a name=autoModMentionRolesMaxNumberOfMentions></a>
 
-The maximum amount of roles a member can mention in a message.
+---
+
+## Nombre maximal de mentions de rôle par message
+
+Le nombre maximal de rôles qu'un membre peut mentionner en un message.
 
 Type: `Number`
 
 Default: `3`
 
-Reset to default: `!config autoModMentionRolesMaxNumberOfMentions default`
+Reset to default:
+`!config autoModMentionRolesMaxNumberOfMentions default`
 
 Examples:
 
@@ -1152,15 +1457,20 @@ Examples:
 
 `!config autoModMentionRolesMaxNumberOfMentions 5`
 
-## Enabled
+<a name=autoModEmojisEnabled></a>
 
-Automatically moderate messages with an excessive amount of emojis.
+---
+
+## Activé
+
+Modère automatiquement les messages avec trop d'emojis.
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModEmojisEnabled default`
+Reset to default:
+`!config autoModEmojisEnabled default`
 
 Enable:
 
@@ -1170,15 +1480,20 @@ Disable:
 
 `!config autoModEmojisEnabled false`
 
-## Max \# of Emojis
+<a name=autoModEmojisMaxNumberOfEmojis></a>
 
-The maximum amount of emojis a message is allowed to have before trigger the rule.
+---
+
+## Nombre maximal d'émojis
+
+Le maximum d'emojis autorisés avant de modérer le message.
 
 Type: `Number`
 
 Default: `5`
 
-Reset to default: `!config autoModEmojisMaxNumberOfEmojis default`
+Reset to default:
+`!config autoModEmojisMaxNumberOfEmojis default`
 
 Examples:
 
@@ -1186,15 +1501,20 @@ Examples:
 
 `!config autoModEmojisMaxNumberOfEmojis 10`
 
-## Enabled
+<a name=autoModHoistEnabled></a>
 
-Automatically give members nicknames if they try to hoist \(use special characters to appear at the top of the user list\).
+---
+
+## Activé
+
+Donne automatiquement des pseudos aux membres si ils essaient de tricher (en utilisant des caractères spéciaux pour apparaître en haut de la liste).
 
 Type: `Boolean`
 
 Default: `true`
 
-Reset to default: `!config autoModHoistEnabled default`
+Reset to default:
+`!config autoModHoistEnabled default`
 
 Enable:
 
@@ -1203,4 +1523,3 @@ Enable:
 Disable:
 
 `!config autoModHoistEnabled false`
-
