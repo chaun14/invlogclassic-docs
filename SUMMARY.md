@@ -11,3 +11,8 @@
   * [Examples](modules/invites/examples.md)
   * [Custom Messages](modules/invites/custom-messages.md)
 
+## references
+
+* [Commands](references/commands.md)
+* [Settings](references/settings.md)
+
