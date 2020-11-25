@@ -3,7 +3,7 @@
 ## Referans
 
 * [Komutlar](references/commands.md)
-* [Configs / Settings](references/settings.md)
+* [Ayarlamalar](references/settings.md)
 
 ## Başlangıç
 
@@ -17,9 +17,9 @@ Botumuz sunucunuzdayken, sunucunuzda gerçekleşen her daveti izleriz. Discord s
 
 Yeni moderasyon sistemimiz birçok şeyi otomatik olarak yönetmenizi sağlar. Daha fazla bilgi için lütfen [strikes](/tr/modules/moderation/strikes.md) ve [punishments](/tr/modules/moderation/punishments.md) sayfalarımızı kontrol edin. Kısacası, botumuz yanlış davranan insanlara 'grev' verir ve belirli bir grevden sonra kullanıcı bir ceza alır. Tüm bunlar kullanıcı tarafından yapılandırılabilir.
 
-## Bot lists:
+## Bot Listler:
 
-Vote to the bot to help us on different bot list !
+Farklı bot listlerde bize yardımcı olmak için bota oy verin!
 
 `infinitybotlist:`
 
