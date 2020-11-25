@@ -18,12 +18,10 @@ While our bot is on your server, we track every invite that happens on your serv
 Our brand new moderation system allows you to auto-moderate many things. Please check our [strikes](modules/moderation-1/strikes.md) and [punishments](modules/moderation-1/punishments.md) pages for more info. In short, our bot gives out 'strikes' to people who misbehave, and after a certain amount of strikes, the user receives a punishment. All of this is configurable by the user.
 
 ## Bot lists:
-Vote to the bot to help us on different bot list !
 
+Vote to the bot to help us on different bot list !
 
 `infinitybotlist:`
 
-
 [![infinitybotlist](https://infinitybotlist.com/bots/617497548743245835/widget?size=large)](https://infinitybotlist.com/bots/617497548743245835/vote)
-
 

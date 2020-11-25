@@ -1,10 +1,10 @@
-# FAQs}
+# FAQ
 
 ## How do I change the prefix of the bot?
 
 You can do `!config prefix -` to change the prefix.
 
-If you don't know your current prefix, you can do `@InviteManager config prefix` to see the prefix.
+If you don't know your current prefix, you can do `@inviteLogger classic config prefix` to see the prefix.
 
 ## How do I set join and leave messages?
 
@@ -28,7 +28,7 @@ or
 
 `!config leaveMessage {memberName} **left**; Invited by **{inviterName}**`.
 
-There are many placeholders available. You can see the full list on the '[Custom Messages](/en/modules/invites/custom-messages.md)' page.
+There are many placeholders available. You can see the full list on the '[Custom Messages](../modules/invites/custom-messages.md#placeholders)' page.
 
 ## What are 'Ranks' and how can I use them?
 
@@ -40,4 +40,5 @@ Take away the read message permissions in the channels where you don't want the 
 
 ## Limitation: No advanced tracking before the bot joins
 
-Advanced tracking (who invited who) only works after you have invited the bot. The bot will still know everyones invite count after you invite it, don't worry. Just the additional information is missing and can only be collected for members who join after you invited the bot.
+Advanced tracking \(who invited who\) only works after you have invited the bot. The bot will still know everyones invite count after you invite it, don't worry. Just the additional information is missing and can only be collected for members who join after you invited the bot.
+
