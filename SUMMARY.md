@@ -11,12 +11,12 @@
 * [Invites](modules/invites/README.md)
   * [Examples](modules/invites/examples.md)
   * [Custom Messages](modules/invites/custom-messages.md)
-* [Moderation](modules/moderation-1/README.md)
-  * [Punishments](modules/moderation-1/punishments.md)
-  * [Strikes](modules/moderation-1/strikes.md)
+* [Modération](modules/moderation/README.md)
+  * [Punishments](modules/moderation/punishments.md)
+  * [Strikes](modules/moderation/strikes.md)
 
 ## references
 
-* [Commands](references/commands.md)
-* [Settings](references/settings.md)
+* [Commandes](references/commands.md)
+* [Options](references/settings.md)
 

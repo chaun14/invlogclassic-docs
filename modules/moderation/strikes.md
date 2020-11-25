@@ -8,15 +8,15 @@ Strikes are points that users get for violating server rules. Every time the use
 
 Violations are auto-moderation rules that you can enable or disable on your server. Currently, the following violations exist:
 
-- [invites](strikes.md#invites)
-- [links](strikes.md#links)
-- [words](strikes.md#words)
-- [allCaps](strikes.md#allcaps)
-- [duplicateText](strikes.md#duplicatetext)
-- [quickMessages](strikes.md#quickmessages)
-- [mentionUsers](strikes.md#mentionusers)
-- [mentionRoles](strikes.md#mentionroles)
-- [emojis](strikes.md#emojis)
+* [invites](strikes.md#invites)
+* [links](strikes.md#links)
+* [words](strikes.md#words)
+* [allCaps](strikes.md#allcaps)
+* [duplicateText](strikes.md#duplicatetext)
+* [quickMessages](strikes.md#quickmessages)
+* [mentionUsers](strikes.md#mentionusers)
+* [mentionRoles](strikes.md#mentionroles)
+* [emojis](strikes.md#emojis)
 
 For each of those violations, you have to define how many strikes will be given if someone violates it. You can do that by using the `strikeconfig` command:
 
@@ -52,7 +52,7 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModInvitesEnabled](https://docs.invitemanager.co/bot/other/configs#automodinvitesenabled)
+* [autoModInvitesEnabled](https://docs.invitemanager.co/bot/other/configs#automodinvitesenabled)
 
 ### links
 
@@ -68,10 +68,10 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModLinksEnabled](https://docs.invitemanager.co/bot/other/configs#automodlinksenabled)
-- [autoModLinksWhitelist](https://docs.invitemanager.co/bot/other/configs#automodlinkswhitelist)
-- [autoModLinksBlacklist](https://docs.invitemanager.co/bot/other/configs#automodlinksblacklist)
-- [autoModLinksFollowRedirects](https://docs.invitemanager.co/bot/other/configs#automodlinksfollowredirects)
+* [autoModLinksEnabled](https://docs.invitemanager.co/bot/other/configs#automodlinksenabled)
+* [autoModLinksWhitelist](https://docs.invitemanager.co/bot/other/configs#automodlinkswhitelist)
+* [autoModLinksBlacklist](https://docs.invitemanager.co/bot/other/configs#automodlinksblacklist)
+* [autoModLinksFollowRedirects](https://docs.invitemanager.co/bot/other/configs#automodlinksfollowredirects)
 
 ### words
 
@@ -87,8 +87,8 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModWordsEnabled](https://docs.invitemanager.co/bot/other/configs#automodwordsenabled)
-- [autoModWordsBlacklist](https://docs.invitemanager.co/bot/other/configs#automodwordsblacklist)
+* [autoModWordsEnabled](https://docs.invitemanager.co/bot/other/configs#automodwordsenabled)
+* [autoModWordsBlacklist](https://docs.invitemanager.co/bot/other/configs#automodwordsblacklist)
 
 ### allCaps
 
@@ -104,9 +104,9 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModAllCapsEnabled](https://docs.invitemanager.co/bot/other/configs#automodallcapsenabled)
-- [autoModAllCapsMinCharacters](https://docs.invitemanager.co/bot/other/configs#automodallcapsmincharacters)
-- [autoModAllCapsPercentageCaps](https://docs.invitemanager.co/bot/other/configs#automodallcapspercentagecaps)
+* [autoModAllCapsEnabled](https://docs.invitemanager.co/bot/other/configs#automodallcapsenabled)
+* [autoModAllCapsMinCharacters](https://docs.invitemanager.co/bot/other/configs#automodallcapsmincharacters)
+* [autoModAllCapsPercentageCaps](https://docs.invitemanager.co/bot/other/configs#automodallcapspercentagecaps)
 
 ### duplicateText
 
@@ -122,8 +122,8 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModDuplicateTextEnabled](https://docs.invitemanager.co/bot/other/configs#automodduplicatetextenabled)
-- [autoModDuplicateTextTimeframeInSeconds](https://docs.invitemanager.co/bot/other/configs#automodduplicatetexttimeframeinseconds)
+* [autoModDuplicateTextEnabled](https://docs.invitemanager.co/bot/other/configs#automodduplicatetextenabled)
+* [autoModDuplicateTextTimeframeInSeconds](https://docs.invitemanager.co/bot/other/configs#automodduplicatetexttimeframeinseconds)
 
 ### quickMessages
 
@@ -139,9 +139,9 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModQuickMessagesEnabled](https://docs.invitemanager.co/bot/other/configs#automodquickmessagesenabled)
-- [autoModQuickMessagesNumberOfMessages](https://docs.invitemanager.co/bot/other/configs#automodquickmessagesnumberofmessages)
-- [autoModQuickMessagesTimeframeInSeconds](https://docs.invitemanager.co/bot/other/configs#automodquickmessagestimeframeinseconds)
+* [autoModQuickMessagesEnabled](https://docs.invitemanager.co/bot/other/configs#automodquickmessagesenabled)
+* [autoModQuickMessagesNumberOfMessages](https://docs.invitemanager.co/bot/other/configs#automodquickmessagesnumberofmessages)
+* [autoModQuickMessagesTimeframeInSeconds](https://docs.invitemanager.co/bot/other/configs#automodquickmessagestimeframeinseconds)
 
 ### mentionUsers
 
@@ -157,8 +157,8 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModMentionUsersEnabled](https://docs.invitemanager.co/bot/other/configs#automodmentionusersenabled)
-- [autoModMentionUsersMaxNumberOfMentions](https://docs.invitemanager.co/bot/other/configs#automodmentionusersmaxnumberofmentions)
+* [autoModMentionUsersEnabled](https://docs.invitemanager.co/bot/other/configs#automodmentionusersenabled)
+* [autoModMentionUsersMaxNumberOfMentions](https://docs.invitemanager.co/bot/other/configs#automodmentionusersmaxnumberofmentions)
 
 ### mentionRoles
 
@@ -174,8 +174,8 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModMentionRolesEnabled](https://docs.invitemanager.co/bot/other/configs#automodmentionrolesenabled)
-- [autoModMentionRolesMaxNumberOfMentions](https://docs.invitemanager.co/bot/other/configs#automodmentionrolesmaxnumberofmentions)
+* [autoModMentionRolesEnabled](https://docs.invitemanager.co/bot/other/configs#automodmentionrolesenabled)
+* [autoModMentionRolesMaxNumberOfMentions](https://docs.invitemanager.co/bot/other/configs#automodmentionrolesmaxnumberofmentions)
 
 ### emojis
 
@@ -191,5 +191,6 @@ To delete the strike config:
 
 **Config options:**
 
-- [autoModEmojisEnabled](https://docs.invitemanager.co/bot/other/configs#automodemojisenabled)
-- [autoModEmojisMaxNumberOfEmojis](https://docs.invitemanager.co/bot/other/configs#automodemojismaxnumberofemojis)
+* [autoModEmojisEnabled](https://docs.invitemanager.co/bot/other/configs#automodemojisenabled)
+* [autoModEmojisMaxNumberOfEmojis](https://docs.invitemanager.co/bot/other/configs#automodemojismaxnumberofemojis)
+
