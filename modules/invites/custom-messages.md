@@ -4,10 +4,6 @@ description: You can customise the join and leave messages with a number of para
 
 # Messages personnalisés
 
-\(Jump to placeholders\)
-
-## 
-
 ## Custom Messages
 
 Vous pouvez définir un message d'arrivée/de départ personnalisé avec cette commande :
