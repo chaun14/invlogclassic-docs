@@ -10,7 +10,7 @@
 
 * [Invites](modules/invites/README.md)
   * [Examples](modules/invites/examples.md)
-  * [Custom Messages](modules/invites/custom-messages.md)
+  * [Messages personnalisés](modules/invites/custom-messages.md)
 * [Modération](modules/moderation/README.md)
   * [Punitions](modules/moderation/punishments.md)
   * [Sanctions](modules/moderation/strikes.md)
