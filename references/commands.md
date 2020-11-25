@@ -1,13 +1,13 @@
-# Commands
+# Komutlar
 
-## Commands
+## Komutlar
 
-To get a list of available commands, do !help on your server.
+Tüm komutların listesi, Sunucunuzda !help komutunu kullanın.
 
 ### Arguments & Flags
 
-Most commands accept arguments and/or flags.  
-According to the **Type** of the argument or flag you can provide different values.
+Çoğu komut bağımsız değişkenleri ve/veya bayrakları kabul eder.
+Bağımsız değişken veya bayrağın **Türüne** göre farklı değerler verebilirsiniz.
 
 #### Boolean
 
@@ -15,9 +15,9 @@ This arguments expects `true` or `false`. You can also use `yes` and `no`.
 
 #### Sayı
 
-This arguments expects a number
+Bu argümanlar bir sayı ister.
 
-#### Enum
+#### Sıralama
 
 This arguments expects a value from a specific set of valid values.
 
@@ -25,28 +25,28 @@ This arguments expects a value from a specific set of valid values.
 
 #### Davet Kodu
 
-This arguments expects a Discord Invite Code.
+Bu argümanlar bir Discord Davet Kodu ister.
 
-> You can put only the part after `https://discord.gg/` to prevent Discord from creating a preview.
+> Discord'un önizleme oluşturmasını önlemek için yalnızca `https://discord.gg/`'den sonraki kısmı koyabilirsiniz.
 
 #### Kullanıcı
 
-This arguments expects a Discord User. You can use any of the following methods to provide a user:
+Bu argümanlar bir Discord Kullanıcısı ister. Bir kullanıcı sağlamak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz:
 
-* Mention the user: `@Valandur`
-* Use their ID: `102785693046026240`
-* Use their name: `Valandur`
-* Use their name and discriminator: `Valandur#3581`
-* Use quotes if their name has a space: `"Valandur with a space"`
+* Kullanıcı etiketi: `@Valandur`
+* Kullanıcı ID: `102785693046026240`
+* Kullanıcı ismi: `Valandur`
+* Kullanıcı tam ismi: `Valandur#3581`
+* Kullanıcının isminde boşluk varsa tırnak işareti kullanın: `"Valandur with a space"`
 
 #### Rol
 
 This arguments expects a Discord Role. You can use any of the following methods to provide a role:
 
-* Mention the role: `@Admin`
-* Use the ID: `102785693046026240`
-* Use the name: `Admin`
-* Use quotes if the name has a space: `"Admin with a space"`
+* Rol etiketi: `@Admin`
+* Rol ID: `102785693046026240`
+* Rol ismi: `Admin`
+* Rol isminde boşluk varsa tırnak işareti kullanın: `"Admin with a space"`
 
 #### Kanal
 
@@ -78,19 +78,18 @@ Bu argüman bir tarih bekliyor. Çeşitli formatlar kullanabilirsiniz, ancak şu
 
 This argument expects a duration. The following duration types are supported:
 
-* Seconds: `s` \(`5s` = 5 seconds\)
-* Minutes: `min` \(`3min` = 3 minutes\)
-* Hours: `h` \(`4h` = 4 hours\)
-* Days: `d` \(`2d` = 2 days\)
-* Weeks: `w` \(`1w` = 1 week\)
-* Months: `mo` \(`6mo` = 6 months\)
-* Years: `y` \(`10y` = 10 years\)
+* Saniye: `s` \(`5s` = 5 Saniye\)
+* Dakika: `min` \(`3min` = 3 Dakika\)
+* Saat: `h` \(`4h` = 4 Saat\)
+* Gün: `d` \(`2d` = 2 Gün\)
+* Hafta: `w` \(`1w` = 1 Hafta\)
+* Ay: `mo` \(`6mo` = 6 Ay\)
+* Yıl: `y` \(`10y` = 10 Yıl\)
 
-### Overview
+### Görünüş
 
-#### Invites
-
-| Command | Description | Usage |
+#### Davetler
+| Komut | Açıklama | Kullanım |
 | :--- | :--- | :--- |
 | addInvites | Kullanıcıya davet puanı ekler/siler. | !addInvites \ \ \[reason\] |
 | clearInvites | Sunucudaki/kullanıcıdaki davetleri temizler. | !clearInvites \[-d value\|--date=value\]\[-cb\|--clearbonus\] \[user\] |
@@ -107,7 +106,7 @@ This argument expects a duration. The following duration types are supported:
 
 #### Ranks
 
-| Command | Description | Usage |
+| Komut | Açıklama | Kullanım |
 | :--- | :--- | :--- |
 | addRank | Yeni bir rütbe ekle. | !addRank \ \ \[info\] |
 | fixRanks | Rolün silindiği tüm rütbeleri siler. | !fixRanks |
@@ -116,7 +115,7 @@ This argument expects a duration. The following duration types are supported:
 
 #### Config
 
-| Command | Description | Usage |
+| Komut | Açıklama | Kullanım |
 | :--- | :--- | :--- |
 | botConfig | Botun yapılandırmasını göster ve değiştir. | !botConfig \[key\]\[value\] |
 | config | Sunucunun yapılandırmasını göster ve değiştir. | !config \[key\]\[value\] |
@@ -127,7 +126,7 @@ This argument expects a duration. The following duration types are supported:
 
 #### Info
 
-| Command | Description | Usage |
+| Komut | Açıklama | Kullanım |
 | :--- | :--- | :--- |
 | botInfo | Bot hakkında genel bilgi al. | !botInfo |
 | credits | Bot geliştiricileri ve katkıda bulunanları göster. | !credits |
@@ -141,15 +140,15 @@ This argument expects a duration. The following duration types are supported:
 
 #### Premium
 
-| Command | Description | Usage |
+| Komut | Açıklama | Kullanım |
 | :--- | :--- | :--- |
 | export | InviteManager verilerini bir csv sayfasına aktarın. | !export \ |
 | premium | InviteManager'ın premium versiyonu hakkında bilgi edinmek. | !premium \[action\] |
 | tryPremium | InviteManager'ın premium sürümünü sınırlı bir süre için ücretsiz deneyin. | !tryPremium |
 
-#### Moderation
+#### Moderasyon
 
-| Command | Description | Usage |
+| Komut | Açıklama | Kullanım |
 | :--- | :--- | :--- |
 | ban | Kullanıcıyı sunucudan banlamak için. | !ban \[-d value\|--deleteMessageDays=value\] \ \[reason\] |
 | caseDelete | Belirli bir durumu silin. | !caseDelete \ \[reason\] |
@@ -172,9 +171,9 @@ This argument expects a duration. The following duration types are supported:
 | unmute | Unmute a user | !unmute \ |
 | warn | Kullanıcı Uyar | !warn \ \[reason\] |
 
-#### Other
+#### Diğer
 
-| Command | Description | Usage |
+| Komut | Açıklama | Kullanım |
 | :--- | :--- | :--- |
 | graph | Bu sunucudaki çeşitli istatistikler hakkındaki grafikleri gösterir. | !graph \ \[from\]\[to\] |
 
@@ -194,7 +193,7 @@ Kullanıcıya davet puanı ekler/siler.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | user | Kullanıcı | Yes | Bonus alacak / kaybedecek kullanıcı davet eder. |  |
 | amount | Sayı | Yes | Kullanıcının alacağı / kaybedeceği davet miktarı. Davetiyeleri kaldırmak için negatif \(-\) bir sayı kullanın. |  |
@@ -228,13 +227,13 @@ Yeni bir rütbe ekle.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
-| role | Rol | Yes | Bu rütbeye geldiğinde kullanıcının alacağı rol. |  |
-| invites | Sayı | Yes | Rütbeye ulaşmak için gereken davet miktarı. |  |
-| info | Metin | No | Kullanıcıların göreceği bir açıklama, böylece bu rütbe hakkında daha fazla bilgi sahibi olacaklar. |  |
+| role | Rol | Evet | Bu rütbeye geldiğinde kullanıcının alacağı rol. |  |
+| invites | Sayı | Evet | Rütbeye ulaşmak için gereken davet miktarı. |  |
+| info | Metin | Hayır | Kullanıcıların göreceği bir açıklama, böylece bu rütbe hakkında daha fazla bilgi sahibi olacaklar. |  |
 
-#### Examples
+#### Örnekler
 
 ```text
 !addRank @Role 5
@@ -248,18 +247,18 @@ Yeni bir rütbe ekle.
 
 Kullanıcıyı sunucudan banlamak için.
 
-#### Usage
+#### Kullanım
 
 ```text
 !ban [-d value|--deleteMessageDays=value] <user> [reason]
 ```
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
-| user | Kullanıcı | Yes | Kullanıcıyı yasaklamak için. |  |
-| reason | Metin | No | Kullanıcı neden yasaklandı? |  |
+| user | Kullanıcı | Evet | Kullanıcıyı yasaklamak için. |  |
+| reason | Metin | Hayıe | Kullanıcı neden yasaklandı? |  |
 
 #### Flags
 
@@ -287,12 +286,12 @@ Botun yapılandırmasını göster ve değiştir.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | key | Enum | No | Göstermek / değiştirmek istediğiniz bot yapılandırma ayarı. | Use one of the following values: `activityEnabled`, `activityMessage`, `activityStatus`, `activityType`, `activityUrl`, `embedDefaultColor` |
 | value | Değer | No | Ayarın yeni değeri. |  |
 
-#### Examples
+#### Örnekler
 
 ```text
 !botConfig
@@ -302,17 +301,17 @@ Botun yapılandırmasını göster ve değiştir.
 
 Bot hakkında genel bilgi al.
 
-#### Usage
+#### Kullanım
 
 ```text
 !botInfo
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!bot-info`
 
-#### Examples
+#### Örnekler
 
 ```text
 !botInfo
@@ -322,13 +321,13 @@ Bot hakkında genel bilgi al.
 
 Belirli bir durumu silin.
 
-#### Usage
+#### Kullanım
 
 ```text
 !caseDelete <caseNumber> [reason]
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!case-delete`
 * `!deletecase`
@@ -336,12 +335,12 @@ Belirli bir durumu silin.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
-| caseNumber | Sayı | Yes | Durum numarası |  |
-| reason | Metin | No | Durumu silmenin sebebi |  |
+| caseNumber | Sayı | Evet | Durum numarası |  |
+| reason | Metin | Hayır | Durumu silmenin sebebi |  |
 
-#### Examples
+#### Örnekler
 
 ```text
 !caseDelete 5434 User apologized
@@ -351,7 +350,7 @@ Belirli bir durumu silin.
 
 Belirli bir kasa hakkındaki bilgileri görüntüleyin.
 
-#### Usage
+#### Kullanım
 
 ```text
 !caseView <caseNumber>
@@ -365,9 +364,9 @@ Belirli bir kasa hakkındaki bilgileri görüntüleyin.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
-| caseNumber | Sayı | Yes | Kasa numarası |  |
+| caseNumber | Sayı | Evet | Vaka numarası |  |
 
 #### Examples
 
@@ -391,11 +390,11 @@ Bir kullanıcının ihlal ve ceza geçmişini kontrol edin.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
-| user | Kullanıcı | Yes | Kontrol edilecek kullanıcı. |  |
+| user | Kullanıcı | Evet | Kontrol edilecek kullanıcı. |  |
 
-#### Examples
+#### Örnekler
 
 ```text
 !check @User
@@ -409,47 +408,47 @@ Bir kullanıcının ihlal ve ceza geçmişini kontrol edin.
 
 Belirli mesaj türlerinden bir kanalı temizleyin.
 
-#### Usage
+#### Kullanım
 
 ```text
 !clean <type> [numberOfMessages]
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!clear`
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
-| type | Enum | Yes | Silinecek mesajların türü. | Use one of the following values: `bots`, `embeds`, `emojis`, `images`, `links`, `mentions`, `reacted`, `reactions` |
-| numberOfMessages | Sayı | No | Aranacak mesaj sayısı. |  |
+| type | Enum | Evet | Silinecek mesajların türü. | Use one of the following values: `bots`, `embeds`, `emojis`, `images`, `links`, `mentions`, `reacted`, `reactions` |
+| numberOfMessages | Sayı | Evet | Aranacak mesaj sayısı. |  |
 
-#### Examples
+#### Örnekler
 
 ### !cleanShort
 
 Kısa mesajları temizle
 
-#### Usage
+#### Kullanım
 
 ```text
 !cleanShort <maxTextLength> [numberOfMessages]
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!clean-short`
 * `!clearshort`
 * `!clear-short`
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
-| maxTextLength | Sayı | Yes | Bundan kısa olan tüm mesajlar silinecektir. |  |
-| numberOfMessages | Sayı | No | Aranacak mesaj sayısı. |  |
+| maxTextLength | Sayı | Evet | Bundan kısa olan tüm mesajlar silinecektir. |  |
+| numberOfMessages | Sayı | Hayıe | Aranacak mesaj sayısı. |  |
 
 #### Examples
 
@@ -540,7 +539,7 @@ Sunucunun yapılandırmasını göster ve değiştir.
 | key | Enum | No | Göstermek/değiştirmek istediğiniz yapılandırma ayarı. | Use one of the following values: `autoModAllCapsEnabled`, `autoModAllCapsMinCharacters`, `autoModAllCapsPercentageCaps`, `autoModDeleteBotMessage`, `autoModDeleteBotMessageTimeoutInSeconds`, `autoModDisabledForOldMembers`, `autoModDisabledForOldMembersThreshold`, `autoModDuplicateTextEnabled`, `autoModDuplicateTextTimeframeInSeconds`, `autoModEmojisEnabled`, `autoModEmojisMaxNumberOfEmojis`, `autoModEnabled`, `autoModHoistEnabled`, `autoModIgnoredChannels`, `autoModIgnoredRoles`, `autoModInvitesEnabled`, `autoModLinksBlacklist`, `autoModLinksEnabled`, `autoModLinksFollowRedirects`, `autoModLinksWhitelist`, `autoModLogEnabled`, `autoModMentionRolesEnabled`, `autoModMentionRolesMaxNumberOfMentions`, `autoModMentionUsersEnabled`, `autoModMentionUsersMaxNumberOfMentions`, `autoModModeratedChannels`, `autoModModeratedRoles`, `autoModQuickMessagesEnabled`, `autoModQuickMessagesNumberOfMessages`, `autoModQuickMessagesTimeframeInSeconds`, `autoModWordsBlacklist`, `autoModWordsEnabled`, `autoSubtractFakes`, `autoSubtractLeaves`, `autoSubtractLeaveThreshold`, `captchaVerificationFailedMessage`, `captchaVerificationLogEnabled`, `captchaVerificationOnJoin`, `captchaVerificationSuccessMessage`, `captchaVerificationTimeout`, `captchaVerificationWelcomeMessage`, `channels`, `getUpdates`, `hideLeftMembersFromLeaderboard`, `ignoredChannels`, `joinMessage`, `joinMessageChannel`, `joinRoles`, `lang`, `leaderboardStyle`, `leaveMessage`, `leaveMessageChannel`, `logChannel`, `modLogChannel`, `modPunishmentBanDeleteMessage`, `modPunishmentKickDeleteMessage`, `modPunishmentMuteDeleteMessage`, `modPunishmentSoftbanDeleteMessage`, `modPunishmentWarnDeleteMessage`, `mutedRole`, `prefix`, `rankAnnouncementChannel`, `rankAnnouncementMessage`, `rankAssignmentStyle` |
 | value | Değer | No | Ayarın yeni değeri. |  |
 
-#### Examples
+#### Örnekler
 
 ```text
 !config
@@ -550,19 +549,19 @@ Sunucunun yapılandırmasını göster ve değiştir.
 
 Özel davet kodları oluştur.
 
-#### Usage
+#### Kullanım
 
 ```text
 !createInvite <name> [channel] [maxUses] [expires] [temporaryMembership]
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!create-invite`
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | name | Metin | Yes | Davet kodunun adı. |  |
 | channel | Kanal | No | Davet kodunun oluşturulduğu kanal. Geçerli kanalı varsayılan olarak kullanır. |  |
@@ -570,7 +569,7 @@ Sunucunun yapılandırmasını göster ve değiştir.
 | expires | Boolean | No | `true` or `false` --&gt; Set if the invite will expires after 24 hours |  |
 | temporaryMembership | Boolean | No | `true` or `false` --&gt; Set if the invited users are granted as temporary members |  |
 
-#### Examples
+#### Örnekler
 
 ```text
 !createInvite reddit
@@ -584,13 +583,13 @@ Sunucunun yapılandırmasını göster ve değiştir.
 
 Bot geliştiricileri ve katkıda bulunanları göster.
 
-#### Usage
+#### Kullanım
 
 ```text
 !credits
 ```
 
-#### Examples
+#### Örnekler
 
 ```text
 !credits
@@ -600,7 +599,7 @@ Bot geliştiricileri ve katkıda bulunanları göster.
 
 InviteManager verilerini bir csv sayfasına aktarın.
 
-#### Usage
+#### Kullanım
 
 ```text
 !export <type>
@@ -677,7 +676,7 @@ Bu sunucudaki çeşitli istatistikler hakkındaki grafikleri gösterir.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | type | Enum | Yes | Gösterilecek tablonun türü. | Use one of the following values: `joins`, `joinsAndLeaves`, `leaves` |
 | from | Tarih | No | Grafiğin başlangıç tarihi |  |
@@ -709,11 +708,11 @@ Yardımı gösterir.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | command | Komut | No | Hakkında ayrıntılı bilgi alma komutu. | Use one of the following values: `addInvites`, `addRank`, `ban`, `botConfig`, `botInfo`, `caseDelete`, `caseView`, `check`, `clean`, `cleanShort`, `cleanText`, `clearInvites`, `config`, `createInvite`, `credits`, `export`, `fixRanks`, `getBot`, `graph`, `help`, `info`, `interactiveConfig`, `inviteCodeConfig`, `inviteCodes`, `inviteDetails`, `invites`, `kick`, `leaderboard`, `lockdown`, `memberConfig`, `members`, `mute`, `permissions`, `ping`, `prefix`, `premium`, `punishmentConfig`, `purge`, `purgeUntil`, `ranks`, `removeInvites`, `removeRank`, `restoreInvites`, `setup`, `softBan`, `strike`, `strikeConfig`, `subtractFakes`, `subtractLeaves`, `support`, `tryPremium`, `unban`, `unhoist`, `unmute`, `warn` |
 
-#### Examples
+#### Örneköer
 
 ```text
 !help
@@ -727,19 +726,19 @@ Yardımı gösterir.
 
 Belirli bir üye hakkında bilgi göster.
 
-#### Usage
+#### Kullanım
 
 ```text
 !info <user> [details] [page]
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!showinfo`
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | user | Kullanıcı | Yes | Ek bilgi görmek istediğiniz kullanıcı. |  |
 | details | Enum | No | Bir üye hakkında sadece belirli detayları isteyin. | Use one of the following values: `bonus`, `members` |
@@ -771,17 +770,17 @@ Belirli bir üye hakkında bilgi göster.
 
 Etkileşimli Yapılandırma
 
-#### Usage
+#### Kullanım
 
 ```text
 !interactiveConfig
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!ic`
 
-#### Examples
+#### Örnekler
 
 ```text
 !interactiveConfig
@@ -791,20 +790,20 @@ Etkileşimli Yapılandırma
 
 Sunucunun davet kodlarının yapılandırmasını gösterin ve değiştirin.
 
-#### Usage
+#### Kullanım
 
 ```text
 !inviteCodeConfig [key] [inviteCode] [value]
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!invite-code-config`
 * `!icc`
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | key | Enum | No | Göstermek / değiştirmek istediğiniz yapılandırma ayarı. | Use one of the following values: `name`, `roles` |
 | inviteCode | Davet Kodu | No | Ayarlarını değiştirmek istediğiniz davet kodu. |  |
@@ -1011,7 +1010,7 @@ Sunucunun üyelerinin yapılandırmasını gösterin ve değiştirin.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | key | Enum | No | Göstermek / değiştirmek istediğiniz üye yapılandırma ayarı. | Use one of the following values: `hideFromLeaderboard` |
 | user | Kullanıcı | No | Ayarın gösterildiği / değiştirildiği üye. |  |
@@ -1056,7 +1055,7 @@ Bir kullanıcı sustur
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | user | Üye | Yes | Susturulması gereken kullanıcı. |  |
 | reason | Metin | No | Bu kullanıcının susturulmuş olmasının nedeni. |  |
@@ -1084,13 +1083,12 @@ Komutları kullanmak için izinleri yapılandırın.
 * `!perms`
 
 #### Arguments
-
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | cmd | Komut | No | Komut, izinleri yapılandırma için | Use one of the following values: `addInvites`, `addRank`, `ban`, `botConfig`, `botInfo`, `caseDelete`, `caseView`, `check`, `clean`, `cleanShort`, `cleanText`, `clearInvites`, `config`, `createInvite`, `credits`, `export`, `fixRanks`, `getBot`, `graph`, `help`, `info`, `interactiveConfig`, `inviteCodeConfig`, `inviteCodes`, `inviteDetails`, `invites`, `kick`, `leaderboard`, `lockdown`, `memberConfig`, `members`, `mute`, `permissions`, `ping`, `prefix`, `premium`, `punishmentConfig`, `purge`, `purgeUntil`, `ranks`, `removeInvites`, `removeRank`, `restoreInvites`, `setup`, `softBan`, `strike`, `strikeConfig`, `subtractFakes`, `subtractLeaves`, `support`, `tryPremium`, `unban`, `unhoist`, `unmute`, `warn` |
 | role | Rol | No | Komuta erişim izni verilmesi veya reddedilmesi gereken rol. |  |
 
-#### Examples
+#### Örnekler
 
 ```text
 !permissions
@@ -1100,13 +1098,13 @@ Komutları kullanmak için izinleri yapılandırın.
 
 botun pingi
 
-#### Usage
+#### Kullanım
 
 ```text
 !ping
 ```
 
-#### Examples
+#### Örnekler
 
 ```text
 !ping
@@ -1122,7 +1120,7 @@ Botun geçerli ön-ekini gösterir.
 !prefix
 ```
 
-#### Examples
+#### Örnekler
 
 ```text
 !prefix
@@ -1130,22 +1128,22 @@ Botun geçerli ön-ekini gösterir.
 
 ### !premium
 
-InviteManager'ın premium versiyonu hakkında bilgi edinmek.
+InviteManager'ın premium versiyonu hakkında bilgi edinin.
 
-#### Usage
+#### Kullanım
 
 ```text
 !premium [action]
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!patreon`
 * `!donate`
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | action | Enum | No | Gerçekleştirilecek eylem. Premium bilgi için yok. Premium durumunuzu kontrol etmek için `check`. bu sunucu için priminizi kullanmak için `activate` . | Use one of the following values: `Activate`, `Check`, `Deactivate` |
 
@@ -1171,19 +1169,19 @@ InviteManager'ın premium versiyonu hakkında bilgi edinmek.
 
 Configure punishments when reaching a certain amount of strikes.
 
-#### Usage
+#### Kullanım
 
 ```text
 !punishmentConfig [punishment] [strikes] [args]
 ```
 
-#### Aliases
+#### Alternatifler
 
 * `!punishment-config`
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | punishment | Enum | No | Kullanılacak cezalandırma türü. | Use one of the following values: `ban`, `kick`, `mute`, `softban`, `warn` |
 | strikes | Sayı | No | Bu cezalandırma için kullanılacak ihtar sayısı. |  |
@@ -1211,7 +1209,7 @@ Bir kanaldaki mesajları temizleme
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | quantity | Sayı | Yes | Kaç mesaj silinmelidir. |  |
 | user | Kullanıcı | No | Mesajları silinmiş olan kullanıcı. |  |
@@ -1237,7 +1235,7 @@ Bir kanaldaki mesajları belirtilen mesaja kadar temizleyin.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | messageID | Metin | Yes | Silinecek son mesaj ID'si |  |
 
@@ -1260,7 +1258,7 @@ Tüm rütbeleri göster.
 
 #### Arguments
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | page | Sayı | No | Gösterilecek sıralama listesinin sayfası |  |
 
@@ -1284,15 +1282,15 @@ Bir kullanıcıdan belirtilen miktarda daveti kaldırır.
 
 * `!remove-invites`
 
-#### Arguments
+#### Argümanlar
 
-| Argument | Type | Required | Description | Details |
+| Argüman | Tür | Zorunluluk | Açıklama | Detaylar |
 | :--- | :--- | :--- | :--- | :--- |
 | user | Kullanıcı | Yes | Davetlerin kaldırılacağı kullanıcı. |  |
 | amount | Sayı | Yes | Kaldırılacak davetlerin sayısı. |  |
 | reason | Metin | No | Davetlerin kaldırılmasının nedeni. |  |
 
-#### Examples
+#### Örnekler
 
 ```text
 !removeInvites @User 5
@@ -1613,7 +1611,7 @@ Unmute a user
 
 Kullanıcı Uyar
 
-#### Usage
+#### Kullanım
 
 ```text
 !warn <member> [reason]
@@ -1626,5 +1624,5 @@ Kullanıcı Uyar
 | member | Üye | Yes | Member to warn. |  |
 | reason | Metin | No | Üye neden uyarıldı ? |  |
 
-#### Examples
+#### Örnekler
 
