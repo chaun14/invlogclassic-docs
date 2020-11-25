@@ -1,170 +1,172 @@
 # Settings
 
+## Configs
+
 There are many config options that can be set. You don't have to set all of them. If you just added the bot, just run `!setup`, which will guide you through the most important ones.
 
-## Overview
+### Overview
 
-### General
-
-| Setting | Description |
-| :--- | :--- |
-| [Prefix]() | The prefix used to trigger bot commands. |
-| [Language]() | The language of the bot |
-| [Log Channel]() | The channel where bot actions are logged. |
-| [Get Updates]() | Enable to receive development updates about InviteLogger. |
-| [Command channels]() | The channels in which the bot will react to commands. |
-| [Ignored channels]() | The channels in which the bot will ignore commands. |
-
-### Invites
-
-#### General
+#### عام
 
 | Setting | Description |
 | :--- | :--- |
-| [Join Roles]() | Roles that are assigned to all members when joining. |
+| بريفكس | البريفكس المستخدم لتشغيل أوامر البوت. |
+| لغه | لغة البوت |
+| قناه السجل | القناه التي يتم تسجيل حركات البوت فيها. |
+| الحصول على التحديثات | فعل لتلقي تحديثات التطوير الخاصه بInviteManager. |
+| قنوات الأوامر | القنوات التي سيتفاعل فيها البوت مع الأوامر. |
+| القنوات المتجاهلة | القنوات التي سيتجاهل فيها البوت الأوامر. |
 
-#### Joins
+#### دعوات
 
-| Setting | Description |
-| :--- | :--- |
-| [Message]() | The message sent when someone joins the server. |
-| [Message Channel]() | The channel that the message on join is sent to. |
-
-#### Leaves
-
-| Setting | Description |
-| :--- | :--- |
-| [Message]() | The message sent when someone leaves the server. |
-| [Message Channel]() | The channel that the leave message is sent to. |
-| [Auto Subtract]() | Automatically remove invites from the inviter when the invited user leaves. |
-| [Auto Subtract Threshold]() | The time in seconds for which a user has to stay in the server for the invite to count. |
-
-#### Leaderboard
+**General**
 
 | Setting | Description |
 | :--- | :--- |
-| [Style]() | The display style of the leaderboard. |
-| [Hide left members]() | Hide members that left the server from the leaderboard. |
+| Join Roles | Roles that are assigned to all members when joining. |
 
-#### Fakes
-
-| Setting | Description |
-| :--- | :--- |
-| [Auto Subtract]() | Automatically subtract fake invites. |
-
-#### Ranks
+**الانضمامات**
 
 | Setting | Description |
 | :--- | :--- |
-| [Assignment Style]() | How ranks are rewarded to users. |
-| [Announcement Channel]() | The channel where users receiving a new rank are announced. |
-| [Announcement Message]() | The message that is sent when a user receives a new rank. |
+| رساله | الرسالة المرسلة عندما يدخل شخص ما الخادم/السيرفر. |
+| قناه الرسائل | القناة التي يتم إرسال رسالة الدخول فيها. |
 
-### Moderation
-
-#### Captcha
+**المغادرات**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Whether or not captcha verification is enabled. |
-| [Welcome Message]() | The message a user will get after joining a server and instructing them to enter the captcha. |
-| [Success Message]() | The welcome message that will be sent to the user after he successfully verifies. |
-| [Failed Message]() | The message sent to the user if he enters an invalid captcha. |
-| [Verification Timeout]() | The time within which the captcha has to be entered successfully. |
-| [Log Enabled]() | Whether or not verification attempts will be logged. |
+| رساله | الرسالة المرسلة عندما يترك شخص ما الخادم/السيرفر. |
+| قناه الرسائل | القناة التي يتم إرسال رسالة الخروج فيها. |
+| طرح تلقائي | ازالة الدعوات تلقائيًا من المدعو عندما يغادر |
+| بداية الطرح التلقائي | الوقت بالثواني الذي يتعين على المستخدم البقاء فيه في السيرفر للدعوه للعد |
 
-#### General
+**المتصدرين**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically moderate messages \(specific rules can also be turned on or off, this has to be ON for ANY rule to work\). |
-| [Moderated Channels]() | The list of moderated channels \(this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels\). |
-| [Moderated Roles]() | The list of roles that are moderated \(this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles\). |
-| [Ignored Channels]() | Channels that are ignored while automatically moderating. |
-| [Ignored Roles]() | Any members with these roles will not automatically be moderated. |
-| [Muted Role]() | The role that is given to people who are muted. Make sure this role is denied the "Send Message" permission. |
-| [Disabled for Old Members]() | Disabled auto moderation for members that have been in your server for a long time. |
-| [Old Members Threshold]() | The amount of time a member has to be in your server to be considered 'old'. |
+| اسلوب  | مظهر اسلوب المتصدرين |
+| اخفي الاعضاء الذين خرجوا | إخفاء الأعضاء الذين تركوا الخادم من المتصدرين |
 
-#### Logging
+**المزيفون**
 
 | Setting | Description |
 | :--- | :--- |
-| [Log Enabled]() | Log any moderation actions that the bot makes. |
-| [Mod Log Channel]() | The channel where moderation logs will be posted in. |
-| [Delete Bot Messages]() | Automatically delete the bots own messages \(keeps your chat clean\). |
-| [Delete Bot Message Timeout]() | The timeout after which bot messages are deleted. |
-| [Delete Ban Messages]() | Whether or not "Ban" pushment messages will be deleted automatically. |
-| [Delete Kick Messages]() | Whether or not "Kick" pushment messages will be deleted automatically. |
-| [Delete Softban Messages]() | Whether or not "Softban" pushment messages will be deleted automatically. |
-| [Delete Warn Messages]() | Whether or not "Warn" pushment messages will be deleted automatically. |
-| [Delete Mute Messages]() | Whether or not "Mute" pushment messages will be deleted automatically. |
+| طرح تلقائي | ازاله الدعوات المزورة تلقائياً |
 
-#### Invites
+**رتب**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically scan messages for discord invite links and remove them. |
+| أسلوب الواجب | كيف تتم مكافأة الرتب للمستخدمين. |
+| قناه التصاريح | القناة التي يعلن فيها المستخدمون الذين يتلقون رتبة جديدة. |
+| رساله التصريح | الرسالة التي يتم إرسالها عندما يتلقى المستخدم رتبة جديدة. |
 
-#### Links
+#### اداره
 
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically remove messages containing links \(you can set a whitelist and blacklist\). |
-| [Whitelist]() | A list of links that users are allowed to post. |
-| [Blacklist]() | Blacklist certain links which users won't be able to post. |
-| [Follow Redirects]() | Enable this to resolve redirects for links. |
-
-#### Banned Words
+**كلمة التحقق**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Whether or not blacklisted words will be automoderated. |
-| [Blacklist]() | A list of words that are banned. |
+| مفعل | سواء تم تفعيل التحقق من كلمة التحقق أم لا. |
+| رسالة الترحيب | الرسالة التي سيحصل عليها المستخدم بعد الانضمام إلى الخادم وتوجيهه لدخول اختبار كلمة التحقق. |
+| رسالة النجاح | رسالة الترحيب التي سيتم إرسالها إلى المستخدم بعد أن يتحقق بنجاح. |
+| رسالة فاشلة | الرسالة التي يتم إرسالها عندما يخفق المستخدم بكلمه التحقق. |
+| التحقق من المهلة | الوقت الذي يتم فيه إدخال كلمة التحقق بنجاح. |
+| السجل مفعل | سواء سيتم تسجيل محاولات التحقق ام لا. |
 
-#### Caps
-
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate messages with A LOT OF CAPS. |
-| [Min. Characters]() | The minimum amount of characters in a message to be considered for moderating \(setting to '3' would ignore 'OK'\). |
-| [Percentage CAPs]() | The percentage of characters of the message that have to be CAPs for the rule to trigger. |
-
-#### Duplicate Messages
+**عام**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically moderate duplicate messages \(copy-paste spam\). |
-| [Timeframe in Seconds]() | The timeframe whithin which messages will be considered duplicates. |
+| تمكين | Automatically moderate messages \(specific rules can also be turned on or off, this has to be ON for ANY rule to work\). |
+| القنوات الادارية | The list of moderated channels \(this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels\). |
+| الرتب الادارية | The list of roles that are moderated \(this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles\). |
+| القنوات المتجاهلة | Channels that are ignored while automatically moderating. |
+| تجاهل الأدوار | Any members with these roles will not automatically be moderated. |
+| رتبه صامته | The role that is given to people who are muted. Make sure this role is denied the "Send Message" permission. |
+| معطل للأعضاء القدامى | Disabled auto moderation for members that have been in your server for a long time. |
+| الأعضاء القديمة عتبة | The amount of time a member has to be in your server to be considered 'old'. |
 
-#### Spam
-
-| Setting | Description |
-| :--- | :--- |
-| [Enabled]() | Automatically moderate users sending a lot of messages in a short time. |
-| [\# of Messages]() | The number of messages that have to be sent within the timeframe to trigger the rule. |
-| [Timeframe in Seconds]() | The timeframe within which a user is allowed to send a maximum amount of messages. |
-
-#### Mentions
+**تسجيل**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically moderate messages that mention an excessive amount of users. |
-| [Max \# of Mentions]() | The maximum amount of users a member can mention in a message. |
-| [Enabled]() | Automatically moderate messages that mention an excessive amount of roles. |
-| [Max \# of Mentions]() | The maximum amount of roles a member can mention in a message. |
+| Log Enabled | Log any moderation actions that the bot makes. |
+| سجل القناه الخاص بالمود | القناة التي سيتم نشر سجلات المود فيها. |
+| حذف رسائل بوت | Automatically delete the bots own messages \(keeps your chat clean\). |
+| حذف Bot Message Timeout | The timeout after which bot messages are deleted. |
+| حذف رسائل الحظر | سواء سيتم حذف رسائل "الحظر" من عدمه تلقائيًا او لا. |
+| حذف رسائل الطرد | سواء سيتم حذف رسائل "الطرد" من عدمه تلقائيًا او لا. |
+| حذف رسائل الحظر | سواء سيتم حذف رسائل "الحظر" من عدمه تلقائيًا او لا. |
+| حذف رسائل التحذير. | سواء سيتم حذف رسائل "تحذير" من عدمه تلقائيًا او لا. |
+| حذف رسائل الصمت | سواء سيتم حذف رسائل "الصمت" من عدمه تلقائيًا او لا. |
 
-#### Emojis
+**دعوات**
 
 | Setting | Description |
 | :--- | :--- |
-| [Enabled]() | Automatically moderate messages with an excessive amount of emojis. |
-| [Max \# of Emojis]() | The maximum amount of emojis a message is allowed to have before trigger the rule. |
-| [Enabled]() | Automatically give members nicknames if they try to hoist \(use special characters to appear at the top of the user list\). |
+| تمكين | Automatically scan messages for discord invite links and remove them. |
 
-## Prefix
+**روابط**
 
-The prefix used to trigger bot commands.
+| Setting | Description |
+| :--- | :--- |
+| تمكين | Automatically remove messages containing links \(you can set a whitelist and blacklist\). |
+| القائمة البيضاء | A list of links that users are allowed to post. |
+| القائمة السوداء | Blacklist certain links which users won't be able to post. |
+| Follow Redirects | Enable this to resolve redirects for links. |
+
+**كلمات محظوره**
+
+| Setting | Description |
+| :--- | :--- |
+| مفعل | سواء سيتم التحقق تلقائياً من رسائل المحظوره او لا. |
+| حظر | قائمه من الكلمات المحظوره |
+
+**احرف كبيره**
+
+| Setting | Description |
+| :--- | :--- |
+| تمكين | Automatically moderate messages with A LOT OF CAPS. |
+| الحد الأدنى من الشخصيات | The minimum amount of characters in a message to be considered for moderating \(setting to '3' would ignore 'OK'\). |
+| النسبة المئوية CAPs | The percentage of characters of the message that have to be CAPs for the rule to trigger. |
+
+**رسائل مكررة**
+
+| Setting | Description |
+| :--- | :--- |
+| تمكين | Automatically moderate duplicate messages \(copy-paste spam\). |
+| الإطار الزمني بالثواني | The timeframe whithin which messages will be considered duplicates. |
+
+**سبام/اصرار**
+
+| Setting | Description |
+| :--- | :--- |
+| مفعل | Automatically moderate users sending a lot of messages in a short time. |
+| \# من الرسائل | The number of messages that have to be sent within the timeframe to trigger the rule. |
+| الإطار الزمني بالثواني | The timeframe within which a user is allowed to send a maximum amount of messages. |
+
+**إشارات**
+
+| Setting | Description |
+| :--- | :--- |
+| تمكين | Automatically moderate messages that mention an excessive amount of users. |
+| Max \# of Mentions | The maximum amount of users a member can mention in a message. |
+| تمكين | Automatically moderate messages that mention an excessive amount of roles. |
+| Max \# of Mentions | The maximum amount of roles a member can mention in a message. |
+
+**ايموجيز - تعبير وجه**
+
+| Setting | Description |
+| :--- | :--- |
+| تمكين | Automatically moderate messages with an excessive amount of emojis. |
+| ماكس \# من Emojis | The maximum amount of emojis a message is allowed to have before trigger the rule. |
+| Enabled | Automatically give members nicknames if they try to hoist \(use special characters to appear at the top of the user list\). |
+
+### بريفكس
+
+البريفكس المستخدم لتشغيل أوامر البوت.
 
 Type: `String`
 
@@ -178,9 +180,9 @@ Examples:
 
 `!config prefix >`
 
-## Language
+### لغه
 
-The language of the bot
+لغة البوت
 
 Type: `Enum<Lang>`
 
@@ -194,9 +196,9 @@ Example:
 
 `!config lang ar`
 
-## Log Channel
+### قناه السجل
 
-The channel where bot actions are logged.
+القناه التي يتم تسجيل حركات البوت فيها.
 
 Type: `Channel`
 
@@ -208,9 +210,9 @@ Examples:
 
 `!config logChannel #channel`
 
-## Get Updates
+### الحصول على التحديثات
 
-Enable to receive development updates about InviteLogger.
+فعل لتلقي تحديثات التطوير الخاصه بInviteManager.
 
 Type: `Boolean`
 
@@ -226,9 +228,9 @@ Disable:
 
 `!config getUpdates false`
 
-## Command channels
+### قنوات الأوامر
 
-The channels in which the bot will react to commands.
+القنوات التي سيتفاعل فيها البوت مع الأوامر.
 
 Type: `Channel[]`
 
@@ -236,9 +238,9 @@ Default: \`\`
 
 Reset to default: `!config channels default`
 
-## Ignored channels
+### القنوات المتجاهلة
 
-The channels in which the bot will ignore commands.
+القنوات التي سيتجاهل فيها البوت الأوامر.
 
 Type: `Channel[]`
 
@@ -246,7 +248,7 @@ Default: \`\`
 
 Reset to default: `!config ignoredChannels default`
 
-## Join Roles
+### Join Roles
 
 Roles that are assigned to all members when joining.
 
@@ -256,9 +258,9 @@ Default: \`\`
 
 Reset to default: `!config joinRoles default`
 
-## Message
+### رساله
 
-The message sent when someone joins the server.
+الرسالة المرسلة عندما يدخل شخص ما الخادم/السيرفر.
 
 Type: `String`
 
@@ -266,9 +268,9 @@ Default: `{memberMention} **joined**; Invited by **{inviterName}** (**{numInvite
 
 Reset to default: `!config joinMessage default`
 
-## Message Channel
+### قناه الرسائل
 
-The channel that the message on join is sent to.
+القناة التي يتم إرسال رسالة الدخول فيها.
 
 Type: `Channel`
 
@@ -282,9 +284,9 @@ Examples:
 
 `!config joinMessageChannel #joins`
 
-## Message
+### رساله
 
-The message sent when someone leaves the server.
+الرسالة المرسلة عندما يترك شخص ما الخادم/السيرفر.
 
 Type: `String`
 
@@ -298,9 +300,9 @@ Examples:
 
 `!config leaveMessage`
 
-## Message Channel
+### قناه الرسائل
 
-The channel that the leave message is sent to.
+القناة التي يتم إرسال رسالة الخروج فيها.
 
 Type: `Channel`
 
@@ -314,9 +316,9 @@ Examples:
 
 `!config leaveMessageChannel #leaves`
 
-## Style
+### اسلوب
 
-The display style of the leaderboard.
+مظهر اسلوب المتصدرين
 
 Type: `Enum<LeaderboardStyle>`
 
@@ -330,9 +332,9 @@ Example:
 
 `!config leaderboardStyle normal`
 
-## Hide left members
+### اخفي الاعضاء الذين خرجوا
 
-Hide members that left the server from the leaderboard.
+إخفاء الأعضاء الذين تركوا الخادم من المتصدرين
 
 Type: `Boolean`
 
@@ -348,9 +350,9 @@ Disable:
 
 `!config hideLeftMembersFromLeaderboard false`
 
-## Auto Subtract
+### طرح تلقائي
 
-Automatically subtract fake invites.
+ازاله الدعوات المزورة تلقائياً
 
 Type: `Boolean`
 
@@ -366,9 +368,9 @@ Disable:
 
 `!config autoSubtractFakes false`
 
-## Auto Subtract
+### طرح تلقائي
 
-Automatically remove invites from the inviter when the invited user leaves.
+ازالة الدعوات تلقائيًا من المدعو عندما يغادر
 
 Type: `Boolean`
 
@@ -384,9 +386,9 @@ Disable:
 
 `!config autoSubtractLeaves false`
 
-## Auto Subtract Threshold
+### بداية الطرح التلقائي
 
-The time in seconds for which a user has to stay in the server for the invite to count.
+الوقت بالثواني الذي يتعين على المستخدم البقاء فيه في السيرفر للدعوه للعد
 
 Type: `Number`
 
@@ -400,9 +402,9 @@ Examples:
 
 `!config autoSubtractLeaveThreshold 3600`
 
-## Assignment Style
+### أسلوب الواجب
 
-How ranks are rewarded to users.
+كيف تتم مكافأة الرتب للمستخدمين.
 
 Type: `Enum<RankAssignmentStyle>`
 
@@ -416,9 +418,9 @@ Example:
 
 `!config rankAssignmentStyle all`
 
-## Announcement Channel
+### قناه التصاريح
 
-The channel where users receiving a new rank are announced.
+القناة التي يعلن فيها المستخدمون الذين يتلقون رتبة جديدة.
 
 Type: `Channel`
 
@@ -432,9 +434,9 @@ Examples:
 
 `!config rankAnnouncementChannel`
 
-## Announcement Message
+### رساله التصريح
 
-The message that is sent when a user receives a new rank.
+الرسالة التي يتم إرسالها عندما يتلقى المستخدم رتبة جديدة.
 
 Type: `String`
 
@@ -448,9 +450,9 @@ Examples:
 
 `!config rankAnnouncementMessage`
 
-## Enabled
+### مفعل
 
-Whether or not captcha verification is enabled.
+سواء تم تفعيل التحقق من كلمة التحقق أم لا.
 
 Type: `Boolean`
 
@@ -466,9 +468,9 @@ Disable:
 
 `!config captchaVerificationOnJoin false`
 
-## Welcome Message
+### رسالة الترحيب
 
-The message a user will get after joining a server and instructing them to enter the captcha.
+الرسالة التي سيحصل عليها المستخدم بعد الانضمام إلى الخادم وتوجيهه لدخول اختبار كلمة التحقق.
 
 Type: `String`
 
@@ -480,9 +482,9 @@ Examples:
 
 `!config captchaVerificationWelcomeMessage Welcome, please enter the captcha below!`
 
-## Success Message
+### رسالة النجاح
 
-The welcome message that will be sent to the user after he successfully verifies.
+رسالة الترحيب التي سيتم إرسالها إلى المستخدم بعد أن يتحقق بنجاح.
 
 Type: `String`
 
@@ -494,9 +496,9 @@ Examples:
 
 `!config captchaVerificationSuccessMessage Thanks for entering the captcha, enjoy our server!`
 
-## Failed Message
+### رسالة فاشلة
 
-The message sent to the user if he enters an invalid captcha.
+الرسالة التي يتم إرسالها عندما يخفق المستخدم بكلمه التحقق.
 
 Type: `String`
 
@@ -508,9 +510,9 @@ Examples:
 
 `!config captchaVerificationFailedMessage Looks like you are not human :(. You can join again and try again later if this was a mistake!`
 
-## Verification Timeout
+### التحقق من المهلة
 
-The time within which the captcha has to be entered successfully.
+الوقت الذي يتم فيه إدخال كلمة التحقق بنجاح.
 
 Type: `Number`
 
@@ -524,9 +526,9 @@ Examples:
 
 `!config captchaVerificationTimeout 600`
 
-## Log Enabled
+### السجل مفعل
 
-Whether or not verification attempts will be logged.
+سواء سيتم تسجيل محاولات التحقق ام لا.
 
 Type: `Boolean`
 
@@ -542,7 +544,7 @@ Disable:
 
 `!config captchaVerificationLogEnabled false`
 
-## Enabled
+### تمكين
 
 Automatically moderate messages \(specific rules can also be turned on or off, this has to be ON for ANY rule to work\).
 
@@ -560,7 +562,7 @@ Disable:
 
 `!config autoModEnabled false`
 
-## Moderated Channels
+### القنوات الادارية
 
 The list of moderated channels \(this acts as a whitelist, leave empty to moderate all channels, or use `autoModIgnoredChannels` to ignore certain channels\).
 
@@ -576,7 +578,7 @@ Examples:
 
 `!config autoModModeratedChannels #support,#help`
 
-## Moderated Roles
+### الرتب الادارية
 
 The list of roles that are moderated \(this acts as a whitelist, leave empty to moderate all roles, or use `autoModIgnoredRoles` to ignore certain roles\).
 
@@ -592,7 +594,7 @@ Examples:
 
 `!config autoModModeratedRoles @Newbies,@Starters`
 
-## Ignored Channels
+### القنوات المتجاهلة
 
 Channels that are ignored while automatically moderating.
 
@@ -608,7 +610,7 @@ Examples:
 
 `!config autoModIgnoredChannels #off-topic,#nsfw`
 
-## Ignored Roles
+### تجاهل الأدوار
 
 Any members with these roles will not automatically be moderated.
 
@@ -624,7 +626,7 @@ Examples:
 
 `!config autoModIgnoredRoles @Moderators,@Staff`
 
-## Muted Role
+### رتبه صامته
 
 The role that is given to people who are muted. Make sure this role is denied the "Send Message" permission.
 
@@ -638,7 +640,7 @@ Examples:
 
 `!config mutedRole @muted`
 
-## Disabled for Old Members
+### معطل للأعضاء القدامى
 
 Disabled auto moderation for members that have been in your server for a long time.
 
@@ -656,7 +658,7 @@ Disable:
 
 `!config autoModDisabledForOldMembers false`
 
-## Old Members Threshold
+### الأعضاء القديمة عتبة
 
 The amount of time a member has to be in your server to be considered 'old'.
 
@@ -672,7 +674,7 @@ Examples:
 
 `!config autoModDisabledForOldMembersThreshold 2419200` \(1 month\)\`\`
 
-## Log Enabled
+### Log Enabled
 
 Log any moderation actions that the bot makes.
 
@@ -690,9 +692,9 @@ Disable:
 
 `!config autoModLogEnabled false`
 
-## Mod Log Channel
+### سجل القناه الخاص بالمود
 
-The channel where moderation logs will be posted in.
+القناة التي سيتم نشر سجلات المود فيها.
 
 Type: `Channel`
 
@@ -706,7 +708,7 @@ Examples:
 
 `!config modLogChannel #logs`
 
-## Delete Bot Messages
+### حذف رسائل بوت
 
 Automatically delete the bots own messages \(keeps your chat clean\).
 
@@ -724,7 +726,7 @@ Disable:
 
 `!config autoModDeleteBotMessage false`
 
-## Delete Bot Message Timeout
+### حذف Bot Message Timeout
 
 The timeout after which bot messages are deleted.
 
@@ -740,9 +742,9 @@ Examples:
 
 `!config autoModDeleteBotMessageTimeoutInSeconds 10`
 
-## Delete Ban Messages
+### حذف رسائل الحظر
 
-Whether or not "Ban" pushment messages will be deleted automatically.
+سواء سيتم حذف رسائل "الحظر" من عدمه تلقائيًا او لا.
 
 Type: `Boolean`
 
@@ -758,9 +760,9 @@ Disable:
 
 `!config modPunishmentBanDeleteMessage false`
 
-## Delete Kick Messages
+### حذف رسائل الطرد
 
-Whether or not "Kick" pushment messages will be deleted automatically.
+سواء سيتم حذف رسائل "الطرد" من عدمه تلقائيًا او لا.
 
 Type: `Boolean`
 
@@ -776,9 +778,9 @@ Disable:
 
 `!config modPunishmentKickDeleteMessage false`
 
-## Delete Softban Messages
+### حذف رسائل الحظر
 
-Whether or not "Softban" pushment messages will be deleted automatically.
+سواء سيتم حذف رسائل "الحظر" من عدمه تلقائيًا او لا.
 
 Type: `Boolean`
 
@@ -794,9 +796,9 @@ Disable:
 
 `!config modPunishmentSoftbanDeleteMessage false`
 
-## Delete Warn Messages
+### حذف رسائل التحذير.
 
-Whether or not "Warn" pushment messages will be deleted automatically.
+سواء سيتم حذف رسائل "تحذير" من عدمه تلقائيًا او لا.
 
 Type: `Boolean`
 
@@ -812,9 +814,9 @@ Disable:
 
 `!config modPunishmentWarnDeleteMessage false`
 
-## Delete Mute Messages
+### حذف رسائل الصمت
 
-Whether or not "Mute" pushment messages will be deleted automatically.
+سواء سيتم حذف رسائل "الصمت" من عدمه تلقائيًا او لا.
 
 Type: `Boolean`
 
@@ -830,7 +832,7 @@ Disable:
 
 `!config modPunishmentMuteDeleteMessage false`
 
-## Enabled
+### تمكين
 
 Automatically scan messages for discord invite links and remove them.
 
@@ -848,7 +850,7 @@ Disable:
 
 `!config autoModInvitesEnabled false`
 
-## Enabled
+### تمكين
 
 Automatically remove messages containing links \(you can set a whitelist and blacklist\).
 
@@ -866,7 +868,7 @@ Disable:
 
 `!config autoModLinksEnabled false`
 
-## Whitelist
+### القائمة البيضاء
 
 A list of links that users are allowed to post.
 
@@ -882,7 +884,7 @@ Examples:
 
 `!config autoModLinksWhitelist youtube.com,twitch.com`
 
-## Blacklist
+### القائمة السوداء
 
 Blacklist certain links which users won't be able to post.
 
@@ -898,7 +900,7 @@ Examples:
 
 `!config autoModLinksBlacklist twitch.com,youtube.com`
 
-## Follow Redirects
+### Follow Redirects
 
 Enable this to resolve redirects for links.
 
@@ -916,9 +918,9 @@ Disable:
 
 `!config autoModLinksFollowRedirects false`
 
-## Enabled
+### مفعل
 
-Whether or not blacklisted words will be automoderated.
+سواء سيتم التحقق تلقائياً من رسائل المحظوره او لا.
 
 Type: `Boolean`
 
@@ -934,9 +936,9 @@ Disable:
 
 `!config autoModWordsEnabled false`
 
-## Blacklist
+### حظر
 
-A list of words that are banned.
+قائمه من الكلمات المحظوره
 
 Type: `String[]`
 
@@ -950,7 +952,7 @@ Examples:
 
 `!config autoModWordsBlacklist stupid,fuck`
 
-## Enabled
+### تمكين
 
 Automatically moderate messages with A LOT OF CAPS.
 
@@ -968,7 +970,7 @@ Disable:
 
 `!config autoModAllCapsEnabled false`
 
-## Min. Characters
+### الحد الأدنى من الشخصيات
 
 The minimum amount of characters in a message to be considered for moderating \(setting to '3' would ignore 'OK'\).
 
@@ -984,7 +986,7 @@ Examples:
 
 `!config autoModAllCapsMinCharacters 15`
 
-## Percentage CAPs
+### النسبة المئوية CAPs
 
 The percentage of characters of the message that have to be CAPs for the rule to trigger.
 
@@ -1000,7 +1002,7 @@ Examples:
 
 `!config autoModAllCapsPercentageCaps 90`
 
-## Enabled
+### تمكين
 
 Automatically moderate duplicate messages \(copy-paste spam\).
 
@@ -1018,7 +1020,7 @@ Disable:
 
 `!config autoModDuplicateTextEnabled false`
 
-## Timeframe in Seconds
+### الإطار الزمني بالثواني
 
 The timeframe whithin which messages will be considered duplicates.
 
@@ -1034,7 +1036,7 @@ Examples:
 
 `!config autoModDuplicateTextTimeframeInSeconds 20`
 
-## Enabled
+### مفعل
 
 Automatically moderate users sending a lot of messages in a short time.
 
@@ -1052,7 +1054,7 @@ Disable:
 
 `!config autoModQuickMessagesEnabled false`
 
-## \# of Messages
+### \# من الرسائل
 
 The number of messages that have to be sent within the timeframe to trigger the rule.
 
@@ -1068,7 +1070,7 @@ Examples:
 
 `!config autoModQuickMessagesNumberOfMessages 10`
 
-## Timeframe in Seconds
+### الإطار الزمني بالثواني
 
 The timeframe within which a user is allowed to send a maximum amount of messages.
 
@@ -1084,7 +1086,7 @@ Examples:
 
 `!config autoModQuickMessagesTimeframeInSeconds 10`
 
-## Enabled
+### تمكين
 
 Automatically moderate messages that mention an excessive amount of users.
 
@@ -1102,7 +1104,7 @@ Disable:
 
 `!config autoModMentionUsersEnabled false`
 
-## Max \# of Mentions
+### Max \# of Mentions
 
 The maximum amount of users a member can mention in a message.
 
@@ -1118,7 +1120,7 @@ Examples:
 
 `!config autoModMentionUsersMaxNumberOfMentions 5`
 
-## Enabled
+### تمكين
 
 Automatically moderate messages that mention an excessive amount of roles.
 
@@ -1136,7 +1138,7 @@ Disable:
 
 `!config autoModMentionRolesEnabled false`
 
-## Max \# of Mentions
+### Max \# of Mentions
 
 The maximum amount of roles a member can mention in a message.
 
@@ -1152,7 +1154,7 @@ Examples:
 
 `!config autoModMentionRolesMaxNumberOfMentions 5`
 
-## Enabled
+### تمكين
 
 Automatically moderate messages with an excessive amount of emojis.
 
@@ -1170,7 +1172,7 @@ Disable:
 
 `!config autoModEmojisEnabled false`
 
-## Max \# of Emojis
+### ماكس \# من Emojis
 
 The maximum amount of emojis a message is allowed to have before trigger the rule.
 
@@ -1186,7 +1188,7 @@ Examples:
 
 `!config autoModEmojisMaxNumberOfEmojis 10`
 
-## Enabled
+### Enabled
 
 Automatically give members nicknames if they try to hoist \(use special characters to appear at the top of the user list\).
 

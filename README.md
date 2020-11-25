@@ -1,29 +1,27 @@
 # Welcome
 
-## Reference
+### Reference
 
-* [Commands](references/commands.md)
-* [Configs / Settings](references/settings.md)
+* [الأوامر](references/commands.md)
+* [الاعدادات](references/settings.md)
 
-## Getting Started
+### ابدء
 
-To get started, just run the `!setup` command on your server.
+للبدء ، ما عليك سوى تشغيل الأمر `! setup` على الخادم الخاص بك.
 
-### Invite Management
+#### تدبير الدعوات
 
-While our bot is on your server, we track every invite that happens on your server. Discord only shows you who has how many invites. Our bot also analyses who was invited by whom. This allows our bot to detect fake invites and see who is trying to cheat the invite system.
+أثناء وجود الروبوت لدينا على الخادم الخاص بك ، فإننا نتتبع كل دعوة تحدث على الخادم الخاص بك. الخلاف يظهر لك فقط من لديه عدد الدعوات. يحلل الروبوت لدينا أيضًا من تمت دعوته من قبل. هذا يسمح لبوتنا باكتشاف الدعوات المزيفة ومعرفة من يحاول خداع نظام الدعوة.
 
-### Moderation
+#### الإشراف
 
-Our brand new moderation system allows you to auto-moderate many things. Please check our [strikes](modules/moderation-1/strikes.md) and [punishments](modules/moderation-1/punishments.md) pages for more info. In short, our bot gives out 'strikes' to people who misbehave, and after a certain amount of strikes, the user receives a punishment. All of this is configurable by the user.
+يتيح لك نظام الاعتدال الجديد الخاص بنا تعديل العديد من الأشياء تلقائيًا. يرجى مراجعة موقعنا [strikes](modules/moderation-1/strikes.md) وايضا [punishments](modules/moderation-1/punishments.md) صفحات لمزيد من المعلومات. باختصار ، يقدم الروبوت الخاص بنا "strikes" للأشخاص الذين يسيئون التصرف ، وبعد كمية معينة من الضربات ، يتلقى المستخدم عقوبة. كل هذا هو شكلي من قبل المستخدم.
 
 ## Bot lists:
-Vote to the bot to help us on different bot list !
 
+Vote to the bot to help us on different bot list !
 
 `infinitybotlist:`
 
-
 [![infinitybotlist](https://infinitybotlist.com/bots/617497548743245835/widget?size=large)](https://infinitybotlist.com/bots/617497548743245835/vote)
-
 
