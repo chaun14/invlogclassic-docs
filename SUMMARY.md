@@ -2,6 +2,10 @@
 
 * [Welcome](README.md)
 
+## getting-started
+
+* [FAQ](getting-started/untitled-1.md)
+
 ## modules
 
 * [Moderation](modules/moderation-1/README.md)
