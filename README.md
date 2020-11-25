@@ -1,29 +1,27 @@
 # Welcome
 
-## Reference
+### 参照
 
-* [Commands](references/commands.md)
+* [コマンド](references/commands.md)
 * [Configs / Settings](references/settings.md)
 
-## Getting Started
+### さあ-始めよう
 
-To get started, just run the `!setup` command on your server.
+開始するには、サーバーで `!setup` コマンドを実行するだけです。
 
-### Invite Management
+#### Invite Management
 
-While our bot is on your server, we track every invite that happens on your server. Discord only shows you who has how many invites. Our bot also analyses who was invited by whom. This allows our bot to detect fake invites and see who is trying to cheat the invite system.
+BOT がサーバーにいる間は、招待を使って起こったすべての出来事を追跡します。Discord はどれくらい招待コードが使われたのかしか表示しませんが、我々の BOT は誰が作ったコードが誰に使われたのか分析します。これにより、BOT は偽物の招待を検出し、招待システムをだまそうとしている人を確認できます。
 
-### Moderation
+#### 管理
 
-Our brand new moderation system allows you to auto-moderate many things. Please check our [strikes](modules/moderation-1/strikes.md) and [punishments](modules/moderation-1/punishments.md) pages for more info. In short, our bot gives out 'strikes' to people who misbehave, and after a certain amount of strikes, the user receives a punishment. All of this is configurable by the user.
+新しいモデレーションシステムにより、多くのことを自動モデレートできます。詳細については [strikes](/ja/modules/moderation/strikes.md) および[punishments](modules/moderation-1/punishments.md) ページをご覧ください。要するに、BOT は不正行為をした人に'strikes' を行い、一定数の警告の後、ユーザーに罰を与えます。 これらはすべてユーザーに設定可能です。
 
 ## Bot lists:
-Vote to the bot to help us on different bot list !
 
+Vote to the bot to help us on different bot list !
 
 `infinitybotlist:`
 
-
 [![infinitybotlist](https://infinitybotlist.com/bots/617497548743245835/widget?size=large)](https://infinitybotlist.com/bots/617497548743245835/vote)
-
 
