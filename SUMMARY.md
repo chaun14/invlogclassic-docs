@@ -4,7 +4,7 @@
 
 ## Pour commencer <a id="getting-started"></a>
 
-* [FAQ](getting-started/untitled-1.md)
+* [FAQ](getting-started/faq.md)
 
 ## modules
 
