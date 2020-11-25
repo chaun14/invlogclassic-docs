@@ -1,4 +1,4 @@
-# Punishments
+# Punitions
 
 ## What are punishments?
 

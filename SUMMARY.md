@@ -12,8 +12,8 @@
   * [Examples](modules/invites/examples.md)
   * [Custom Messages](modules/invites/custom-messages.md)
 * [Modération](modules/moderation/README.md)
-  * [Punishments](modules/moderation/punishments.md)
-  * [Strikes](modules/moderation/strikes.md)
+  * [Punitions](modules/moderation/punishments.md)
+  * [Sanctions](modules/moderation/strikes.md)
 
 ## references
 

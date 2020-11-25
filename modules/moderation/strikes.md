@@ -1,4 +1,4 @@
-# Strikes
+# Sanctions
 
 ## What are strikes?
 
