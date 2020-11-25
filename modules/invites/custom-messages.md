@@ -2,7 +2,7 @@
 description: You can customise the join and leave messages with a number of parameters.
 ---
 
-# Messages personnalisés
+# Custom messages
 
 ## Custom Messages <a id="custom-messages"></a>
 
