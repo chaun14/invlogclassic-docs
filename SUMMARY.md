@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Bienvenue](README.md)
 
-## getting-started
+## Pour commencer <a id="getting-started"></a>
 
 * [FAQ](getting-started/untitled-1.md)
 
