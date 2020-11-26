@@ -1,22 +1,22 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Hoşgeldin](README.md)
 
-## getting-started
+## Başlangıç
 
-* [FAQ](getting-started/faq.md)
+* [S.S.S](getting-started/faq.md)
 
-## modules
+## Modüller
 
-* [Invites](modules/invites/README.md)
-  * [Examples](modules/invites/examples.md)
-  * [Custom Messages](modules/invites/custom-messages.md)
-* [Moderation](modules/moderation-1/README.md)
-  * [Punishments](modules/moderation-1/punishments.md)
-  * [Strikes](modules/moderation-1/strikes.md)
+* [Davet Sistemini Yapılandırma Kaynakları](modules/invites/README.md)
+  * [Örnek Kullanımlar](modules/invites/examples.md)
+  * [Özelleştirme](modules/invites/custom-messages.md)
+* [Moderasyon Sistemi](modules/moderation-1/README.md)
+  * [Cezaları Yapılandırma](modules/moderation-1/punishments.md)
+  * [Ceza Puanları](modules/moderation-1/strikes.md)
 
-## references
+## Ek Kaynaklar
 
-* [Commands](references/commands.md)
-* [Settings](references/settings.md)
+* [Tüm Komutlar](references/commands.md)
+* [Ayarlamalar](references/settings.md)
 
