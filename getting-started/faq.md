@@ -1,4 +1,4 @@
-# FAQ
+# S.S.S (Sıkça Sorulan Sorular)
 
 ### Botun ön ekini nasıl değiştirebilirim?
 
