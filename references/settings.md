@@ -1,14 +1,14 @@
-# Settings
+# Ayarlama Rehberi
 
-## Configs
+## Açıklama
 
-There are many config options that can be set. You don't have to set all of them. If you just added the bot, just run `!setup`, which will guide you through the most important ones.
+Ayarlanabilecek birçok yapılandırma seçeneği vardır. Hepsini ayarlamanıza gerek yok. Botu yeni eklediyseniz, en önemlileri boyunca size rehberlik edecek olan "!setup" komutunu çalıştırın.
 
-### Overview
+### !config
 
 #### Genel
 
-| Setting | Description |
+| Ayar | Açıklaması |
 | :--- | :--- |
 | Prefix | The prefix used to trigger bot commands. |
 | Dil | Botun dili |
@@ -17,11 +17,11 @@ There are many config options that can be set. You don't have to set all of them
 | Komut kanalları | Botun komutlara tepki vereceği kanallar. |
 | Görmezden gelinen kanallar | Botun komutları görmezden geleceği kanallar. |
 
-#### davetler
+#### Davetler
 
 **Genel**
 
-| Setting | Description |
+| Ayar | Açıklaması |
 | :--- | :--- |
 | Katılma rolleri | Katılırken tüm üyelere atanan roller. |
 
