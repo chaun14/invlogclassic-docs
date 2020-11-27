@@ -1,4 +1,4 @@
-# Welcome
+# Hoşgeldin
 
 ## Referans
 
@@ -15,7 +15,7 @@ Botumuz sunucunuzdayken, sunucunuzda gerçekleşen her daveti izleriz. Discord s
 
 #### Moderasyon
 
-Yeni moderasyon sistemimiz birçok şeyi otomatik olarak yönetmenizi sağlar. Daha fazla bilgi için lütfen [strikes](/tr/modules/moderation/strikes.md) ve [punishments](/tr/modules/moderation/punishments.md) sayfalarımızı kontrol edin. Kısacası, botumuz yanlış davranan insanlara 'grev' verir ve belirli bir grevden sonra kullanıcı bir ceza alır. Tüm bunlar kullanıcı tarafından yapılandırılabilir.
+Yeni moderasyon sistemimiz birçok şeyi otomatik olarak yönetmenizi sağlar. Daha fazla bilgi için lütfen [Ceza Puanları](https://classic.invitelogger.me/v/turkish/modueller/moderation-1/strikes) ve [Cezaları Yapılandırma](https://classic.invitelogger.me/v/turkish/modueller/moderation-1/punishments) sayfalarımızı kontrol edin. Kısacası, botumuz yanlış davranan insanlara 'ceza puanı' verir ve belirli bir kural dışı davranış sonrası kullanıcı bir ceza alır. Bu sistem sunucu yöneticileri tarafından yapılandırılabilir.
 
 ## Bot Listler:
 
