@@ -4,19 +4,19 @@
 
 ## Başlangıç
 
-* [S.S.S](getting-started/faq.md)
+* [S.S.S](baslangic/faq.md)
 
 ## Modüller
 
-* [Davet Sistemini Yapılandırma Kaynakları](modules/invites/README.md)
-  * [Örnek Kullanımlar](modules/invites/examples.md)
-  * [Özelleştirme](modules/invites/custom-messages.md)
-* [Moderasyon Sistemi](modules/moderation-1/README.md)
-  * [Cezaları Yapılandırma](modules/moderation-1/punishments.md)
-  * [Ceza Puanları](modules/moderation-1/strikes.md)
+* [Davet Sistemini Yapılandırma Kaynakları](modueller/invites/README.md)
+  * [Örnek Kullanımlar](modueller/invites/examples.md)
+  * [Özelleştirme](modueller/invites/custom-messages.md)
+* [Moderasyon Sistemi](modueller/moderation-1/README.md)
+  * [Cezaları Yapılandırma](modueller/moderation-1/punishments.md)
+  * [Ceza Puanları](modueller/moderation-1/strikes.md)
 
 ## Ek Kaynaklar
 
-* [Tüm Komutlar](references/commands.md)
-* [Ayarlamalar](references/settings.md)
+* [Tüm Komutlar](ek-kaynaklar/commands.md)
+* [Ayarlamalar](ek-kaynaklar/settings.md)
 

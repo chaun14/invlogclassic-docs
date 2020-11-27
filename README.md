@@ -2,20 +2,20 @@
 
 ## Referans
 
-* [Komutlar](references/commands.md)
-* [Ayarlamalar](references/settings.md)
+* [Komutlar](ek-kaynaklar/commands.md)
+* [Ayarlamalar](ek-kaynaklar/settings.md)
 
 ## Başlangıç
 
 Başlamak için sunucunuzda `!setup` komutunu çalıştırmanız yeterlidir.
 
-#### Davet Yönetimi
+### Davet Yönetimi
 
 Botumuz sunucunuzdayken, sunucunuzda gerçekleşen her daveti izleriz. Discord sadece size kimin davet ettiğini gösterir. Botumuz ayrıca kimin kimi davet ettiğini analiz eder. Bu botumuzun sahte davetiyeleri tespit etmesini ve davet sistemini kandırmaya çalıştığını görmesini sağlar.
 
-#### Moderasyon
+### Moderasyon
 
-Yeni moderasyon sistemimiz birçok şeyi otomatik olarak yönetmenizi sağlar. Daha fazla bilgi için lütfen [Ceza Puanları](https://classic.invitelogger.me/v/turkish/modueller/moderation-1/strikes) ve [Cezaları Yapılandırma](https://classic.invitelogger.me/v/turkish/modueller/moderation-1/punishments) sayfalarımızı kontrol edin. Kısacası, botumuz yanlış davranan insanlara 'ceza puanı' verir ve belirli bir kural dışı davranış sonrası kullanıcı bir ceza alır. Bu sistem sunucu yöneticileri tarafından yapılandırılabilir.
+Yeni moderasyon sistemimiz birçok şeyi otomatik olarak yönetmenizi sağlar. Daha fazla bilgi için lütfen [Ceza Puanları](modueller/moderation-1/strikes.md) ve [Cezaları Yapılandırma](modueller/moderation-1/punishments.md) sayfalarımızı kontrol edin. Kısacası, botumuz yanlış davranan insanlara 'ceza puanı' verir ve belirli bir kural dışı davranış sonrası kullanıcı bir ceza alır. Bu sistem sunucu yöneticileri tarafından yapılandırılabilir.
 
 ## Bot Listler:
 

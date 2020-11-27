@@ -1,0 +1,2 @@
+# Davet Sistemini Yapılandırma Kaynakları
+
