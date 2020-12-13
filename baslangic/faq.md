@@ -1,3 +1,6 @@
+---
+description: InviteLogger Classic Hakkında Sıkça Sorulan Sorular.
+---
 # S.S.S
 
 ## S.S.S \(Sıkça Sorulan Sorular\)
