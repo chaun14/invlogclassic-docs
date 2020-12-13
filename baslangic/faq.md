@@ -4,9 +4,9 @@
 
 ### Botun ön ekini nasıl değiştirebilirim?
 
-Öneki değiştirmek için `!config prefix -` yapabilirsiniz.
+Öneki değiştirmek için `!config prefix <prefix>` komutunu kullanabilirsiniz. Ör: `!config prefix -`
 
-Geçerli önekinizi bilmiyorsanız, öneki görmek için`@inviteLogger classic config prefix` komtunu kullanabilirsiniz.
+Geçerli önekinizi bilmiyorsanız, öneki görmek için botu etiketleyebilirsiniz.
 
 ### Katılma ve ayrılma mesajlarını nasıl ayarlarım?
 
@@ -32,17 +32,16 @@ Kesinlikle!
 
 `!config leaveMessage {memberName} **ayrıldı**; **{inviterName}** tarafından davet edilmişti.`
 
-Kullanılabilecek çok sayıda yer tutucu var. Listenin tamamını '[Custom Messages](../modueller/invites/custom-messages.md#oezellestirilmis-mesajlar)' sayfasında görebilirsiniz.
+Kullanılabilecek çok sayıda değişken var. Listenin tamamını '[Tüm Değişkenler](../modueller/invites/custom-messages.md#oezellestirilmis-mesajlar)' sayfasında görebilirsiniz.
 
 ### 'Rütbe' nedir, nasıl kullanabilirim?
 
-Rütbe, belirli bir sayıda davete ulaştıklarında insanlara rol atamak için kullanılır. Örneğin. `@Başlangıçcı` adında bir rolünüz varsa ve 5 veya daha fazla daveti olan kişilerin bu role eklenmesini istiyorsanız şu şekilde bir sıralama oluşturmanız gerekir:`!add-rank @Başlangıçcı 5 (ve burada bir açıklama istersiniz)`. Birisi 5 davet alır almaz, otomatik olarak bu role eklenir!
+Rütbe, belirli bir sayıda davete yapan insanlara rol vermek için kullanılır. Örneğin; `@Yakışıklı` adında bir rolünüz varsa ve 5 veya daha fazla daveti olan kişilere bu rolün eklenmesini istiyorsanız bu örnekteki gibi bir komut kullanmanız gerekir: `!addRank @Yakışıklı 5 (açıklama)`. Birisi 5 davet alır almaz, otomatik olarak bu rol kullanıcıya eklenir!
 
-### Bir / bazı kanallar dışındaki tüm botları nasıl devre dışı bırakabilirim?
+### Botun bazı kanallara mesaj atmasını ve o kanallarda komut kullanılmasını istemiyorum, nasıl yapabilirim?
 
-Botun yanıt vermesini istemediğiniz kanallarda okunan mesaj izinlerini kaldırın.
+Botun yanıt vermesini istemediğiniz kanallarda botun mesaj atma yetkisini kaldırabilirsiniz veya direk olarak botun o kanalı algılamasını kapatmak istiyorsanız da `!config ignoredChannels #kanal` komutu ile bu özelliği kullanabilirsiniz.
 
 ### Sınırlama: Bot katılmadan önce gelişmiş izleme yok.
 
-Gelişmiş izleme \(kim kimi davet ettiğinde\) yalnızca botu davet ettikten sonra çalışır. Bot, herkesin davet ettikten sonra sayımı davet ettiğini bilecek, endişelenmeyin. Yalnızca ek bilgiler eksiktir ve yalnızca botu davet ettikten sonra katılan üyeler için toplanabilir.
-
+Gelişmiş izleme \(kim kimi davet ettiği\) yalnızca botu davet ettikten sonra çalışır. Bot, herkesin davet ettikten sonra davet ettiğini bilecek, endişelenmeyin. Yalnızca ek bilgiler eksiktir ve yalnızca botu davet ettikten sonra katılan üyeler için gösterilebilir.
