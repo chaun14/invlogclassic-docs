@@ -10,33 +10,36 @@ description: Giriş ve ayrılma mesajları kendinize göre özelleştirebilirsin
 
 ## Özelleştirilmiş Mesajlar
 
-Yapılandırmayı ayarlayarak özel bir katılma veya mesaj oluşturabilirsiniz:
+Kendinize özel mesaj ayarlayarak katılma ve ayrılma mesajı oluşturabilirsiniz:
 
 ```text
 !config joinMessage This is your custom join message! It will be posted every time someone joins your server.
 ```
 
-ve ya
+veya
 
 ```text
 !config leaveMessage This is your custom leave message! It will be posted every time someone leaves your server.
 ```
 
-Bunun gibi bir mesaj açıkça mantıklı değil. Yeni üye, davet eden veya sunucu hakkındaki bilgilerle kişiselleştirmelisiniz. Lütfen mevcut tüm değişkenler için aşağıdaki listeye bakın.
+gibi örnekler verilebilir.
 
-Eğer mesajın
+Bunun gibi bir mesaj açıkça mantıklı değil. Yeni üye, davet eden veya sunucu hakkındaki bilgilerle kişiselleştirmelisiniz. Lütfen mevcut tüm değişkenler için aşağıdaki listeye göz atın.
 
-`Welcome @Andy! You were invited by Valandur, who now has 3 invites! Have fun on our server!`
+Eğer mesajımızı 
+
+`Hoşgeldin @Andy! Valandur tarafından sunucuya giriş yaptın, toplamda 3 davetin oldu! İyi eğlenmeler!`
 
 olmasını istiyorsak.
 
-Tüm isimleri ve numaraları değişkenlerle değiştirerek bunu kolayca yapabiliriz:
+Tüm isimleri ve numaraları değişkenlerlere bağlayarak bunu kolayca yapabiliriz:
+`Hoşgeldin {memberMention}! {inviterName} tarafından sunucuya giriş yaptın, toplamda {numInvites} davetin oldu! İyi eğlenmeler!`
 
-`Welcome {memberMention}! You were invited by {inviterName}, who now has {numInvites} invites! Have fun on our server!`
+Böylece, mesajı ayarlamak için artık `!config joinMessage <mesaj>` komutunu kullanabilirsiniz. Botumuz, birisi her katıldığında değişkenleri otomatik olarak değiştirecektir.
 
-Böylece, mesajı ayarlamak için artık `!config joinMessage <mesaj>` yapabilirsiniz. Botumuz, birisi her katıldığında yer değişkenleri otomatik olarak değiştirecektir.
+> \[!Not\|style:flat\] Premium kullanıcılar bu mesajları embed halinde ayarlayabilir. [Daha fazla bilgi](https://github.com/chaun14/invlogclassic-docs/tree/d05e5669fc48cfcc5f429ee855b06f4511193435/modules/invites/modules/invites/examples.md)
 
-> \[!Not\|style:flat\] Premium kullanıcılar bu mesajları embed halinde ayarlayabilir. [Daha fazla bilgi](https://github.com/chaun14/invlogclassic-docs/tree/d05e5669fc48cfcc5f429ee855b06f4511193435/modules/invites/modules/invites/examples.md) Lütfen [Örnek sayfa](https://github.com/chaun14/invlogclassic-docs/tree/d05e5669fc48cfcc5f429ee855b06f4511193435/modules/invites/modules/invites/examples.md)'a bakarak nasıl embed mesajı yapabilceğinizi görün.
+Lütfen [Örnek sayfa](https://github.com/chaun14/invlogclassic-docs/tree/d05e5669fc48cfcc5f429ee855b06f4511193435/modules/invites/modules/invites/examples.md)'ya bakarak nasıl embed mesajı yapabilceğinizi görün.
 
 ### Değişkenler
 
