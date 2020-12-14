@@ -1,3 +1,7 @@
+---
+description: Giriş ve ayrılma mesajlarının örneklerini bu sayfadan bulabilirsiniz.
+---
+
 # Örnek Kullanımlar
 
 ## Normal Mesaj
@@ -16,7 +20,7 @@
 
 #### **Ekran Görüntüsü**
 
-![Giri&#x15F; Embed &#xD6;rnek](https://github.com/chaun14/invlogclassic-docs/tree/dc10368657c0c77011b9dc6183904f56dbce29fa/assets/invite-manager-join-message-premium.png)
+![Giri&#x15F; Embed &#xD6;rnek](https://docs.invitemanager.co/assets/invite-manager-join-message-premium.png)
 
 #### **Kodu**
 
@@ -28,7 +32,7 @@
 
 #### **Ekran Görüntüsü**
 
-![Ayr&#x131;lma Embed &#xD6;rnek](https://github.com/chaun14/invlogclassic-docs/tree/dc10368657c0c77011b9dc6183904f56dbce29fa/assets/invite-manager-leave-message-premium.png)
+![Ayr&#x131;lma Embed &#xD6;rnek](https://docs.invitemanager.co/assets/invite-manager-leave-message-premium.png)
 
 #### **Kodu**
 

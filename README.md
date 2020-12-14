@@ -1,3 +1,7 @@
+---
+description: InviteLogger Classic'in Türkçe Sayfasına Hoşgeldin.
+---
+
 # Hoşgeldin
 
 ## Referans
@@ -9,9 +13,9 @@
 
 Başlamak için sunucunuzda `!setup` komutunu çalıştırmanız yeterlidir.
 
-### Davet Yönetimi
+### Davet Sistemi
 
-Botumuz sunucunuzdayken, sunucunuzda gerçekleşen her daveti izleriz. Discord sadece size kimin davet ettiğini gösterir. Botumuz ayrıca kimin kimi davet ettiğini analiz eder. Bu botumuzun sahte davetiyeleri tespit etmesini ve davet sistemini kandırmaya çalıştığını görmesini sağlar.
+Botumuz sunucunuzdayken, sunucunuzda gerçekleşen her daveti izleriz. Discord sadece size kimin davet ettiğini gösterir. Botumuz ayrıca kimin kimi davet ettiğini analiz eder.
 
 ### Moderasyon
 
