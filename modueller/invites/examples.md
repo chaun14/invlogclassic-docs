@@ -1,3 +1,7 @@
+---
+description: Giriş ve ayrılma mesajlarının örneklerini bu sayfadan bulabilirsiniz.
+---
+
 # Örnek Kullanımlar
 
 ## Normal Mesaj
