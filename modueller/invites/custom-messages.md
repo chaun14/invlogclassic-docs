@@ -13,13 +13,13 @@ description: Giriş ve ayrılma mesajları kendinize göre özelleştirebilirsin
 Kendinize özel mesaj ayarlayarak katılma ve ayrılma mesajı oluşturabilirsiniz:
 
 ```text
-!config joinMessage This is your custom join message! It will be posted every time someone joins your server.
+!config joinMessage Bu senin katılma mesajın olucak! Ayrıca her kullanıcı sunucuya girceği zaman atılcaktır.
 ```
 
 veya
 
 ```text
-!config leaveMessage This is your custom leave message! It will be posted every time someone leaves your server.
+!config leaveMessage Bu senin çıkış mesajın olucak! Ayrıca her kullanıcı sunucuya çıktığı zaman atılcaktır.
 ```
 
 gibi örnekler verilebilir.
