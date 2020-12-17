@@ -1,6 +1,7 @@
 ---
 description: InviteLogger Classic Hakkında Sıkça Sorulan Sorular.
 ---
+
 # S.S.S
 
 ## S.S.S \(Sıkça Sorulan Sorular\)
@@ -48,3 +49,4 @@ Botun yanıt vermesini istemediğiniz kanallarda botun mesaj atma yetkisini kald
 ### Sınırlama: Bot katılmadan önce gelişmiş izleme yok.
 
 Gelişmiş izleme \(kim kimi davet ettiği\) yalnızca botu davet ettikten sonra çalışır. Bot, herkesin davet ettikten sonra davet ettiğini bilecek, endişelenmeyin. Yalnızca ek bilgiler eksiktir ve yalnızca botu davet ettikten sonra katılan üyeler için gösterilebilir.
+

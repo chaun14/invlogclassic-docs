@@ -26,14 +26,13 @@ gibi örnekler verilebilir.
 
 Bunun gibi bir mesaj açıkça mantıklı değil. Yeni üye, davet eden veya sunucu hakkındaki bilgilerle kişiselleştirmelisiniz. Lütfen mevcut tüm değişkenler için aşağıdaki listeye göz atın.
 
-Eğer mesajımızı 
+Eğer mesajımızı
 
 `Hoşgeldin @Andy! Valandur tarafından sunucuya giriş yaptın, toplamda 3 davetin oldu! İyi eğlenmeler!`
 
 olmasını istiyorsak.
 
-Tüm isimleri ve numaraları değişkenlerlere bağlayarak bunu kolayca yapabiliriz:
-`Hoşgeldin {memberMention}! {inviterName} tarafından sunucuya giriş yaptın, toplamda {numInvites} davetin oldu! İyi eğlenmeler!`
+Tüm isimleri ve numaraları değişkenlerlere bağlayarak bunu kolayca yapabiliriz: `Hoşgeldin {memberMention}! {inviterName} tarafından sunucuya giriş yaptın, toplamda {numInvites} davetin oldu! İyi eğlenmeler!`
 
 Böylece, mesajı ayarlamak için artık `!config joinMessage <mesaj>` komutunu kullanabilirsiniz. Botumuz, birisi her katıldığında değişkenleri otomatik olarak değiştirecektir.
 
