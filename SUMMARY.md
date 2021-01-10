@@ -20,3 +20,7 @@
 * [Commands](references/commands.md)
 * [Settings](references/settings.md)
 
+---
+
+* [Invite the bot](https://discord.com/oauth2/authorize?scope=bot&response_type=code&permissions=268462304&client_id=617497548743245835&redirect_uri=https://invitelogger.chaun14.fr)
+
